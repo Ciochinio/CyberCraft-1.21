@@ -1,13 +1,129 @@
 {
-  "mod_elements": [],
-  "variable_elements": [],
+  "mod_elements": [
+    {
+      "name": "CyberwareMenu",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyberware_menu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/network/CyberwareMenuMessage.java"
+        ]
+      },
+      "path": "~/Cyberware/Gui"
+    },
+    {
+      "name": "CyberwareMenuOnKeyPressed",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyberware_menu_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/CyberwareMenuOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Gui"
+    },
+    {
+      "name": "CyberwareGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyberware_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/client/gui/CyberwareGuiScreen.java",
+          "src/main/java/net/rbm/cybercraft/world/inventory/CyberwareGuiMenu.java"
+        ]
+      },
+      "path": "~/Cyberware/Gui"
+    },
+    {
+      "name": "Eyes",
+      "type": "tag",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eyes",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cybercraft/tags/items/eyes.json"
+        ]
+      },
+      "path": "~/Cyberware/Cyberware/Face"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "eyes1",
+      "type": "itemstack",
+      "scope": "player_lifetime",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "save",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "true"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "key.cybercraft.cyberware_menu": "Cyberware Menu",
+      "key.categories.cybercraft": "CyberCraft"
+    }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Main",
+        "children": []
+      },
+      {
+        "name": "Cyberware",
+        "children": [
+          {
+            "name": "Gui",
+            "children": []
+          },
+          {
+            "name": "Cyberware",
+            "children": [
+              {
+                "name": "Face",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "cybercraft",

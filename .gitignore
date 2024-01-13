@@ -1,0 +1,22 @@
+# Gradle build system ignores
+.gradle/
+build/
+
+# Other IDE related folders
+.idea/
+.settings/
+
+# MCreator workspace
+.mcreator
+
+# Minecraft client/server files
+run
+run/
+
+# MCreator generator ignores
+
+# MacOS system files
+.DS_STORE
+.AppleDouble
+.LSOverride
+/.idea/runConfigurations.xml

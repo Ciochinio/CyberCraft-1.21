@@ -68,8 +68,22 @@ public class CybercraftModVariables {
 			PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			clone.save = original.save;
+			clone.operatingsystem1 = original.operatingsystem1;
+			clone.frontalcortex1 = original.frontalcortex1;
+			clone.frontalcortex2 = original.frontalcortex2;
+			clone.face1 = original.face1;
+			clone.arms1 = original.arms1;
+			clone.hands1 = original.hands1;
+			clone.skeleton1 = original.skeleton1;
+			clone.skeleton2 = original.skeleton2;
+			clone.circuletorysystem1 = original.circuletorysystem1;
+			clone.circulatorysystem2 = original.circulatorysystem2;
+			clone.nervoussystem1 = original.nervoussystem1;
+			clone.nervoussystem2 = original.nervoussystem2;
+			clone.legs1 = original.legs1;
+			clone.integumentarysystem1 = original.integumentarysystem1;
+			clone.integumentarysystem2 = original.integumentarysystem2;
 			if (!event.isWasDeath()) {
-				clone.eyes1 = original.eyes1;
 			}
 		}
 	}
@@ -105,8 +119,22 @@ public class CybercraftModVariables {
 	}
 
 	public static class PlayerVariables {
-		public ItemStack eyes1 = ItemStack.EMPTY;
 		public boolean save = true;
+		public ItemStack operatingsystem1 = ItemStack.EMPTY;
+		public ItemStack frontalcortex1 = ItemStack.EMPTY;
+		public ItemStack frontalcortex2 = ItemStack.EMPTY;
+		public ItemStack face1 = ItemStack.EMPTY;
+		public ItemStack arms1 = ItemStack.EMPTY;
+		public ItemStack hands1 = ItemStack.EMPTY;
+		public ItemStack skeleton1 = ItemStack.EMPTY;
+		public ItemStack skeleton2 = ItemStack.EMPTY;
+		public ItemStack circuletorysystem1 = ItemStack.EMPTY;
+		public ItemStack circulatorysystem2 = ItemStack.EMPTY;
+		public ItemStack nervoussystem1 = ItemStack.EMPTY;
+		public ItemStack nervoussystem2 = ItemStack.EMPTY;
+		public ItemStack legs1 = ItemStack.EMPTY;
+		public ItemStack integumentarysystem1 = ItemStack.EMPTY;
+		public ItemStack integumentarysystem2 = ItemStack.EMPTY;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -115,15 +143,43 @@ public class CybercraftModVariables {
 
 		public Tag writeNBT() {
 			CompoundTag nbt = new CompoundTag();
-			nbt.put("eyes1", eyes1.save(new CompoundTag()));
 			nbt.putBoolean("save", save);
+			nbt.put("operatingsystem1", operatingsystem1.save(new CompoundTag()));
+			nbt.put("frontalcortex1", frontalcortex1.save(new CompoundTag()));
+			nbt.put("frontalcortex2", frontalcortex2.save(new CompoundTag()));
+			nbt.put("face1", face1.save(new CompoundTag()));
+			nbt.put("arms1", arms1.save(new CompoundTag()));
+			nbt.put("hands1", hands1.save(new CompoundTag()));
+			nbt.put("skeleton1", skeleton1.save(new CompoundTag()));
+			nbt.put("skeleton2", skeleton2.save(new CompoundTag()));
+			nbt.put("circuletorysystem1", circuletorysystem1.save(new CompoundTag()));
+			nbt.put("circulatorysystem2", circulatorysystem2.save(new CompoundTag()));
+			nbt.put("nervoussystem1", nervoussystem1.save(new CompoundTag()));
+			nbt.put("nervoussystem2", nervoussystem2.save(new CompoundTag()));
+			nbt.put("legs1", legs1.save(new CompoundTag()));
+			nbt.put("integumentarysystem1", integumentarysystem1.save(new CompoundTag()));
+			nbt.put("integumentarysystem2", integumentarysystem2.save(new CompoundTag()));
 			return nbt;
 		}
 
 		public void readNBT(Tag Tag) {
 			CompoundTag nbt = (CompoundTag) Tag;
-			eyes1 = ItemStack.of(nbt.getCompound("eyes1"));
 			save = nbt.getBoolean("save");
+			operatingsystem1 = ItemStack.of(nbt.getCompound("operatingsystem1"));
+			frontalcortex1 = ItemStack.of(nbt.getCompound("frontalcortex1"));
+			frontalcortex2 = ItemStack.of(nbt.getCompound("frontalcortex2"));
+			face1 = ItemStack.of(nbt.getCompound("face1"));
+			arms1 = ItemStack.of(nbt.getCompound("arms1"));
+			hands1 = ItemStack.of(nbt.getCompound("hands1"));
+			skeleton1 = ItemStack.of(nbt.getCompound("skeleton1"));
+			skeleton2 = ItemStack.of(nbt.getCompound("skeleton2"));
+			circuletorysystem1 = ItemStack.of(nbt.getCompound("circuletorysystem1"));
+			circulatorysystem2 = ItemStack.of(nbt.getCompound("circulatorysystem2"));
+			nervoussystem1 = ItemStack.of(nbt.getCompound("nervoussystem1"));
+			nervoussystem2 = ItemStack.of(nbt.getCompound("nervoussystem2"));
+			legs1 = ItemStack.of(nbt.getCompound("legs1"));
+			integumentarysystem1 = ItemStack.of(nbt.getCompound("integumentarysystem1"));
+			integumentarysystem2 = ItemStack.of(nbt.getCompound("integumentarysystem2"));
 		}
 	}
 
@@ -148,8 +204,22 @@ public class CybercraftModVariables {
 			context.enqueueWork(() -> {
 				if (!context.getDirection().getReceptionSide().isServer()) {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
-					variables.eyes1 = message.data.eyes1;
 					variables.save = message.data.save;
+					variables.operatingsystem1 = message.data.operatingsystem1;
+					variables.frontalcortex1 = message.data.frontalcortex1;
+					variables.frontalcortex2 = message.data.frontalcortex2;
+					variables.face1 = message.data.face1;
+					variables.arms1 = message.data.arms1;
+					variables.hands1 = message.data.hands1;
+					variables.skeleton1 = message.data.skeleton1;
+					variables.skeleton2 = message.data.skeleton2;
+					variables.circuletorysystem1 = message.data.circuletorysystem1;
+					variables.circulatorysystem2 = message.data.circulatorysystem2;
+					variables.nervoussystem1 = message.data.nervoussystem1;
+					variables.nervoussystem2 = message.data.nervoussystem2;
+					variables.legs1 = message.data.legs1;
+					variables.integumentarysystem1 = message.data.integumentarysystem1;
+					variables.integumentarysystem2 = message.data.integumentarysystem2;
 				}
 			});
 			context.setPacketHandled(true);

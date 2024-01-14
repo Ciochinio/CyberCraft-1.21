@@ -27,13 +27,8 @@ public class CyberwareGuiScreen extends AbstractContainerScreen<CyberwareGuiMenu
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 236;
-		this.imageHeight = 232;
-	}
-
-	@Override
-	public boolean isPauseScreen() {
-		return true;
+		this.imageWidth = 294;
+		this.imageHeight = 235;
 	}
 
 	private static final ResourceLocation texture = new ResourceLocation("cybercraft:textures/screens/cyberware_gui.png");
@@ -52,7 +47,7 @@ public class CyberwareGuiScreen extends AbstractContainerScreen<CyberwareGuiMenu
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("cybercraft:textures/screens/test.png"), this.leftPos + 75, this.topPos + 6, 0, 0, 85, 140, 85, 140);
+		guiGraphics.blit(new ResourceLocation("cybercraft:textures/screens/test.png"), this.leftPos + 104, this.topPos + 7, 0, 0, 85, 140, 85, 140);
 
 		RenderSystem.disableBlend();
 	}
@@ -73,6 +68,16 @@ public class CyberwareGuiScreen extends AbstractContainerScreen<CyberwareGuiMenu
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+		guiGraphics.drawString(this.font, Component.translatable("gui.cybercraft.cyberware_gui.label_operating_system"), 173, 5, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.cybercraft.cyberware_gui.label_frontal_cortex"), 38, 5, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.cybercraft.cyberware_gui.label_face"), 181, 32, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.cybercraft.cyberware_gui.label_arms"), 65, 32, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.cybercraft.cyberware_gui.label_hands"), 191, 59, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.cybercraft.cyberware_gui.label_skeleton"), 56, 59, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.cybercraft.cyberware_gui.label_circulatory_system"), 182, 86, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.cybercraft.cyberware_gui.label_nervous_s_ystem"), 29, 86, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.cybercraft.cyberware_gui.label_legs"), 173, 113, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.cybercraft.cyberware_gui.label_integumentary_system"), 2, 113, -12829636, false);
 	}
 
 	@Override

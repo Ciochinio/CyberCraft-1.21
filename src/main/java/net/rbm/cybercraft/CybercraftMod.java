@@ -16,7 +16,10 @@ package net.rbm.cybercraft;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
+import net.rbm.cybercraft.init.CybercraftModTabs;
+import net.rbm.cybercraft.init.CybercraftModMobEffects;
 import net.rbm.cybercraft.init.CybercraftModMenus;
+import net.rbm.cybercraft.init.CybercraftModItems;
 
 import net.minecraftforge.network.simple.SimpleChannel;
 import net.minecraftforge.network.NetworkRegistry;
@@ -48,6 +51,12 @@ public class CybercraftMod {
 	public CybercraftMod() {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+		CybercraftModItems.REGISTRY.register(bus);
+
+		CybercraftModTabs.REGISTRY.register(bus);
+
+		CybercraftModMobEffects.REGISTRY.register(bus);
 
 		CybercraftModMenus.REGISTRY.register(bus);
 	}

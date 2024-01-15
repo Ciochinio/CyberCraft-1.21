@@ -1,4 +1,7 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+    "cybercraft:reinforced_tendons",
+    "cybercraft:fortified_ankles"
+  ]
 }

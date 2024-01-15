@@ -1,0 +1,676 @@
+{
+  "mod_elements": [
+    {
+      "name": "CyberwareMenuOnKeyPressed",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyberware_menu_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/CyberwareMenuOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Gui"
+    },
+    {
+      "name": "CyberwareMenu",
+      "type": "keybind",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyberware_menu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/network/CyberwareMenuMessage.java"
+        ]
+      },
+      "path": "~/Cyberware/Gui"
+    },
+    {
+      "name": "CyberwareGui",
+      "type": "gui",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyberware_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/client/gui/CyberwareGuiScreen.java",
+          "src/main/java/net/rbm/cybercraft/world/inventory/CyberwareGuiMenu.java"
+        ]
+      },
+      "path": "~/Cyberware/Gui"
+    },
+    {
+      "name": "Read",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "read",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/ReadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Gui"
+    },
+    {
+      "name": "Save",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "save",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/SaveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Gui"
+    },
+    {
+      "name": "Write",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "write",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/WriteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Gui"
+    },
+    {
+      "name": "OperatingSystem",
+      "type": "tag",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "operating_system",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cybercraft/tags/items/operating_system.json"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Operating System"
+    },
+    {
+      "name": "FrontalCortex",
+      "type": "tag",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frontal_cortex",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cybercraft/tags/items/frontal_cortex.json"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Frontal Cortex"
+    },
+    {
+      "name": "Face",
+      "type": "tag",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "face",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cybercraft/tags/items/face.json"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Face"
+    },
+    {
+      "name": "Arms",
+      "type": "tag",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arms",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cybercraft/tags/items/arms.json"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Arms"
+    },
+    {
+      "name": "Hands",
+      "type": "tag",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hands",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cybercraft/tags/items/hands.json"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Hands"
+    },
+    {
+      "name": "Skeleton",
+      "type": "tag",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skeleton",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cybercraft/tags/items/skeleton.json"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Skeleton"
+    },
+    {
+      "name": "CirculatorySystem",
+      "type": "tag",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "circulatory_system",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cybercraft/tags/items/circulatory_system.json"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Circulatory System"
+    },
+    {
+      "name": "NervousSystem",
+      "type": "tag",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nervous_system",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cybercraft/tags/items/nervous_system.json"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Nervous System"
+    },
+    {
+      "name": "Legs",
+      "type": "tag",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "legs",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cybercraft/tags/items/legs.json"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Legs"
+    },
+    {
+      "name": "IntegumentarySystem",
+      "type": "tag",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "integumentary_system",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cybercraft/tags/items/integumentary_system.json"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Integumentary System"
+    },
+    {
+      "name": "CyberCraftTab",
+      "type": "tab",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyber_craft_tab",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Main"
+    },
+    {
+      "name": "ReinforcedTendons",
+      "type": "item",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_tendons",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/item/ReinforcedTendonsItem.java",
+          "src/main/resources/assets/cybercraft/models/item/reinforced_tendons.json"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Legs/ReinforcedTendons"
+    },
+    {
+      "name": "DoubleJumpOnKeyPressed",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": false,
+      "locked_code": false,
+      "registry_name": "double_jump_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/DoubleJumpOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Legs/ReinforcedTendons"
+    },
+    {
+      "name": "DoubleJump",
+      "type": "keybind",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_jump",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/network/DoubleJumpMessage.java"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Legs/ReinforcedTendons"
+    },
+    {
+      "name": "RestoreJump",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "restore_jump",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/RestoreJumpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Legs/ReinforcedTendons"
+    },
+    {
+      "name": "FortifiedAnkles",
+      "type": "item",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fortified_ankles",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cybercraft/models/item/fortified_ankles.json",
+          "src/main/java/net/rbm/cybercraft/item/FortifiedAnklesItem.java"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Legs/Fortified Ankles"
+    },
+    {
+      "name": "HigherJump",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "higher_jump",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/HigherJumpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Legs/Fortified Ankles"
+    },
+    {
+      "name": "ReducedFallDamage",
+      "type": "potioneffect",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reduced_fall_damage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/potion/ReducedFallDamageMobEffect.java"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Legs/FallDamage"
+    },
+    {
+      "name": "ReducedFallDamageStart",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reduced_fall_damage_start",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/ReducedFallDamageStartProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Legs/FallDamage"
+    },
+    {
+      "name": "ReducedFallDamageNow",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reduced_fall_damage_now",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/ReducedFallDamageNowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Legs/FallDamage"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "save",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "true"
+    },
+    {
+      "name": "operatingsystem1",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "frontalcortex1",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "frontalcortex2",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "face1",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "arms1",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "hands1",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "skeleton1",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "skeleton2",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "circuletorysystem1",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "circulatorysystem2",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "nervoussystem1",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "nervoussystem2",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "legs1",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "integumentarysystem1",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "integumentarysystem2",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "doublejump",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "1.0"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "gui.cybercraft.cyberware_gui.label_hands": "HANDS",
+      "effect.cybercraft.reduced_fall_damage": "Reduced Fall Damage",
+      "key.cybercraft.cyberware_menu": "Cyberware Menu",
+      "gui.cybercraft.cyberware_gui.label_skeleton": "SKELETON",
+      "gui.cybercraft.cyberware_gui.label_face": "FACE",
+      "gui.cybercraft.cyberware_gui.label_circulatory_system": "CIRCULATORY SYSTEM",
+      "gui.cybercraft.cyberware_gui.label_nervous_s_ystem": "NERVOUS SYSTEM",
+      "gui.cybercraft.cyberware_gui.label_frontal_cortex": "FRONTAL CORTEX",
+      "gui.cybercraft.cyberware_gui.label_operating_system": "OPERATING SYSTEM",
+      "gui.cybercraft.cyberware_gui.label_integumentary_system": "INTEGUMENTARY SYSTEM",
+      "item_group.cybercraft.cyber_craft_tab": "CyberCraft ",
+      "gui.cybercraft.cyberware_gui.label_legs": "LEGS",
+      "key.cybercraft.double_jump": "Jump",
+      "item.cybercraft.fortified_ankles": "Fortified Ankles",
+      "item.cybercraft.reinforced_tendons": "Reinforced Tendons",
+      "key.categories.cybercraft": "CyberCraft",
+      "gui.cybercraft.cyberware_gui.label_arms": "      ARMS"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Main",
+        "children": []
+      },
+      {
+        "name": "Cyberware",
+        "children": [
+          {
+            "name": "Gui",
+            "children": []
+          },
+          {
+            "name": "Cyberwares",
+            "children": [
+              {
+                "name": "Operating System",
+                "children": []
+              },
+              {
+                "name": "Frontal Cortex",
+                "children": []
+              },
+              {
+                "name": "Face",
+                "children": []
+              },
+              {
+                "name": "Arms",
+                "children": []
+              },
+              {
+                "name": "Hands",
+                "children": []
+              },
+              {
+                "name": "Skeleton",
+                "children": []
+              },
+              {
+                "name": "Circulatory System",
+                "children": []
+              },
+              {
+                "name": "Nervous System",
+                "children": []
+              },
+              {
+                "name": "Legs",
+                "children": [
+                  {
+                    "name": "ReinforcedTendons",
+                    "children": []
+                  },
+                  {
+                    "name": "Fortified Ankles",
+                    "children": []
+                  },
+                  {
+                    "name": "FallDamage",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "Integumentary System",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "cybercraft",
+    "modName": "CyberCraft",
+    "version": "1.0.0",
+    "author": "Ciochu",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.rbm.cybercraft",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300452316
+}

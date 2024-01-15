@@ -3,7 +3,14 @@
   "_type": "tag",
   "definition": {
     "type": "Items",
-    "items": [],
+    "items": [
+      {
+        "value": "CUSTOM:ReinforcedTendons"
+      },
+      {
+        "value": "CUSTOM:FortifiedAnkles"
+      }
+    ],
     "blocks": [],
     "functions": [],
     "entities": [],

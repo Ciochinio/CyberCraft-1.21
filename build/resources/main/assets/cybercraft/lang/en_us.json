@@ -1,5 +1,6 @@
 {
   "gui.cybercraft.cyberware_gui.label_hands": "HANDS",
+  "effect.cybercraft.reduced_fall_damage": "Reduced Fall Damage",
   "key.cybercraft.cyberware_menu": "Cyberware Menu",
   "gui.cybercraft.cyberware_gui.label_skeleton": "SKELETON",
   "gui.cybercraft.cyberware_gui.label_face": "FACE",
@@ -10,6 +11,9 @@
   "gui.cybercraft.cyberware_gui.label_integumentary_system": "INTEGUMENTARY SYSTEM",
   "item_group.cybercraft.cyber_craft_tab": "CyberCraft ",
   "gui.cybercraft.cyberware_gui.label_legs": "LEGS",
+  "key.cybercraft.double_jump": "Jump",
+  "item.cybercraft.fortified_ankles": "Fortified Ankles",
+  "item.cybercraft.reinforced_tendons": "Reinforced Tendons",
   "key.categories.cybercraft": "CyberCraft",
   "gui.cybercraft.cyberware_gui.label_arms": "      ARMS"
 }

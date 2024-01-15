@@ -6,6 +6,7 @@ package net.rbm.cybercraft.init;
 
 import org.lwjgl.glfw.GLFW;
 
+import net.rbm.cybercraft.network.DoubleJumpMessage;
 import net.rbm.cybercraft.network.CyberwareMenuMessage;
 import net.rbm.cybercraft.CybercraftMod;
 
@@ -33,10 +34,24 @@ public class CybercraftModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping DOUBLE_JUMP = new KeyMapping("key.cybercraft.double_jump", GLFW.GLFW_KEY_SPACE, "key.categories.cybercraft") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				CybercraftMod.PACKET_HANDLER.sendToServer(new DoubleJumpMessage(0, 0));
+				DoubleJumpMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(CYBERWARE_MENU);
+		event.register(DOUBLE_JUMP);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
@@ -45,6 +60,7 @@ public class CybercraftModKeyMappings {
 		public static void onClientTick(TickEvent.ClientTickEvent event) {
 			if (Minecraft.getInstance().screen == null) {
 				CYBERWARE_MENU.consumeClick();
+				DOUBLE_JUMP.consumeClick();
 			}
 		}
 	}

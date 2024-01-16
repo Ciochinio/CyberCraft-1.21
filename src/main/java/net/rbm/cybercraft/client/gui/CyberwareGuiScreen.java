@@ -47,7 +47,7 @@ public class CyberwareGuiScreen extends AbstractContainerScreen<CyberwareGuiMenu
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("cybercraft:textures/screens/test.png"), this.leftPos + 272, this.topPos + 131, 0, 0, 85, 140, 85, 140);
+		guiGraphics.blit(new ResourceLocation("cybercraft:textures/screens/test.png"), this.leftPos + 104, this.topPos + 9, 0, 0, 85, 140, 85, 140);
 
 		RenderSystem.disableBlend();
 	}
@@ -74,7 +74,7 @@ public class CyberwareGuiScreen extends AbstractContainerScreen<CyberwareGuiMenu
 		guiGraphics.drawString(this.font, Component.translatable("gui.cybercraft.cyberware_gui.label_arms"), 65, 32, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.cybercraft.cyberware_gui.label_hands"), 191, 59, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.cybercraft.cyberware_gui.label_skeleton"), 56, 59, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.cybercraft.cyberware_gui.label_circulatory_system"), 182, 86, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.cybercraft.cyberware_gui.label_circulatory_system"), 200, 86, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.cybercraft.cyberware_gui.label_nervous_s_ystem"), 29, 86, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.cybercraft.cyberware_gui.label_legs"), 173, 113, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.cybercraft.cyberware_gui.label_integumentary_system"), 2, 113, -12829636, false);

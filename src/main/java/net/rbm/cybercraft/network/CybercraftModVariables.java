@@ -86,6 +86,10 @@ public class CybercraftModVariables {
 			if (!event.isWasDeath()) {
 				clone.doublejump = original.doublejump;
 				clone.cybercraftMovementSpeed = original.cybercraftMovementSpeed;
+				clone.cybercraftHealth = original.cybercraftHealth;
+				clone.cybercraftArmor = original.cybercraftArmor;
+				clone.cybercraftHackDamage = original.cybercraftHackDamage;
+				clone.cybercraftAdditionalDamage = original.cybercraftAdditionalDamage;
 			}
 		}
 	}
@@ -139,6 +143,10 @@ public class CybercraftModVariables {
 		public ItemStack integumentarysystem2 = ItemStack.EMPTY;
 		public double doublejump = 2.0;
 		public double cybercraftMovementSpeed = 0;
+		public double cybercraftHealth = 0;
+		public double cybercraftArmor = 0;
+		public double cybercraftHackDamage = 0;
+		public double cybercraftAdditionalDamage = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -165,6 +173,10 @@ public class CybercraftModVariables {
 			nbt.put("integumentarysystem2", integumentarysystem2.save(new CompoundTag()));
 			nbt.putDouble("doublejump", doublejump);
 			nbt.putDouble("cybercraftMovementSpeed", cybercraftMovementSpeed);
+			nbt.putDouble("cybercraftHealth", cybercraftHealth);
+			nbt.putDouble("cybercraftArmor", cybercraftArmor);
+			nbt.putDouble("cybercraftHackDamage", cybercraftHackDamage);
+			nbt.putDouble("cybercraftAdditionalDamage", cybercraftAdditionalDamage);
 			return nbt;
 		}
 
@@ -188,6 +200,10 @@ public class CybercraftModVariables {
 			integumentarysystem2 = ItemStack.of(nbt.getCompound("integumentarysystem2"));
 			doublejump = nbt.getDouble("doublejump");
 			cybercraftMovementSpeed = nbt.getDouble("cybercraftMovementSpeed");
+			cybercraftHealth = nbt.getDouble("cybercraftHealth");
+			cybercraftArmor = nbt.getDouble("cybercraftArmor");
+			cybercraftHackDamage = nbt.getDouble("cybercraftHackDamage");
+			cybercraftAdditionalDamage = nbt.getDouble("cybercraftAdditionalDamage");
 		}
 	}
 
@@ -230,6 +246,10 @@ public class CybercraftModVariables {
 					variables.integumentarysystem2 = message.data.integumentarysystem2;
 					variables.doublejump = message.data.doublejump;
 					variables.cybercraftMovementSpeed = message.data.cybercraftMovementSpeed;
+					variables.cybercraftHealth = message.data.cybercraftHealth;
+					variables.cybercraftArmor = message.data.cybercraftArmor;
+					variables.cybercraftHackDamage = message.data.cybercraftHackDamage;
+					variables.cybercraftAdditionalDamage = message.data.cybercraftAdditionalDamage;
 				}
 			});
 			context.setPacketHandled(true);

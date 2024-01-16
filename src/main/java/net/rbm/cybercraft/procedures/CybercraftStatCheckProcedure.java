@@ -5,6 +5,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
 
 import javax.annotation.Nullable;
@@ -13,19 +14,27 @@ import javax.annotation.Nullable;
 public class CybercraftStatCheckProcedure {
 	@SubscribeEvent
 	public static void onPlayerRespawned(PlayerEvent.PlayerRespawnEvent event) {
-		execute(event, event.getEntity());
+		execute(event, event.getEntity().level(), event.getEntity());
 	}
 
-	public static void execute(Entity entity) {
-		execute(null, entity);
+	public static void execute(LevelAccessor world, Entity entity) {
+		execute(null, world, entity);
 	}
 
-	private static void execute(@Nullable Event event, Entity entity) {
+	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		CybercraftPlayerStatResetProcedure.execute(entity);
-		TestArmsProcedure.execute(entity);
-		LeeroyLigamentSystemEffectProcedure.execute(entity);
+		CybercraftFrontalCortexStatCheckProcedure.execute();
+		CybercraftOperatingSystemStatCheckProcedure.execute();
+		CybercraftArmsStatCheckProcedure.execute();
+		CybercraftFaceStatCheckProcedure.execute();
+		CybercraftSkeletonStatCheckProcedure.execute();
+		CybercraftHandsStatCheckProcedure.execute();
+		CybercraftNervousSystemStatCheckProcedure.execute();
+		CybercraftCirculetorySystemStatCheckProcedure.execute();
+		CybercraftIntegumentarySystemStatCheckProcedure.execute();
+		CybercraftLegsStatCheckProcedure.execute(world, entity);
 		CybercraftPlayerStatApplyProcedure.execute(entity);
 	}
 }

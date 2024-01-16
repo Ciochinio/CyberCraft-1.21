@@ -2,6 +2,7 @@ package net.rbm.cybercraft.procedures;
 
 import net.rbm.cybercraft.network.CybercraftModVariables;
 
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.entity.player.Player;
@@ -11,13 +12,13 @@ import java.util.function.Supplier;
 import java.util.Map;
 
 public class SaveProcedure {
-	public static void execute(Entity entity) {
+	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		{
 			ItemStack _setval = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY);
 			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.operatingsystem1 = _setval;
+				capability.frontalcortex1 = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
@@ -28,7 +29,7 @@ public class SaveProcedure {
 		{
 			ItemStack _setval = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY);
 			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.frontalcortex1 = _setval;
+				capability.frontalcortex2 = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
@@ -39,7 +40,7 @@ public class SaveProcedure {
 		{
 			ItemStack _setval = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY);
 			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.frontalcortex2 = _setval;
+				capability.operatingsystem1 = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
@@ -50,7 +51,7 @@ public class SaveProcedure {
 		{
 			ItemStack _setval = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY);
 			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.face1 = _setval;
+				capability.arms1 = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
@@ -61,7 +62,7 @@ public class SaveProcedure {
 		{
 			ItemStack _setval = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(4)).getItem() : ItemStack.EMPTY);
 			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.arms1 = _setval;
+				capability.face1 = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
@@ -72,7 +73,7 @@ public class SaveProcedure {
 		{
 			ItemStack _setval = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(5)).getItem() : ItemStack.EMPTY);
 			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.hands1 = _setval;
+				capability.skeleton1 = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
@@ -83,7 +84,7 @@ public class SaveProcedure {
 		{
 			ItemStack _setval = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(6)).getItem() : ItemStack.EMPTY);
 			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.skeleton1 = _setval;
+				capability.skeleton2 = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
@@ -94,7 +95,7 @@ public class SaveProcedure {
 		{
 			ItemStack _setval = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(7)).getItem() : ItemStack.EMPTY);
 			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.skeleton2 = _setval;
+				capability.hands1 = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
@@ -105,7 +106,7 @@ public class SaveProcedure {
 		{
 			ItemStack _setval = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(8)).getItem() : ItemStack.EMPTY);
 			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.circuletorysystem1 = _setval;
+				capability.nervoussystem1 = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
@@ -116,7 +117,7 @@ public class SaveProcedure {
 		{
 			ItemStack _setval = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(9)).getItem() : ItemStack.EMPTY);
 			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.circulatorysystem2 = _setval;
+				capability.nervoussystem2 = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
@@ -127,7 +128,7 @@ public class SaveProcedure {
 		{
 			ItemStack _setval = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(10)).getItem() : ItemStack.EMPTY);
 			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.nervoussystem1 = _setval;
+				capability.circuletorysystem1 = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
@@ -138,7 +139,7 @@ public class SaveProcedure {
 		{
 			ItemStack _setval = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(11)).getItem() : ItemStack.EMPTY);
 			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.nervoussystem2 = _setval;
+				capability.circulatorysystem2 = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
@@ -149,7 +150,7 @@ public class SaveProcedure {
 		{
 			ItemStack _setval = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(12)).getItem() : ItemStack.EMPTY);
 			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.legs1 = _setval;
+				capability.integumentarysystem1 = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
@@ -160,7 +161,7 @@ public class SaveProcedure {
 		{
 			ItemStack _setval = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(13)).getItem() : ItemStack.EMPTY);
 			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.integumentarysystem1 = _setval;
+				capability.integumentarysystem2 = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
@@ -171,7 +172,7 @@ public class SaveProcedure {
 		{
 			ItemStack _setval = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(14)).getItem() : ItemStack.EMPTY);
 			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.integumentarysystem2 = _setval;
+				capability.legs1 = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
@@ -186,6 +187,6 @@ public class SaveProcedure {
 				capability.syncPlayerVariables(entity);
 			});
 		}
-		CybercraftStatCheckProcedure.execute(entity);
+		CybercraftStatCheckProcedure.execute(world, entity);
 	}
 }

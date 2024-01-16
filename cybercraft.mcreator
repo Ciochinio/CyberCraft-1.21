@@ -100,6 +100,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -249,7 +253,7 @@
           "src/main/resources/data/cybercraft/tags/items/legs.json"
         ]
       },
-      "path": "~/Cyberware/Cyberwares/Legs"
+      "path": "~/Cyberware/Cyberwares/Legs/Main"
     },
     {
       "name": "IntegumentarySystem",
@@ -353,7 +357,7 @@
           "src/main/java/net/rbm/cybercraft/potion/ReducedFallDamageMobEffect.java"
         ]
       },
-      "path": "~/Cyberware/Cyberwares/Legs/FallDamage"
+      "path": "~/Cyberware/Cyberwares/Legs/Main/Reduced Fall Damage"
     },
     {
       "name": "ReducedFallDamageWithLegs",
@@ -373,7 +377,7 @@
           }
         ]
       },
-      "path": "~/Cyberware/Cyberwares/Legs/FallDamage"
+      "path": "~/Cyberware/Cyberwares/Legs/Main/Reduced Fall Damage"
     },
     {
       "name": "FallDamageReduction",
@@ -393,7 +397,7 @@
           }
         ]
       },
-      "path": "~/Cyberware/Cyberwares/Legs/FallDamage"
+      "path": "~/Cyberware/Cyberwares/Legs/Main/Reduced Fall Damage"
     },
     {
       "name": "LynxPaws",
@@ -408,7 +412,7 @@
           "src/main/resources/assets/cybercraft/models/item/lynx_paws.json"
         ]
       },
-      "path": "~/Cyberware/Cyberwares/Legs/LynxPaws"
+      "path": "~/Cyberware/Cyberwares/Legs/Lynx Paws"
     },
     {
       "name": "LynxPawsFallDamage",
@@ -428,7 +432,7 @@
           }
         ]
       },
-      "path": "~/Cyberware/Cyberwares/Legs/LynxPaws"
+      "path": "~/Cyberware/Cyberwares/Legs/Lynx Paws"
     },
     {
       "name": "LynxPawsLeap",
@@ -448,7 +452,7 @@
           }
         ]
       },
-      "path": "~/Cyberware/Cyberwares/Legs/LynxPaws"
+      "path": "~/Cyberware/Cyberwares/Legs/Lynx Paws"
     },
     {
       "name": "FortifiedAnklesHigherJump",
@@ -526,25 +530,6 @@
       "path": "~/Cyberware/Cyberwares/Legs/Leeroy Ligament System"
     },
     {
-      "name": "TestArms",
-      "type": "procedure",
-      "sortid": 42,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "test_arms",
-      "metadata": {
-        "files": [
-          "src/main/java/net/rbm/cybercraft/procedures/TestArmsProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
       "name": "CybercraftStatCheck",
       "type": "procedure",
       "sortid": 58,
@@ -559,10 +544,14 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
-      "path": "~/Character/Stats/Main"
+      "path": "~/Character/Stats"
     },
     {
       "name": "CybercraftPlayerStatReset",
@@ -582,7 +571,7 @@
           }
         ]
       },
-      "path": "~/Character/Stats/Main"
+      "path": "~/Character/Stats"
     },
     {
       "name": "CybercraftPlayerStatApply",
@@ -602,7 +591,7 @@
           }
         ]
       },
-      "path": "~/Character/Stats/Main"
+      "path": "~/Character/Stats"
     },
     {
       "name": "CybercraftStatReload",
@@ -619,10 +608,14 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
-      "path": "~/Character/Stats/Main"
+      "path": "~/Character/Stats"
     },
     {
       "name": "CybercraftPlayerStats",
@@ -642,7 +635,7 @@
           }
         ]
       },
-      "path": "~/Character/Stats/Commands"
+      "path": "~/Character/Commands"
     },
     {
       "name": "Cybercraftstats",
@@ -656,7 +649,213 @@
           "src/main/java/net/rbm/cybercraft/command/CybercraftstatsCommand.java"
         ]
       },
-      "path": "~/Character/Stats/Commands"
+      "path": "~/Character/Commands"
+    },
+    {
+      "name": "CybercraftLegsStatCheck",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cybercraft_legs_stat_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/CybercraftLegsStatCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Legs/Main"
+    },
+    {
+      "name": "CybercraftIntegumentarySystemStatCheck",
+      "type": "procedure",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cybercraft_integumentary_system_stat_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/CybercraftIntegumentarySystemStatCheckProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Cyberware/Cyberwares/Integumentary System"
+    },
+    {
+      "name": "CybercraftNervousSystemStatCheck",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cybercraft_nervous_system_stat_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/CybercraftNervousSystemStatCheckProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Cyberware/Cyberwares/Nervous System"
+    },
+    {
+      "name": "CybercraftCirculetorySystemStatCheck",
+      "type": "procedure",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cybercraft_circuletory_system_stat_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/CybercraftCirculetorySystemStatCheckProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Cyberware/Cyberwares/Circulatory System"
+    },
+    {
+      "name": "CybercraftSkeletonStatCheck",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cybercraft_skeleton_stat_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/CybercraftSkeletonStatCheckProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Cyberware/Cyberwares/Skeleton"
+    },
+    {
+      "name": "CybercraftHandsStatCheck",
+      "type": "procedure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cybercraft_hands_stat_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/CybercraftHandsStatCheckProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Cyberware/Cyberwares/Hands"
+    },
+    {
+      "name": "CybercraftArmsStatCheck",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cybercraft_arms_stat_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/CybercraftArmsStatCheckProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Cyberware/Cyberwares/Arms"
+    },
+    {
+      "name": "CybercraftFaceStatCheck",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cybercraft_face_stat_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/CybercraftFaceStatCheckProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Cyberware/Cyberwares/Face"
+    },
+    {
+      "name": "CybercraftFrontalCortexStatCheck",
+      "type": "procedure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cybercraft_frontal_cortex_stat_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/CybercraftFrontalCortexStatCheckProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Cyberware/Cyberwares/Frontal Cortex"
+    },
+    {
+      "name": "CybercraftOperatingSystemStatCheck",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cybercraft_operating_system_stat_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/CybercraftOperatingSystemStatCheckProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Cyberware/Cyberwares/Operating System"
+    },
+    {
+      "name": "CybercraftHealAdditionalHealth",
+      "type": "procedure",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cybercraft_heal_additional_health",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/CybercraftHealAdditionalHealthProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Character/Stats"
+    },
+    {
+      "name": "TestHeal",
+      "type": "procedure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_heal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/TestHealProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -767,6 +966,30 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
+    },
+    {
+      "name": "cybercraftHealth",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "cybercraftArmor",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "cybercraftHackDamage",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "cybercraftAdditionalDamage",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -804,22 +1027,18 @@
         "name": "Cyberware",
         "children": [
           {
-            "name": "Gui",
+            "name": "Main",
             "children": []
           },
           {
             "name": "Cyberwares",
             "children": [
               {
-                "name": "Operating System",
-                "children": []
-              },
-              {
                 "name": "Frontal Cortex",
                 "children": []
               },
               {
-                "name": "Face",
+                "name": "Operating System",
                 "children": []
               },
               {
@@ -827,7 +1046,7 @@
                 "children": []
               },
               {
-                "name": "Hands",
+                "name": "Face",
                 "children": []
               },
               {
@@ -835,7 +1054,7 @@
                 "children": []
               },
               {
-                "name": "Circulatory System",
+                "name": "Hands",
                 "children": []
               },
               {
@@ -843,8 +1062,25 @@
                 "children": []
               },
               {
+                "name": "Circulatory System",
+                "children": []
+              },
+              {
+                "name": "Integumentary System",
+                "children": []
+              },
+              {
                 "name": "Legs",
                 "children": [
+                  {
+                    "name": "Main",
+                    "children": [
+                      {
+                        "name": "Reduced Fall Damage",
+                        "children": []
+                      }
+                    ]
+                  },
                   {
                     "name": "ReinforcedTendons",
                     "children": []
@@ -854,11 +1090,7 @@
                     "children": []
                   },
                   {
-                    "name": "FallDamage",
-                    "children": []
-                  },
-                  {
-                    "name": "LynxPaws",
+                    "name": "Lynx Paws",
                     "children": []
                   },
                   {
@@ -866,12 +1098,12 @@
                     "children": []
                   }
                 ]
-              },
-              {
-                "name": "Integumentary System",
-                "children": []
               }
             ]
+          },
+          {
+            "name": "Gui",
+            "children": []
           }
         ]
       },
@@ -880,16 +1112,11 @@
         "children": [
           {
             "name": "Stats",
-            "children": [
-              {
-                "name": "Main",
-                "children": []
-              },
-              {
-                "name": "Commands",
-                "children": []
-              }
-            ]
+            "children": []
+          },
+          {
+            "name": "Commands",
+            "children": []
           }
         ]
       }

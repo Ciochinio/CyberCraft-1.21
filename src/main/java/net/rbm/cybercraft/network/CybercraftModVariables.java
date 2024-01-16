@@ -85,6 +85,7 @@ public class CybercraftModVariables {
 			clone.integumentarysystem2 = original.integumentarysystem2;
 			if (!event.isWasDeath()) {
 				clone.doublejump = original.doublejump;
+				clone.cybercraftMovementSpeed = original.cybercraftMovementSpeed;
 			}
 		}
 	}
@@ -137,6 +138,7 @@ public class CybercraftModVariables {
 		public ItemStack integumentarysystem1 = ItemStack.EMPTY;
 		public ItemStack integumentarysystem2 = ItemStack.EMPTY;
 		public double doublejump = 2.0;
+		public double cybercraftMovementSpeed = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -162,6 +164,7 @@ public class CybercraftModVariables {
 			nbt.put("integumentarysystem1", integumentarysystem1.save(new CompoundTag()));
 			nbt.put("integumentarysystem2", integumentarysystem2.save(new CompoundTag()));
 			nbt.putDouble("doublejump", doublejump);
+			nbt.putDouble("cybercraftMovementSpeed", cybercraftMovementSpeed);
 			return nbt;
 		}
 
@@ -184,6 +187,7 @@ public class CybercraftModVariables {
 			integumentarysystem1 = ItemStack.of(nbt.getCompound("integumentarysystem1"));
 			integumentarysystem2 = ItemStack.of(nbt.getCompound("integumentarysystem2"));
 			doublejump = nbt.getDouble("doublejump");
+			cybercraftMovementSpeed = nbt.getDouble("cybercraftMovementSpeed");
 		}
 	}
 
@@ -225,6 +229,7 @@ public class CybercraftModVariables {
 					variables.integumentarysystem1 = message.data.integumentarysystem1;
 					variables.integumentarysystem2 = message.data.integumentarysystem2;
 					variables.doublejump = message.data.doublejump;
+					variables.cybercraftMovementSpeed = message.data.cybercraftMovementSpeed;
 				}
 			});
 			context.setPacketHandled(true);

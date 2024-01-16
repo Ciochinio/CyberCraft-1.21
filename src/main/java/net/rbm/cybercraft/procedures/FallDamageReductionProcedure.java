@@ -32,6 +32,8 @@ public class FallDamageReductionProcedure {
 			if (event != null && event.isCancelable()) {
 				event.setCanceled(true);
 			}
+			if (entity instanceof LivingEntity _entity)
+				_entity.removeEffect(CybercraftModMobEffects.REDUCED_FALL_DAMAGE.get());
 		}
 	}
 }

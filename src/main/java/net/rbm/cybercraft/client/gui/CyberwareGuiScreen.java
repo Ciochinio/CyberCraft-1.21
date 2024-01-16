@@ -47,7 +47,7 @@ public class CyberwareGuiScreen extends AbstractContainerScreen<CyberwareGuiMenu
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("cybercraft:textures/screens/test.png"), this.leftPos + 104, this.topPos + 7, 0, 0, 85, 140, 85, 140);
+		guiGraphics.blit(new ResourceLocation("cybercraft:textures/screens/test.png"), this.leftPos + 272, this.topPos + 131, 0, 0, 85, 140, 85, 140);
 
 		RenderSystem.disableBlend();
 	}

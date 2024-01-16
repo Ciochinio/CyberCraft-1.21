@@ -21,6 +21,8 @@ public class CybercraftModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.cybercraft.cyber_craft_tab")).icon(() -> new ItemStack(Blocks.REDSTONE_TORCH)).displayItems((parameters, tabData) -> {
 				tabData.accept(CybercraftModItems.REINFORCED_TENDONS.get());
 				tabData.accept(CybercraftModItems.FORTIFIED_ANKLES.get());
+				tabData.accept(CybercraftModItems.LYNX_PAWS.get());
+				tabData.accept(CybercraftModItems.LEEROY_LIGAMENT_SYSTEM.get());
 			})
 
 					.build());

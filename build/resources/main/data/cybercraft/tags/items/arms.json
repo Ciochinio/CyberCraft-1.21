@@ -1,4 +1,6 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+    "cybercraft:reinforced_tendons"
+  ]
 }

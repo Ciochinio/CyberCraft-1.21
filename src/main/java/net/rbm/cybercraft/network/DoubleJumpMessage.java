@@ -1,7 +1,7 @@
 
 package net.rbm.cybercraft.network;
 
-import net.rbm.cybercraft.procedures.DoubleJumpOnKeyPressedProcedure;
+import net.rbm.cybercraft.procedures.ReinforcedTendonsDoubleJumpProcedure;
 import net.rbm.cybercraft.CybercraftMod;
 
 import net.minecraftforge.network.NetworkEvent;
@@ -52,7 +52,7 @@ public class DoubleJumpMessage {
 			return;
 		if (type == 0) {
 
-			DoubleJumpOnKeyPressedProcedure.execute(entity);
+			ReinforcedTendonsDoubleJumpProcedure.execute(entity);
 		}
 	}
 

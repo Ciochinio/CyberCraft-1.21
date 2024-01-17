@@ -2,7 +2,6 @@ package net.rbm.cybercraft.procedures;
 
 import net.rbm.cybercraft.network.CybercraftModVariables;
 
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.entity.player.Player;
@@ -12,7 +11,7 @@ import java.util.function.Supplier;
 import java.util.Map;
 
 public class SaveProcedure {
-	public static void execute(LevelAccessor world, Entity entity) {
+	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
 		{
@@ -187,6 +186,6 @@ public class SaveProcedure {
 				capability.syncPlayerVariables(entity);
 			});
 		}
-		CybercraftStatCheckProcedure.execute(world, entity);
+		CybercraftStatCheckProcedure.execute(entity);
 	}
 }

@@ -100,10 +100,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -253,7 +249,7 @@
           "src/main/resources/data/cybercraft/tags/items/legs.json"
         ]
       },
-      "path": "~/Cyberware/Cyberwares/Legs"
+      "path": "~/Cyberware/Cyberwares/Legs/Main"
     },
     {
       "name": "IntegumentarySystem",
@@ -357,7 +353,7 @@
           "src/main/java/net/rbm/cybercraft/potion/ReducedFallDamageMobEffect.java"
         ]
       },
-      "path": "~/Cyberware/Cyberwares/Legs/FallDamage"
+      "path": "~/Cyberware/Cyberwares/Legs/Main/Reduced Fall Damage"
     },
     {
       "name": "ReducedFallDamageWithLegs",
@@ -377,7 +373,7 @@
           }
         ]
       },
-      "path": "~/Cyberware/Cyberwares/Legs/FallDamage"
+      "path": "~/Cyberware/Cyberwares/Legs/Main/Reduced Fall Damage"
     },
     {
       "name": "FallDamageReduction",
@@ -397,7 +393,7 @@
           }
         ]
       },
-      "path": "~/Cyberware/Cyberwares/Legs/FallDamage"
+      "path": "~/Cyberware/Cyberwares/Legs/Main/Reduced Fall Damage"
     },
     {
       "name": "LynxPaws",
@@ -412,7 +408,7 @@
           "src/main/resources/assets/cybercraft/models/item/lynx_paws.json"
         ]
       },
-      "path": "~/Cyberware/Cyberwares/Legs/LynxPaws"
+      "path": "~/Cyberware/Cyberwares/Legs/Lynx Paws"
     },
     {
       "name": "LynxPawsFallDamage",
@@ -432,7 +428,7 @@
           }
         ]
       },
-      "path": "~/Cyberware/Cyberwares/Legs/LynxPaws"
+      "path": "~/Cyberware/Cyberwares/Legs/Lynx Paws"
     },
     {
       "name": "LynxPawsLeap",
@@ -452,7 +448,7 @@
           }
         ]
       },
-      "path": "~/Cyberware/Cyberwares/Legs/LynxPaws"
+      "path": "~/Cyberware/Cyberwares/Legs/Lynx Paws"
     },
     {
       "name": "FortifiedAnklesHigherJump",
@@ -544,14 +540,10 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
-      "path": "~/Character/Stats/Main"
+      "path": "~/Character/Stats"
     },
     {
       "name": "CybercraftPlayerStatReset",
@@ -571,7 +563,7 @@
           }
         ]
       },
-      "path": "~/Character/Stats/Main"
+      "path": "~/Character/Stats"
     },
     {
       "name": "CybercraftPlayerStatApply",
@@ -588,14 +580,10 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
-      "path": "~/Character/Stats/Main"
+      "path": "~/Character/Stats"
     },
     {
       "name": "CybercraftStatReload",
@@ -612,14 +600,10 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
-      "path": "~/Character/Stats/Main"
+      "path": "~/Character/Stats"
     },
     {
       "name": "CybercraftPlayerStats",
@@ -639,7 +623,7 @@
           }
         ]
       },
-      "path": "~/Character/Stats/Commands"
+      "path": "~/Character/Commands"
     },
     {
       "name": "Cybercraftstats",
@@ -653,7 +637,7 @@
           "src/main/java/net/rbm/cybercraft/command/CybercraftstatsCommand.java"
         ]
       },
-      "path": "~/Character/Stats/Commands"
+      "path": "~/Character/Commands"
     },
     {
       "name": "CybercraftLegsStatCheck",
@@ -673,7 +657,7 @@
           }
         ]
       },
-      "path": "~/Cyberware/Cyberwares/Legs"
+      "path": "~/Cyberware/Cyberwares/Legs/Main"
     },
     {
       "name": "CybercraftIntegumentarySystemStatCheck",
@@ -832,7 +816,49 @@
           }
         ]
       },
-      "path": "~/Character/Stats/Main"
+      "path": "~/Character/Stats"
+    },
+    {
+      "name": "TestHeal",
+      "type": "procedure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_heal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/TestHealProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TestIntegumentarySystem",
+      "type": "procedure",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_integumentary_system",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/TestIntegumentarySystemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1004,22 +1030,18 @@
         "name": "Cyberware",
         "children": [
           {
-            "name": "Gui",
+            "name": "Main",
             "children": []
           },
           {
             "name": "Cyberwares",
             "children": [
               {
-                "name": "Operating System",
-                "children": []
-              },
-              {
                 "name": "Frontal Cortex",
                 "children": []
               },
               {
-                "name": "Face",
+                "name": "Operating System",
                 "children": []
               },
               {
@@ -1027,7 +1049,7 @@
                 "children": []
               },
               {
-                "name": "Hands",
+                "name": "Face",
                 "children": []
               },
               {
@@ -1035,7 +1057,7 @@
                 "children": []
               },
               {
-                "name": "Circulatory System",
+                "name": "Hands",
                 "children": []
               },
               {
@@ -1043,8 +1065,25 @@
                 "children": []
               },
               {
+                "name": "Circulatory System",
+                "children": []
+              },
+              {
+                "name": "Integumentary System",
+                "children": []
+              },
+              {
                 "name": "Legs",
                 "children": [
+                  {
+                    "name": "Main",
+                    "children": [
+                      {
+                        "name": "Reduced Fall Damage",
+                        "children": []
+                      }
+                    ]
+                  },
                   {
                     "name": "ReinforcedTendons",
                     "children": []
@@ -1054,11 +1093,7 @@
                     "children": []
                   },
                   {
-                    "name": "FallDamage",
-                    "children": []
-                  },
-                  {
-                    "name": "LynxPaws",
+                    "name": "Lynx Paws",
                     "children": []
                   },
                   {
@@ -1066,12 +1101,12 @@
                     "children": []
                   }
                 ]
-              },
-              {
-                "name": "Integumentary System",
-                "children": []
               }
             ]
+          },
+          {
+            "name": "Gui",
+            "children": []
           }
         ]
       },
@@ -1080,41 +1115,11 @@
         "children": [
           {
             "name": "Stats",
-            "children": [
-              {
-                "name": "Main",
-                "children": []
-              },
-              {
-                "name": "Commands",
-                "children": []
-              },
-              {
-                "name": "Attributes",
-                "children": [
-                  {
-                    "name": "Body",
-                    "children": []
-                  },
-                  {
-                    "name": "Reflexes",
-                    "children": []
-                  },
-                  {
-                    "name": "Technical Ability",
-                    "children": []
-                  },
-                  {
-                    "name": "Intelligence",
-                    "children": []
-                  },
-                  {
-                    "name": "Cool",
-                    "children": []
-                  }
-                ]
-              }
-            ]
+            "children": []
+          },
+          {
+            "name": "Commands",
+            "children": []
           }
         ]
       }

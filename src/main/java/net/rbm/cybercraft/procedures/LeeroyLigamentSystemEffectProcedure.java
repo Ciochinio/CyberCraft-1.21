@@ -17,13 +17,6 @@ public class LeeroyLigamentSystemEffectProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
-			{
-				double _setval = (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftHealth + 20;
-				entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.cybercraftHealth = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
 		}
 	}
 }

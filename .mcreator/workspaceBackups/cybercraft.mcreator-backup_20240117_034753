@@ -100,10 +100,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -253,7 +249,7 @@
           "src/main/resources/data/cybercraft/tags/items/legs.json"
         ]
       },
-      "path": "~/Cyberware/Cyberwares/Legs"
+      "path": "~/Cyberware/Cyberwares/Legs/Main"
     },
     {
       "name": "IntegumentarySystem",
@@ -294,7 +290,7 @@
           "src/main/resources/assets/cybercraft/models/item/reinforced_tendons.json"
         ]
       },
-      "path": "~/Cyberware/Cyberwares/Legs"
+      "path": "~/Cyberware/Cyberwares/Legs/ReinforcedTendons"
     },
     {
       "name": "DoubleJump",
@@ -308,7 +304,7 @@
           "src/main/java/net/rbm/cybercraft/network/DoubleJumpMessage.java"
         ]
       },
-      "path": "~/Cyberware/Cyberwares/Legs"
+      "path": "~/Cyberware/Cyberwares/Legs/ReinforcedTendons"
     },
     {
       "name": "RestoreJump",
@@ -328,7 +324,7 @@
           }
         ]
       },
-      "path": "~/Cyberware/Cyberwares/Legs"
+      "path": "~/Cyberware/Cyberwares/Legs/ReinforcedTendons"
     },
     {
       "name": "FortifiedAnkles",
@@ -343,7 +339,7 @@
           "src/main/java/net/rbm/cybercraft/item/FortifiedAnklesItem.java"
         ]
       },
-      "path": "~/Cyberware/Cyberwares/Legs"
+      "path": "~/Cyberware/Cyberwares/Legs/Fortified Ankles"
     },
     {
       "name": "ReducedFallDamage",
@@ -357,7 +353,7 @@
           "src/main/java/net/rbm/cybercraft/potion/ReducedFallDamageMobEffect.java"
         ]
       },
-      "path": "~/Cyberware/Cyberwares/Legs"
+      "path": "~/Cyberware/Cyberwares/Legs/Main/Reduced Fall Damage"
     },
     {
       "name": "ReducedFallDamageWithLegs",
@@ -377,7 +373,7 @@
           }
         ]
       },
-      "path": "~/Cyberware/Cyberwares/Legs"
+      "path": "~/Cyberware/Cyberwares/Legs/Main/Reduced Fall Damage"
     },
     {
       "name": "FallDamageReduction",
@@ -397,7 +393,7 @@
           }
         ]
       },
-      "path": "~/Cyberware/Cyberwares/Legs"
+      "path": "~/Cyberware/Cyberwares/Legs/Main/Reduced Fall Damage"
     },
     {
       "name": "LynxPaws",
@@ -412,7 +408,7 @@
           "src/main/resources/assets/cybercraft/models/item/lynx_paws.json"
         ]
       },
-      "path": "~/Cyberware/Cyberwares/Legs"
+      "path": "~/Cyberware/Cyberwares/Legs/Lynx Paws"
     },
     {
       "name": "LynxPawsFallDamage",
@@ -432,7 +428,7 @@
           }
         ]
       },
-      "path": "~/Cyberware/Cyberwares/Legs"
+      "path": "~/Cyberware/Cyberwares/Legs/Lynx Paws"
     },
     {
       "name": "LynxPawsLeap",
@@ -452,7 +448,7 @@
           }
         ]
       },
-      "path": "~/Cyberware/Cyberwares/Legs"
+      "path": "~/Cyberware/Cyberwares/Legs/Lynx Paws"
     },
     {
       "name": "FortifiedAnklesHigherJump",
@@ -472,7 +468,7 @@
           }
         ]
       },
-      "path": "~/Cyberware/Cyberwares/Legs"
+      "path": "~/Cyberware/Cyberwares/Legs/Fortified Ankles"
     },
     {
       "name": "ReinforcedTendonsDoubleJump",
@@ -492,7 +488,7 @@
           }
         ]
       },
-      "path": "~/Cyberware/Cyberwares/Legs"
+      "path": "~/Cyberware/Cyberwares/Legs/ReinforcedTendons"
     },
     {
       "name": "LeeroyLigamentSystem",
@@ -507,7 +503,7 @@
           "src/main/resources/assets/cybercraft/models/item/leeroy_ligament_system.json"
         ]
       },
-      "path": "~/Cyberware/Cyberwares/Legs"
+      "path": "~/Cyberware/Cyberwares/Legs/Leeroy Ligament System"
     },
     {
       "name": "LeeroyLigamentSystemEffect",
@@ -527,7 +523,7 @@
           }
         ]
       },
-      "path": "~/Cyberware/Cyberwares/Legs"
+      "path": "~/Cyberware/Cyberwares/Legs/Leeroy Ligament System"
     },
     {
       "name": "CybercraftStatCheck",
@@ -544,14 +540,10 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
-      "path": "~/Character"
+      "path": "~/Character/Stats"
     },
     {
       "name": "CybercraftPlayerStatReset",
@@ -571,7 +563,7 @@
           }
         ]
       },
-      "path": "~/Character"
+      "path": "~/Character/Stats"
     },
     {
       "name": "CybercraftPlayerStatApply",
@@ -591,7 +583,7 @@
           }
         ]
       },
-      "path": "~/Character"
+      "path": "~/Character/Stats"
     },
     {
       "name": "CybercraftStatReload",
@@ -608,14 +600,10 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
-      "path": "~/Character"
+      "path": "~/Character/Stats"
     },
     {
       "name": "CybercraftPlayerStats",
@@ -635,7 +623,7 @@
           }
         ]
       },
-      "path": "~/Character"
+      "path": "~/Character/Commands"
     },
     {
       "name": "Cybercraftstats",
@@ -649,7 +637,7 @@
           "src/main/java/net/rbm/cybercraft/command/CybercraftstatsCommand.java"
         ]
       },
-      "path": "~/Character"
+      "path": "~/Character/Commands"
     },
     {
       "name": "CybercraftLegsStatCheck",
@@ -662,18 +650,9 @@
         "files": [
           "src/main/java/net/rbm/cybercraft/procedures/CybercraftLegsStatCheckProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
-      "path": "~/Cyberware/Cyberwares/Legs"
+      "path": "~/Cyberware/Cyberwares/Legs/Main"
     },
     {
       "name": "CybercraftIntegumentarySystemStatCheck",
@@ -733,7 +712,7 @@
         ],
         "dependencies": []
       },
-      "path": "~/Cyberware/Cyberwares"
+      "path": "~/Cyberware/Cyberwares/Skeleton"
     },
     {
       "name": "CybercraftHandsStatCheck",
@@ -748,7 +727,7 @@
         ],
         "dependencies": []
       },
-      "path": "~/Cyberware/Cyberwares"
+      "path": "~/Cyberware/Cyberwares/Hands"
     },
     {
       "name": "CybercraftArmsStatCheck",
@@ -763,7 +742,7 @@
         ],
         "dependencies": []
       },
-      "path": "~/Cyberware/Cyberwares"
+      "path": "~/Cyberware/Cyberwares/Arms"
     },
     {
       "name": "CybercraftFaceStatCheck",
@@ -778,7 +757,7 @@
         ],
         "dependencies": []
       },
-      "path": "~/Cyberware/Cyberwares"
+      "path": "~/Cyberware/Cyberwares/Face"
     },
     {
       "name": "CybercraftFrontalCortexStatCheck",
@@ -793,7 +772,7 @@
         ],
         "dependencies": []
       },
-      "path": "~/Cyberware/Cyberwares"
+      "path": "~/Cyberware/Cyberwares/Frontal Cortex"
     },
     {
       "name": "CybercraftOperatingSystemStatCheck",
@@ -808,7 +787,7 @@
         ],
         "dependencies": []
       },
-      "path": "~/Cyberware/Cyberwares"
+      "path": "~/Cyberware/Cyberwares/Operating System"
     },
     {
       "name": "CybercraftHealAdditionalHealth",
@@ -832,7 +811,7 @@
           }
         ]
       },
-      "path": "~/Character"
+      "path": "~/Character/Stats"
     },
     {
       "name": "TestHeal",
@@ -853,6 +832,29 @@
           {
             "name": "world",
             "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TestIntegumentarySystem",
+      "type": "procedure",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_integumentary_system",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/TestIntegumentarySystemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
           }
         ]
       }
@@ -1071,7 +1073,33 @@
               },
               {
                 "name": "Legs",
-                "children": []
+                "children": [
+                  {
+                    "name": "Main",
+                    "children": [
+                      {
+                        "name": "Reduced Fall Damage",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "ReinforcedTendons",
+                    "children": []
+                  },
+                  {
+                    "name": "Fortified Ankles",
+                    "children": []
+                  },
+                  {
+                    "name": "Lynx Paws",
+                    "children": []
+                  },
+                  {
+                    "name": "Leeroy Ligament System",
+                    "children": []
+                  }
+                ]
               }
             ]
           },
@@ -1083,7 +1111,16 @@
       },
       {
         "name": "Character",
-        "children": []
+        "children": [
+          {
+            "name": "Stats",
+            "children": []
+          },
+          {
+            "name": "Commands",
+            "children": []
+          }
+        ]
       }
     ]
   },

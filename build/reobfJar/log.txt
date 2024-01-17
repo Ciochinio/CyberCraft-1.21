@@ -260,6 +260,7 @@ Writing Output: C:\Users\cioch\Documents\GitHub\CyberCraft-1.20.1\build\reobfJar
   net/rbm/cybercraft/procedures/RestoreJumpProcedure.class
   net/rbm/cybercraft/procedures/SaveProcedure.class
   net/rbm/cybercraft/procedures/TestHealProcedure.class
+  net/rbm/cybercraft/procedures/TestIntegumentarySystemProcedure.class
   net/rbm/cybercraft/procedures/WriteProcedure.class
   net/rbm/cybercraft/world/
   net/rbm/cybercraft/world/inventory/

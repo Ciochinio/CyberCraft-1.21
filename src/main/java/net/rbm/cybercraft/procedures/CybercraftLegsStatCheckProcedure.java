@@ -6,6 +6,6 @@ public class CybercraftLegsStatCheckProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		LeeroyLigamentSystemEffectProcedure.execute(entity);
+		LeeroyLigamentSystemStatsProcedure.execute(entity);
 	}
 }

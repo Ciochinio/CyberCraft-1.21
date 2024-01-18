@@ -83,6 +83,12 @@ public class CybercraftModVariables {
 			clone.legs1 = original.legs1;
 			clone.integumentarysystem1 = original.integumentarysystem1;
 			clone.integumentarysystem2 = original.integumentarysystem2;
+			clone.frontalcortedAdditional1 = original.frontalcortedAdditional1;
+			clone.skeletonAdditional1 = original.skeletonAdditional1;
+			clone.handsAdditional1 = original.handsAdditional1;
+			clone.nervoussystemAdditional1 = original.nervoussystemAdditional1;
+			clone.circulatorysystemAdditional1 = original.circulatorysystemAdditional1;
+			clone.integumentarysystemAdditional1 = original.integumentarysystemAdditional1;
 			if (!event.isWasDeath()) {
 				clone.doublejump = original.doublejump;
 				clone.cybercraftMovementSpeed = original.cybercraftMovementSpeed;
@@ -90,6 +96,7 @@ public class CybercraftModVariables {
 				clone.cybercraftArmor = original.cybercraftArmor;
 				clone.cybercraftHackDamage = original.cybercraftHackDamage;
 				clone.cybercraftAdditionalDamage = original.cybercraftAdditionalDamage;
+				clone.cybercraftDamageReduction = original.cybercraftDamageReduction;
 			}
 		}
 	}
@@ -147,6 +154,13 @@ public class CybercraftModVariables {
 		public double cybercraftArmor = 0;
 		public double cybercraftHackDamage = 0;
 		public double cybercraftAdditionalDamage = 0;
+		public ItemStack frontalcortedAdditional1 = ItemStack.EMPTY;
+		public ItemStack skeletonAdditional1 = ItemStack.EMPTY;
+		public ItemStack handsAdditional1 = ItemStack.EMPTY;
+		public ItemStack nervoussystemAdditional1 = ItemStack.EMPTY;
+		public ItemStack circulatorysystemAdditional1 = ItemStack.EMPTY;
+		public ItemStack integumentarysystemAdditional1 = ItemStack.EMPTY;
+		public double cybercraftDamageReduction = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -177,6 +191,13 @@ public class CybercraftModVariables {
 			nbt.putDouble("cybercraftArmor", cybercraftArmor);
 			nbt.putDouble("cybercraftHackDamage", cybercraftHackDamage);
 			nbt.putDouble("cybercraftAdditionalDamage", cybercraftAdditionalDamage);
+			nbt.put("frontalcortedAdditional1", frontalcortedAdditional1.save(new CompoundTag()));
+			nbt.put("skeletonAdditional1", skeletonAdditional1.save(new CompoundTag()));
+			nbt.put("handsAdditional1", handsAdditional1.save(new CompoundTag()));
+			nbt.put("nervoussystemAdditional1", nervoussystemAdditional1.save(new CompoundTag()));
+			nbt.put("circulatorysystemAdditional1", circulatorysystemAdditional1.save(new CompoundTag()));
+			nbt.put("integumentarysystemAdditional1", integumentarysystemAdditional1.save(new CompoundTag()));
+			nbt.putDouble("cybercraftDamageReduction", cybercraftDamageReduction);
 			return nbt;
 		}
 
@@ -204,6 +225,13 @@ public class CybercraftModVariables {
 			cybercraftArmor = nbt.getDouble("cybercraftArmor");
 			cybercraftHackDamage = nbt.getDouble("cybercraftHackDamage");
 			cybercraftAdditionalDamage = nbt.getDouble("cybercraftAdditionalDamage");
+			frontalcortedAdditional1 = ItemStack.of(nbt.getCompound("frontalcortedAdditional1"));
+			skeletonAdditional1 = ItemStack.of(nbt.getCompound("skeletonAdditional1"));
+			handsAdditional1 = ItemStack.of(nbt.getCompound("handsAdditional1"));
+			nervoussystemAdditional1 = ItemStack.of(nbt.getCompound("nervoussystemAdditional1"));
+			circulatorysystemAdditional1 = ItemStack.of(nbt.getCompound("circulatorysystemAdditional1"));
+			integumentarysystemAdditional1 = ItemStack.of(nbt.getCompound("integumentarysystemAdditional1"));
+			cybercraftDamageReduction = nbt.getDouble("cybercraftDamageReduction");
 		}
 	}
 
@@ -250,6 +278,13 @@ public class CybercraftModVariables {
 					variables.cybercraftArmor = message.data.cybercraftArmor;
 					variables.cybercraftHackDamage = message.data.cybercraftHackDamage;
 					variables.cybercraftAdditionalDamage = message.data.cybercraftAdditionalDamage;
+					variables.frontalcortedAdditional1 = message.data.frontalcortedAdditional1;
+					variables.skeletonAdditional1 = message.data.skeletonAdditional1;
+					variables.handsAdditional1 = message.data.handsAdditional1;
+					variables.nervoussystemAdditional1 = message.data.nervoussystemAdditional1;
+					variables.circulatorysystemAdditional1 = message.data.circulatorysystemAdditional1;
+					variables.integumentarysystemAdditional1 = message.data.integumentarysystemAdditional1;
+					variables.cybercraftDamageReduction = message.data.cybercraftDamageReduction;
 				}
 			});
 			context.setPacketHandled(true);

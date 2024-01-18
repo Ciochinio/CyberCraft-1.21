@@ -1,4 +1,9 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+    "cybercraft:nano_plating",
+    "cybercraft:painducer",
+    "cybercraft:countershell",
+    "cybercraft:pain_editor"
+  ]
 }

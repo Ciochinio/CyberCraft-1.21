@@ -23,6 +23,10 @@ public class CybercraftModTabs {
 				tabData.accept(CybercraftModItems.FORTIFIED_ANKLES.get());
 				tabData.accept(CybercraftModItems.LYNX_PAWS.get());
 				tabData.accept(CybercraftModItems.LEEROY_LIGAMENT_SYSTEM.get());
+				tabData.accept(CybercraftModItems.NANO_PLATING.get());
+				tabData.accept(CybercraftModItems.PAINDUCER.get());
+				tabData.accept(CybercraftModItems.COUNTERSHELL.get());
+				tabData.accept(CybercraftModItems.PAIN_EDITOR.get());
 			})
 
 					.build());

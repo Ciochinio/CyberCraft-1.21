@@ -3,7 +3,20 @@
   "_type": "tag",
   "definition": {
     "type": "Items",
-    "items": [],
+    "items": [
+      {
+        "value": "CUSTOM:NanoPlating"
+      },
+      {
+        "value": "CUSTOM:Painducer"
+      },
+      {
+        "value": "CUSTOM:Countershell"
+      },
+      {
+        "value": "CUSTOM:PainEditor"
+      }
+    ],
     "blocks": [],
     "functions": [],
     "entities": [],

@@ -164,16 +164,25 @@ Writing Output: C:\Users\cioch\Documents\GitHub\CyberCraft-1.20.1\build\reobfJar
   assets/cybercraft/lang/en_us.json
   assets/cybercraft/models/
   assets/cybercraft/models/item/
+  assets/cybercraft/models/item/countershell.json
   assets/cybercraft/models/item/fortified_ankles.json
   assets/cybercraft/models/item/leeroy_ligament_system.json
   assets/cybercraft/models/item/lynx_paws.json
+  assets/cybercraft/models/item/nano_plating.json
+  assets/cybercraft/models/item/pain_editor.json
+  assets/cybercraft/models/item/painducer.json
   assets/cybercraft/models/item/reinforced_tendons.json
   assets/cybercraft/textures/
   assets/cybercraft/textures/item/
+  assets/cybercraft/textures/item/blooddepleter.png
   assets/cybercraft/textures/item/boostedtendons.png
   assets/cybercraft/textures/item/catpaws.png
   assets/cybercraft/textures/item/jenkinstendons.png
+  assets/cybercraft/textures/item/nanotechplates.png
+  assets/cybercraft/textures/item/painreductor.png
   assets/cybercraft/textures/item/reinforcedmuscles.png
+  assets/cybercraft/textures/item/suddenaid.png
+  assets/cybercraft/textures/item/weirdtankyplating.png
   assets/cybercraft/textures/mob_effect/
   assets/cybercraft/textures/mob_effect/reduced_fall_damage.png
   assets/cybercraft/textures/screens/
@@ -193,6 +202,10 @@ Writing Output: C:\Users\cioch\Documents\GitHub\CyberCraft-1.20.1\build\reobfJar
   data/cybercraft/tags/items/nervous_system.json
   data/cybercraft/tags/items/operating_system.json
   data/cybercraft/tags/items/skeleton.json
+  data/forge/
+  data/forge/tags/
+  data/forge/tags/damage_type/
+  data/forge/tags/damage_type/cybercraft_projectiles.json
   net/
   net/rbm/
   net/rbm/cybercraft/
@@ -213,9 +226,13 @@ Writing Output: C:\Users\cioch\Documents\GitHub\CyberCraft-1.20.1\build\reobfJar
   net/rbm/cybercraft/init/CybercraftModScreens.class
   net/rbm/cybercraft/init/CybercraftModTabs.class
   net/rbm/cybercraft/item/
+  net/rbm/cybercraft/item/CountershellItem.class
   net/rbm/cybercraft/item/FortifiedAnklesItem.class
   net/rbm/cybercraft/item/LeeroyLigamentSystemItem.class
   net/rbm/cybercraft/item/LynxPawsItem.class
+  net/rbm/cybercraft/item/NanoPlatingItem.class
+  net/rbm/cybercraft/item/PainEditorItem.class
+  net/rbm/cybercraft/item/PainducerItem.class
   net/rbm/cybercraft/item/ReinforcedTendonsItem.class
   net/rbm/cybercraft/network/
   net/rbm/cybercraft/network/CybercraftModVariables$1.class
@@ -229,6 +246,7 @@ Writing Output: C:\Users\cioch\Documents\GitHub\CyberCraft-1.20.1\build\reobfJar
   net/rbm/cybercraft/potion/
   net/rbm/cybercraft/potion/ReducedFallDamageMobEffect.class
   net/rbm/cybercraft/procedures/
+  net/rbm/cybercraft/procedures/CountershellEffectProcedure.class
   net/rbm/cybercraft/procedures/CybercraftArmsStatCheckProcedure.class
   net/rbm/cybercraft/procedures/CybercraftCirculetorySystemStatCheckProcedure.class
   net/rbm/cybercraft/procedures/CybercraftFaceStatCheckProcedure.class
@@ -247,11 +265,15 @@ Writing Output: C:\Users\cioch\Documents\GitHub\CyberCraft-1.20.1\build\reobfJar
   net/rbm/cybercraft/procedures/CybercraftStatReloadProcedure.class
   net/rbm/cybercraft/procedures/CyberwareMenuOnKeyPressedProcedure$1.class
   net/rbm/cybercraft/procedures/CyberwareMenuOnKeyPressedProcedure.class
+  net/rbm/cybercraft/procedures/DamageReductionCalculatorProcedure.class
   net/rbm/cybercraft/procedures/FallDamageReductionProcedure.class
   net/rbm/cybercraft/procedures/FortifiedAnklesHigherJumpProcedure.class
-  net/rbm/cybercraft/procedures/LeeroyLigamentSystemEffectProcedure.class
+  net/rbm/cybercraft/procedures/LeeroyLigamentSystemStatsProcedure.class
   net/rbm/cybercraft/procedures/LynxPawsFallDamageProcedure.class
   net/rbm/cybercraft/procedures/LynxPawsLeapProcedure.class
+  net/rbm/cybercraft/procedures/NanoPlatingEffectProcedure.class
+  net/rbm/cybercraft/procedures/PainEditorEffectProcedure.class
+  net/rbm/cybercraft/procedures/PainducerEffectProcedure.class
   net/rbm/cybercraft/procedures/ReadProcedure.class
   net/rbm/cybercraft/procedures/ReducedFallDamageWithLegsProcedure.class
   net/rbm/cybercraft/procedures/ReinforcedTendonsDoubleJumpProcedure.class

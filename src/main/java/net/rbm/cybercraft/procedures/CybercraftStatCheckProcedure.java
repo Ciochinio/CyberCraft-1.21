@@ -32,7 +32,7 @@ public class CybercraftStatCheckProcedure {
 		CybercraftHandsStatCheckProcedure.execute();
 		CybercraftNervousSystemStatCheckProcedure.execute();
 		CybercraftCirculetorySystemStatCheckProcedure.execute();
-		CybercraftIntegumentarySystemStatCheckProcedure.execute();
+		CybercraftIntegumentarySystemStatCheckProcedure.execute(entity);
 		CybercraftLegsStatCheckProcedure.execute(entity);
 		CybercraftPlayerStatApplyProcedure.execute(entity);
 	}

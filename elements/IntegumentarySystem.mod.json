@@ -15,6 +15,15 @@
       },
       {
         "value": "CUSTOM:PainEditor"
+      },
+      {
+        "value": "CUSTOM:Proxishield"
+      },
+      {
+        "value": "CUSTOM:Rangeguard"
+      },
+      {
+        "value": "CUSTOM:SubdermalArmor"
       }
     ],
     "blocks": [],

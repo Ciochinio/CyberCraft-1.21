@@ -43,5 +43,12 @@ public class CybercraftPlayerStatResetProcedure {
 				capability.syncPlayerVariables(entity);
 			});
 		}
+		{
+			double _setval = 0;
+			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.cybercraftToughness = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
 	}
 }

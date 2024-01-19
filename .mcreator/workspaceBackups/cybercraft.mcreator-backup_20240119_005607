@@ -353,7 +353,7 @@
           "src/main/java/net/rbm/cybercraft/potion/ReducedFallDamageMobEffect.java"
         ]
       },
-      "path": "~/Cyberware/Cyberwares/Legs/Main/Reduced Fall Damage"
+      "path": "~/Main/Reduced Fall Damage"
     },
     {
       "name": "ReducedFallDamageWithLegs",
@@ -373,7 +373,7 @@
           }
         ]
       },
-      "path": "~/Cyberware/Cyberwares/Legs/Main/Reduced Fall Damage"
+      "path": "~/Main/Reduced Fall Damage"
     },
     {
       "name": "FallDamageReduction",
@@ -393,7 +393,7 @@
           }
         ]
       },
-      "path": "~/Cyberware/Cyberwares/Legs/Main/Reduced Fall Damage"
+      "path": "~/Main/Reduced Fall Damage"
     },
     {
       "name": "LynxPaws",
@@ -650,7 +650,12 @@
         "files": [
           "src/main/java/net/rbm/cybercraft/procedures/CybercraftIntegumentarySystemStatCheckProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Cyberware/Cyberwares/Integumentary System/Main"
     },
@@ -1053,6 +1058,161 @@
         ]
       },
       "path": "~/Cyberware/Cyberwares/Integumentary System/Pain Editor"
+    },
+    {
+      "name": "Proxishield",
+      "type": "item",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "proxishield",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cybercraft/models/item/proxishield.json",
+          "src/main/java/net/rbm/cybercraft/item/ProxishieldItem.java"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Integumentary System/ProxiShield"
+    },
+    {
+      "name": "ProxishieldEffect",
+      "type": "procedure",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "proxishield_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/ProxishieldEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Integumentary System/ProxiShield"
+    },
+    {
+      "name": "EnemyDetection",
+      "type": "procedure",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enemy_detection",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/EnemyDetectionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Main"
+    },
+    {
+      "name": "EnemyNearby",
+      "type": "potioneffect",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enemy_nearby",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/potion/EnemyNearbyMobEffect.java"
+        ]
+      },
+      "path": "~/Main"
+    },
+    {
+      "name": "Rangeguard",
+      "type": "item",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rangeguard",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cybercraft/models/item/rangeguard.json",
+          "src/main/java/net/rbm/cybercraft/item/RangeguardItem.java"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Integumentary System/RangeGuard"
+    },
+    {
+      "name": "RangeguardEffect",
+      "type": "procedure",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rangeguard_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/RangeguardEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Integumentary System/RangeGuard"
+    },
+    {
+      "name": "SubdermalArmor",
+      "type": "item",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "subdermal_armor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/item/SubdermalArmorItem.java",
+          "src/main/resources/assets/cybercraft/models/item/subdermal_armor.json"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Integumentary System/Subdermal Armor"
+    },
+    {
+      "name": "SubdermalArmorStats",
+      "type": "procedure",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "subdermal_armor_stats",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/SubdermalArmorStatsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Integumentary System/Subdermal Armor"
     }
   ],
   "variable_elements": [
@@ -1189,43 +1349,25 @@
       "value": "0"
     },
     {
-      "name": "frontalcortedAdditional1",
-      "type": "itemstack",
-      "scope": "player_persistent",
-      "value": "ItemStack.EMPTY"
-    },
-    {
-      "name": "skeletonAdditional1",
-      "type": "itemstack",
-      "scope": "player_persistent",
-      "value": "ItemStack.EMPTY"
-    },
-    {
-      "name": "handsAdditional1",
-      "type": "itemstack",
-      "scope": "player_persistent",
-      "value": "ItemStack.EMPTY"
-    },
-    {
-      "name": "nervoussystemAdditional1",
-      "type": "itemstack",
-      "scope": "player_persistent",
-      "value": "ItemStack.EMPTY"
-    },
-    {
-      "name": "circulatorysystemAdditional1",
-      "type": "itemstack",
-      "scope": "player_persistent",
-      "value": "ItemStack.EMPTY"
-    },
-    {
-      "name": "integumentarysystemAdditional1",
-      "type": "itemstack",
-      "scope": "player_persistent",
-      "value": "ItemStack.EMPTY"
-    },
-    {
       "name": "cybercraftDamageReduction",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "cybercraftCritRate",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "cybercraftCritDamage",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "cybercraftToughness",
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
@@ -1234,29 +1376,33 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "gui.cybercraft.cyberware_gui.label_hands": "HANDS",
       "effect.cybercraft.reduced_fall_damage": "Reduced Fall Damage",
       "key.cybercraft.cyberware_menu": "Cyberware Menu",
       "item.cybercraft.countershell": "Countershell",
       "gui.cybercraft.cyberware_gui.label_skeleton": "SKELETON",
-      "gui.cybercraft.cyberware_gui.label_face": "FACE",
-      "gui.cybercraft.cyberware_gui.label_circulatory_system": "CIRCULATORY SYSTEM",
       "gui.cybercraft.cyberware_gui.label_nervous_s_ystem": "NERVOUS SYSTEM",
-      "item.cybercraft.lynx_paws": "Lynx Paws",
+      "gui.cybercraft.cyberware_gui.label_circulatory_system": "CIRCULATORY SYSTEM",
       "item.cybercraft.nano_plating": "Nano Plating",
-      "gui.cybercraft.cyberware_gui.label_frontal_cortex": "FRONTAL CORTEX",
       "item.cybercraft.leeroy_ligament_system": "Leeroy Ligament System",
+      "effect.cybercraft.enemy_nearby": "Enemy Nearby",
       "item.cybercraft.pain_editor": "Pain Editor",
       "gui.cybercraft.cyberware_gui.label_operating_system": "OPERATING SYSTEM",
       "gui.cybercraft.cyberware_gui.label_integumentary_system": "INTEGUMENTARY SYSTEM",
       "item_group.cybercraft.cyber_craft_tab": "CyberCraft ",
       "item.cybercraft.painducer": "Painducer",
       "gui.cybercraft.cyberware_gui.label_legs": "LEGS",
-      "key.cybercraft.double_jump": "Jump",
       "item.cybercraft.fortified_ankles": "Fortified Ankles",
       "item.cybercraft.reinforced_tendons": "Reinforced Tendons",
+      "item.cybercraft.rangeguard": "RangeGuard",
+      "gui.cybercraft.cyberware_gui.label_hands": "HANDS",
+      "item.cybercraft.lynx_paws": "Lynx Paws",
+      "gui.cybercraft.cyberware_gui.label_face": "FACE",
+      "gui.cybercraft.cyberware_gui.label_frontal_cortex": "FRONTAL CORTEX",
+      "key.cybercraft.double_jump": "Jump",
+      "item.cybercraft.subdermal_armor": "Subdermal Armor",
       "key.categories.cybercraft": "CyberCraft",
-      "gui.cybercraft.cyberware_gui.label_arms": "      ARMS"
+      "gui.cybercraft.cyberware_gui.label_arms": "      ARMS",
+      "item.cybercraft.proxishield": "ProxiShield"
     }
   },
   "foldersRoot": {
@@ -1264,7 +1410,12 @@
     "children": [
       {
         "name": "Main",
-        "children": []
+        "children": [
+          {
+            "name": "Reduced Fall Damage",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Cyberware",
@@ -1330,6 +1481,18 @@
                   {
                     "name": "Pain Editor",
                     "children": []
+                  },
+                  {
+                    "name": "ProxiShield",
+                    "children": []
+                  },
+                  {
+                    "name": "RangeGuard",
+                    "children": []
+                  },
+                  {
+                    "name": "Subdermal Armor",
+                    "children": []
                   }
                 ]
               },
@@ -1338,12 +1501,7 @@
                 "children": [
                   {
                     "name": "Main",
-                    "children": [
-                      {
-                        "name": "Reduced Fall Damage",
-                        "children": []
-                      }
-                    ]
+                    "children": []
                   },
                   {
                     "name": "ReinforcedTendons",

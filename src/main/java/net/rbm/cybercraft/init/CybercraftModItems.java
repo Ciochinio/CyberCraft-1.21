@@ -4,7 +4,10 @@
  */
 package net.rbm.cybercraft.init;
 
+import net.rbm.cybercraft.item.SubdermalArmorItem;
 import net.rbm.cybercraft.item.ReinforcedTendonsItem;
+import net.rbm.cybercraft.item.RangeguardItem;
+import net.rbm.cybercraft.item.ProxishieldItem;
 import net.rbm.cybercraft.item.PainducerItem;
 import net.rbm.cybercraft.item.PainEditorItem;
 import net.rbm.cybercraft.item.NanoPlatingItem;
@@ -30,4 +33,7 @@ public class CybercraftModItems {
 	public static final RegistryObject<Item> PAINDUCER = REGISTRY.register("painducer", () -> new PainducerItem());
 	public static final RegistryObject<Item> COUNTERSHELL = REGISTRY.register("countershell", () -> new CountershellItem());
 	public static final RegistryObject<Item> PAIN_EDITOR = REGISTRY.register("pain_editor", () -> new PainEditorItem());
+	public static final RegistryObject<Item> PROXISHIELD = REGISTRY.register("proxishield", () -> new ProxishieldItem());
+	public static final RegistryObject<Item> RANGEGUARD = REGISTRY.register("rangeguard", () -> new RangeguardItem());
+	public static final RegistryObject<Item> SUBDERMAL_ARMOR = REGISTRY.register("subdermal_armor", () -> new SubdermalArmorItem());
 }

@@ -27,6 +27,9 @@ public class CybercraftModTabs {
 				tabData.accept(CybercraftModItems.PAINDUCER.get());
 				tabData.accept(CybercraftModItems.COUNTERSHELL.get());
 				tabData.accept(CybercraftModItems.PAIN_EDITOR.get());
+				tabData.accept(CybercraftModItems.PROXISHIELD.get());
+				tabData.accept(CybercraftModItems.RANGEGUARD.get());
+				tabData.accept(CybercraftModItems.SUBDERMAL_ARMOR.get());
 			})
 
 					.build());

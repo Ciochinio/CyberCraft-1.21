@@ -30,7 +30,6 @@ public class DamageReductionCalculatorProcedure {
 	private static void execute(@Nullable Event event, Entity entity, double amount) {
 		if (entity == null)
 			return;
-		double test = 0;
 		{
 			double _setval = amount * (1 - Math.max((entity instanceof LivingEntity _livEnt ? _livEnt.getArmorValue() : 0) / 5, (entity instanceof LivingEntity _livEnt ? _livEnt.getArmorValue() : 0) - amount / 2) / 25);
 			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {

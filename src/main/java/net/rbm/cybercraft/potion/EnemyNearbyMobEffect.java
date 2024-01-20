@@ -11,7 +11,7 @@ import net.minecraft.client.gui.GuiGraphics;
 
 public class EnemyNearbyMobEffect extends MobEffect {
 	public EnemyNearbyMobEffect() {
-		super(MobEffectCategory.NEUTRAL, -1);
+		super(MobEffectCategory.NEUTRAL, -16777216);
 	}
 
 	@Override

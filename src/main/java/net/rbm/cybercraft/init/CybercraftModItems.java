@@ -5,6 +5,7 @@
 package net.rbm.cybercraft.init;
 
 import net.rbm.cybercraft.item.SubdermalArmorItem;
+import net.rbm.cybercraft.item.ShockNAweItem;
 import net.rbm.cybercraft.item.ReinforcedTendonsItem;
 import net.rbm.cybercraft.item.RangeguardItem;
 import net.rbm.cybercraft.item.ProxishieldItem;
@@ -15,6 +16,7 @@ import net.rbm.cybercraft.item.LynxPawsItem;
 import net.rbm.cybercraft.item.LeeroyLigamentSystemItem;
 import net.rbm.cybercraft.item.FortifiedAnklesItem;
 import net.rbm.cybercraft.item.CountershellItem;
+import net.rbm.cybercraft.item.ChitinItem;
 import net.rbm.cybercraft.CybercraftMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -36,4 +38,6 @@ public class CybercraftModItems {
 	public static final RegistryObject<Item> PROXISHIELD = REGISTRY.register("proxishield", () -> new ProxishieldItem());
 	public static final RegistryObject<Item> RANGEGUARD = REGISTRY.register("rangeguard", () -> new RangeguardItem());
 	public static final RegistryObject<Item> SUBDERMAL_ARMOR = REGISTRY.register("subdermal_armor", () -> new SubdermalArmorItem());
+	public static final RegistryObject<Item> CHITIN = REGISTRY.register("chitin", () -> new ChitinItem());
+	public static final RegistryObject<Item> SHOCK_N_AWE = REGISTRY.register("shock_n_awe", () -> new ShockNAweItem());
 }

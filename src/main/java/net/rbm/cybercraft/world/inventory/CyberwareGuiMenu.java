@@ -338,7 +338,7 @@ public class CyberwareGuiMenu extends AbstractContainerMenu implements Supplier<
 	@Override
 	public void removed(Player playerIn) {
 		super.removed(playerIn);
-		SaveProcedure.execute(entity);
+		SaveProcedure.execute(world, entity);
 		if (!bound && playerIn instanceof ServerPlayer serverPlayer) {
 			if (!serverPlayer.isAlive() || serverPlayer.hasDisconnected()) {
 				for (int j = 0; j < internal.getSlots(); ++j) {

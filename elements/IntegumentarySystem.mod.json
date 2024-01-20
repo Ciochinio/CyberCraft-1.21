@@ -24,6 +24,12 @@
       },
       {
         "value": "CUSTOM:SubdermalArmor"
+      },
+      {
+        "value": "CUSTOM:Chitin"
+      },
+      {
+        "value": "CUSTOM:ShockNAwe"
       }
     ],
     "blocks": [],

@@ -5,7 +5,7 @@
     "effectName": "Enemy Nearby",
     "icon": "reduced_fall_damage.png",
     "color": {
-      "value": -1,
+      "value": -16777216,
       "falpha": 0.0
     },
     "isInstant": false,

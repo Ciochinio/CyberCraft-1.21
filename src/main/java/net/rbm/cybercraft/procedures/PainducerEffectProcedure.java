@@ -38,7 +38,7 @@ public class PainducerEffectProcedure {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal(("Dmg>>" + (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftDamageReduction)), false);
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)
-					- (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftDamageReduction >= 0) {
+					- (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftDamageReduction > 0) {
 				if (event != null && event.isCancelable()) {
 					event.setCanceled(true);
 				}
@@ -47,25 +47,25 @@ public class PainducerEffectProcedure {
 							- (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftDamageReduction * 0.6));
 				CybercraftMod.queueServerWork(20, () -> {
 					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)
-							- (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftDamageReduction * 0.1 >= 0) {
+							- (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftDamageReduction * 0.1 > 0) {
 						if (entity instanceof LivingEntity _entity)
 							_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)
 									- (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftDamageReduction * 0.1));
 						CybercraftMod.queueServerWork(20, () -> {
 							if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)
-									- (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftDamageReduction * 0.1 >= 0) {
+									- (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftDamageReduction * 0.1 > 0) {
 								if (entity instanceof LivingEntity _entity)
 									_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)
 											- (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftDamageReduction * 0.1));
 								CybercraftMod.queueServerWork(20, () -> {
 									if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)
-											- (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftDamageReduction * 0.1 >= 0) {
+											- (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftDamageReduction * 0.1 > 0) {
 										if (entity instanceof LivingEntity _entity)
 											_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)
 													- (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftDamageReduction * 0.1));
 										CybercraftMod.queueServerWork(20, () -> {
 											if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)
-													- (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftDamageReduction * 0.1 >= 0) {
+													- (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftDamageReduction * 0.1 > 0) {
 												if (entity instanceof LivingEntity _entity)
 													_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)
 															- (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftDamageReduction * 0.1));

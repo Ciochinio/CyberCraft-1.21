@@ -36,7 +36,7 @@ public class ThreatEvacActivationProcedure {
 				|| ((entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).circulatorysystem2).getItem() == CybercraftModItems.THREATEVAC.get())
 				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) <= (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 0.5) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(CybercraftModMobEffects.THREATEVAC_ACTIVATION_THRESHOLD.get(), 60, 0));
+				_entity.addEffect(new MobEffectInstance(CybercraftModMobEffects.THREATEVAC_ACTIVATION_THRESHOLD.get(), 10, 0));
 		}
 	}
 }

@@ -35,7 +35,7 @@ public class CybercrafPlayerStatCheckProcedure {
 		CybercraftCirculetorySystemStatCheckProcedure.execute();
 		CybercraftIntegumentarySystemStatCheckProcedure.execute(entity);
 		CybercraftLegsStatCheckProcedure.execute(entity);
-		PlayerPassiveRegenerationProcedure.execute(world, entity);
+		PassiveHealthRegenStartedProcedure.execute(world, entity);
 		CybercraftPlayerStatApplyProcedure.execute(entity);
 	}
 }

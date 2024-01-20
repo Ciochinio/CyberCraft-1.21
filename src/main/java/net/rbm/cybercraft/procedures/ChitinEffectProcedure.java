@@ -1,9 +1,12 @@
 package net.rbm.cybercraft.procedures;
 
 import net.rbm.cybercraft.network.CybercraftModVariables;
+import net.rbm.cybercraft.init.CybercraftModMobEffects;
 import net.rbm.cybercraft.init.CybercraftModItems;
 
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffectInstance;
 
 public class ChitinEffectProcedure {
 	public static void execute(Entity entity) {
@@ -33,6 +36,8 @@ public class ChitinEffectProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(CybercraftModMobEffects.PASSIVE_HEALTH_REGEN.get(), 30, 0));
 		}
 	}
 }

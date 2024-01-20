@@ -18,14 +18,14 @@ public class CybercraftPlayerStatResetProcedure {
 		{
 			double _setval = 0;
 			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.cybercraftMovementSpeed = _setval;
+				capability.cybercraftToughness = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
 		{
 			double _setval = 0;
 			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.cybercraftArmor = _setval;
+				capability.cybercraftPassiveHealthRegeneration = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
@@ -46,14 +46,14 @@ public class CybercraftPlayerStatResetProcedure {
 		{
 			double _setval = 0;
 			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.cybercraftToughness = _setval;
+				capability.cybercraftArmor = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
 		{
 			double _setval = 0;
 			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.cybercraftPassiveHealthRegeneration = _setval;
+				capability.cybercraftMovementSpeed = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}

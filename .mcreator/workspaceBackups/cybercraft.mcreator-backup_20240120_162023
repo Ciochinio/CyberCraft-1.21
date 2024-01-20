@@ -1360,6 +1360,29 @@
         ]
       },
       "path": "~/Cyberware/Cyberwares/Integumentary System/Shock-n-Awe"
+    },
+    {
+      "name": "Test",
+      "type": "procedure",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/TestProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [

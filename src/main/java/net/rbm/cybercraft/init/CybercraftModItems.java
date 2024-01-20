@@ -4,6 +4,7 @@
  */
 package net.rbm.cybercraft.init;
 
+import net.rbm.cybercraft.item.ThreatevacItem;
 import net.rbm.cybercraft.item.SubdermalArmorItem;
 import net.rbm.cybercraft.item.ShockNAweItem;
 import net.rbm.cybercraft.item.ReinforcedTendonsItem;
@@ -40,4 +41,5 @@ public class CybercraftModItems {
 	public static final RegistryObject<Item> SUBDERMAL_ARMOR = REGISTRY.register("subdermal_armor", () -> new SubdermalArmorItem());
 	public static final RegistryObject<Item> CHITIN = REGISTRY.register("chitin", () -> new ChitinItem());
 	public static final RegistryObject<Item> SHOCK_N_AWE = REGISTRY.register("shock_n_awe", () -> new ShockNAweItem());
+	public static final RegistryObject<Item> THREATEVAC = REGISTRY.register("threatevac", () -> new ThreatevacItem());
 }

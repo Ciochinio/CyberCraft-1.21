@@ -1,0 +1,23 @@
+{
+  "_fv": 57,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "ThreatEvac Activation Thresholder",
+    "icon": "threatevac_movement_speed.png",
+    "color": {
+      "value": -16777216,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "ThreatevacActivationThresholdEffectStarted"
+    },
+    "onExpired": {
+      "name": "ThreatevacActivationThresholdEffectExpires"
+    }
+  }
+}

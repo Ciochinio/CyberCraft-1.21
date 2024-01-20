@@ -1360,6 +1360,64 @@
         ]
       },
       "path": "~/Cyberware/Cyberwares/Integumentary System/Shock-n-Awe"
+    },
+    {
+      "name": "Test",
+      "type": "procedure",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/TestProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Threatevac",
+      "type": "item",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "threatevac",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/item/ThreatevacItem.java",
+          "src/main/resources/assets/cybercraft/models/item/threatevac.json"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Circulatory System/ThreatEvac"
+    },
+    {
+      "name": "ThreatEvacActivation",
+      "type": "procedure",
+      "sortid": 111,
+      "compiles": false,
+      "locked_code": false,
+      "registry_name": "threat_evac_activation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/ThreatEvacActivationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Circulatory System/ThreatEvac"
     }
   ],
   "variable_elements": [
@@ -1554,6 +1612,7 @@
       "gui.cybercraft.cyberware_gui.label_face": "FACE",
       "gui.cybercraft.cyberware_gui.label_frontal_cortex": "FRONTAL CORTEX",
       "item.cybercraft.shock_n_awe": "Shock-n-Awe",
+      "item.cybercraft.threatevac": "ThreatEvac",
       "key.cybercraft.double_jump": "Jump",
       "item.cybercraft.subdermal_armor": "Subdermal Armor",
       "key.categories.cybercraft": "CyberCraft",
@@ -1604,7 +1663,12 @@
               },
               {
                 "name": "Circulatory System",
-                "children": []
+                "children": [
+                  {
+                    "name": "ThreatEvac",
+                    "children": []
+                  }
+                ]
               },
               {
                 "name": "Integumentary System",

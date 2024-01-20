@@ -32,6 +32,7 @@ public class CybercraftModTabs {
 				tabData.accept(CybercraftModItems.SUBDERMAL_ARMOR.get());
 				tabData.accept(CybercraftModItems.CHITIN.get());
 				tabData.accept(CybercraftModItems.SHOCK_N_AWE.get());
+				tabData.accept(CybercraftModItems.THREATEVAC.get());
 			})
 
 					.build());

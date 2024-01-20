@@ -1360,6 +1360,118 @@
         ]
       },
       "path": "~/Cyberware/Cyberwares/Integumentary System/Shock-n-Awe"
+    },
+    {
+      "name": "Test",
+      "type": "procedure",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/TestProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Threatevac",
+      "type": "item",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "threatevac",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/item/ThreatevacItem.java",
+          "src/main/resources/assets/cybercraft/models/item/threatevac.json"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Circulatory System/ThreatEvac"
+    },
+    {
+      "name": "ThreatEvacActivation",
+      "type": "procedure",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "threat_evac_activation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/ThreatEvacActivationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Circulatory System/ThreatEvac"
+    },
+    {
+      "name": "ThreatevacActivationThreshold",
+      "type": "potioneffect",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "threatevac_activation_threshold",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/potion/ThreatevacActivationThresholdMobEffect.java"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Circulatory System/ThreatEvac"
+    },
+    {
+      "name": "ThreatevacActivationThresholdEffectStarted",
+      "type": "procedure",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "threatevac_activation_threshold_effect_started",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/ThreatevacActivationThresholdEffectStartedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Circulatory System/ThreatEvac"
+    },
+    {
+      "name": "ThreatevacActivationThresholdEffectExpires",
+      "type": "procedure",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "threatevac_activation_threshold_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/ThreatevacActivationThresholdEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Circulatory System/ThreatEvac"
     }
   ],
   "variable_elements": [
@@ -1548,12 +1660,14 @@
       "effect.cybercraft.heal_cooldown": "HealCooldown",
       "item.cybercraft.reinforced_tendons": "Reinforced Tendons",
       "item.cybercraft.rangeguard": "RangeGuard",
+      "effect.cybercraft.threatevac_activation_threshold": "ThreatEvac Activation Thresholder",
       "gui.cybercraft.cyberware_gui.label_hands": "HANDS",
       "item.cybercraft.chitin": "Chitin",
       "item.cybercraft.lynx_paws": "Lynx Paws",
       "gui.cybercraft.cyberware_gui.label_face": "FACE",
       "gui.cybercraft.cyberware_gui.label_frontal_cortex": "FRONTAL CORTEX",
       "item.cybercraft.shock_n_awe": "Shock-n-Awe",
+      "item.cybercraft.threatevac": "ThreatEvac",
       "key.cybercraft.double_jump": "Jump",
       "item.cybercraft.subdermal_armor": "Subdermal Armor",
       "key.categories.cybercraft": "CyberCraft",
@@ -1604,7 +1718,12 @@
               },
               {
                 "name": "Circulatory System",
-                "children": []
+                "children": [
+                  {
+                    "name": "ThreatEvac",
+                    "children": []
+                  }
+                ]
               },
               {
                 "name": "Integumentary System",

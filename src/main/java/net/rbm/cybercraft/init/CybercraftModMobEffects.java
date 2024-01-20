@@ -4,6 +4,7 @@
  */
 package net.rbm.cybercraft.init;
 
+import net.rbm.cybercraft.potion.ThreatevacActivationThresholdMobEffect;
 import net.rbm.cybercraft.potion.ReducedFallDamageMobEffect;
 import net.rbm.cybercraft.potion.HealCooldownMobEffect;
 import net.rbm.cybercraft.potion.EnemyNearbyMobEffect;
@@ -20,4 +21,5 @@ public class CybercraftModMobEffects {
 	public static final RegistryObject<MobEffect> REDUCED_FALL_DAMAGE = REGISTRY.register("reduced_fall_damage", () -> new ReducedFallDamageMobEffect());
 	public static final RegistryObject<MobEffect> ENEMY_NEARBY = REGISTRY.register("enemy_nearby", () -> new EnemyNearbyMobEffect());
 	public static final RegistryObject<MobEffect> HEAL_COOLDOWN = REGISTRY.register("heal_cooldown", () -> new HealCooldownMobEffect());
+	public static final RegistryObject<MobEffect> THREATEVAC_ACTIVATION_THRESHOLD = REGISTRY.register("threatevac_activation_threshold", () -> new ThreatevacActivationThresholdMobEffect());
 }

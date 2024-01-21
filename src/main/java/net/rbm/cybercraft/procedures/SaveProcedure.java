@@ -128,7 +128,7 @@ public class SaveProcedure {
 		{
 			ItemStack _setval = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(10)).getItem() : ItemStack.EMPTY);
 			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.circuletorysystem1 = _setval;
+				capability.circulatorysystem1 = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}

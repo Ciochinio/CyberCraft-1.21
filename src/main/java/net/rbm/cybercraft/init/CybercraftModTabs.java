@@ -38,6 +38,8 @@ public class CybercraftModTabs {
 				tabData.accept(CybercraftModItems.HEAL_ON_KILL.get());
 				tabData.accept(CybercraftModItems.ADRENALINE_BOOSTER.get());
 				tabData.accept(CybercraftModItems.BLACK_MAMBA.get());
+				tabData.accept(CybercraftModItems.ISOMETRIC_STABILIZER.get());
+				tabData.accept(CybercraftModItems.BIOMONITOR.get());
 			})
 
 					.build());

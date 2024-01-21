@@ -76,7 +76,7 @@ public class CybercraftModVariables {
 			clone.hands1 = original.hands1;
 			clone.skeleton1 = original.skeleton1;
 			clone.skeleton2 = original.skeleton2;
-			clone.circuletorysystem1 = original.circuletorysystem1;
+			clone.circulatorysystem1 = original.circulatorysystem1;
 			clone.circulatorysystem2 = original.circulatorysystem2;
 			clone.nervoussystem1 = original.nervoussystem1;
 			clone.nervoussystem2 = original.nervoussystem2;
@@ -97,6 +97,7 @@ public class CybercraftModVariables {
 				clone.cybercraftPassiveHealthRegeneration = original.cybercraftPassiveHealthRegeneration;
 				clone.sumPassiveHealthRegeneration = original.sumPassiveHealthRegeneration;
 				clone.cybercraftAttackSpeed = original.cybercraftAttackSpeed;
+				clone.cybercraftMitigationChance = original.cybercraftMitigationChance;
 			}
 		}
 	}
@@ -141,7 +142,7 @@ public class CybercraftModVariables {
 		public ItemStack hands1 = ItemStack.EMPTY;
 		public ItemStack skeleton1 = ItemStack.EMPTY;
 		public ItemStack skeleton2 = ItemStack.EMPTY;
-		public ItemStack circuletorysystem1 = ItemStack.EMPTY;
+		public ItemStack circulatorysystem1 = ItemStack.EMPTY;
 		public ItemStack circulatorysystem2 = ItemStack.EMPTY;
 		public ItemStack nervoussystem1 = ItemStack.EMPTY;
 		public ItemStack nervoussystem2 = ItemStack.EMPTY;
@@ -161,6 +162,7 @@ public class CybercraftModVariables {
 		public double cybercraftPassiveHealthRegeneration = 0;
 		public double sumPassiveHealthRegeneration = 0;
 		public double cybercraftAttackSpeed = 0;
+		public double cybercraftMitigationChance = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -178,7 +180,7 @@ public class CybercraftModVariables {
 			nbt.put("hands1", hands1.save(new CompoundTag()));
 			nbt.put("skeleton1", skeleton1.save(new CompoundTag()));
 			nbt.put("skeleton2", skeleton2.save(new CompoundTag()));
-			nbt.put("circuletorysystem1", circuletorysystem1.save(new CompoundTag()));
+			nbt.put("circulatorysystem1", circulatorysystem1.save(new CompoundTag()));
 			nbt.put("circulatorysystem2", circulatorysystem2.save(new CompoundTag()));
 			nbt.put("nervoussystem1", nervoussystem1.save(new CompoundTag()));
 			nbt.put("nervoussystem2", nervoussystem2.save(new CompoundTag()));
@@ -198,6 +200,7 @@ public class CybercraftModVariables {
 			nbt.putDouble("cybercraftPassiveHealthRegeneration", cybercraftPassiveHealthRegeneration);
 			nbt.putDouble("sumPassiveHealthRegeneration", sumPassiveHealthRegeneration);
 			nbt.putDouble("cybercraftAttackSpeed", cybercraftAttackSpeed);
+			nbt.putDouble("cybercraftMitigationChance", cybercraftMitigationChance);
 			return nbt;
 		}
 
@@ -212,7 +215,7 @@ public class CybercraftModVariables {
 			hands1 = ItemStack.of(nbt.getCompound("hands1"));
 			skeleton1 = ItemStack.of(nbt.getCompound("skeleton1"));
 			skeleton2 = ItemStack.of(nbt.getCompound("skeleton2"));
-			circuletorysystem1 = ItemStack.of(nbt.getCompound("circuletorysystem1"));
+			circulatorysystem1 = ItemStack.of(nbt.getCompound("circulatorysystem1"));
 			circulatorysystem2 = ItemStack.of(nbt.getCompound("circulatorysystem2"));
 			nervoussystem1 = ItemStack.of(nbt.getCompound("nervoussystem1"));
 			nervoussystem2 = ItemStack.of(nbt.getCompound("nervoussystem2"));
@@ -232,6 +235,7 @@ public class CybercraftModVariables {
 			cybercraftPassiveHealthRegeneration = nbt.getDouble("cybercraftPassiveHealthRegeneration");
 			sumPassiveHealthRegeneration = nbt.getDouble("sumPassiveHealthRegeneration");
 			cybercraftAttackSpeed = nbt.getDouble("cybercraftAttackSpeed");
+			cybercraftMitigationChance = nbt.getDouble("cybercraftMitigationChance");
 		}
 	}
 
@@ -265,7 +269,7 @@ public class CybercraftModVariables {
 					variables.hands1 = message.data.hands1;
 					variables.skeleton1 = message.data.skeleton1;
 					variables.skeleton2 = message.data.skeleton2;
-					variables.circuletorysystem1 = message.data.circuletorysystem1;
+					variables.circulatorysystem1 = message.data.circulatorysystem1;
 					variables.circulatorysystem2 = message.data.circulatorysystem2;
 					variables.nervoussystem1 = message.data.nervoussystem1;
 					variables.nervoussystem2 = message.data.nervoussystem2;
@@ -285,6 +289,7 @@ public class CybercraftModVariables {
 					variables.cybercraftPassiveHealthRegeneration = message.data.cybercraftPassiveHealthRegeneration;
 					variables.sumPassiveHealthRegeneration = message.data.sumPassiveHealthRegeneration;
 					variables.cybercraftAttackSpeed = message.data.cybercraftAttackSpeed;
+					variables.cybercraftMitigationChance = message.data.cybercraftMitigationChance;
 				}
 			});
 			context.setPacketHandled(true);

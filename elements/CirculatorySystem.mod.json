@@ -21,6 +21,12 @@
       },
       {
         "value": "CUSTOM:BlackMamba"
+      },
+      {
+        "value": "CUSTOM:IsometricStabilizer"
+      },
+      {
+        "value": "CUSTOM:Biomonitor"
       }
     ],
     "blocks": [],

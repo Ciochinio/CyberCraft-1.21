@@ -32,7 +32,7 @@ public class HealOnKillEffectProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		if (entity instanceof Mob || entity instanceof WaterAnimal) {
-			if (CybercraftModItems.HEAL_ON_KILL.get() == ((sourceentity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).circuletorysystem1).getItem()
+			if (CybercraftModItems.HEAL_ON_KILL.get() == ((sourceentity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).circulatorysystem1).getItem()
 					|| CybercraftModItems.HEAL_ON_KILL.get() == ((sourceentity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).circulatorysystem2).getItem()) {
 				if (sourceentity instanceof LivingEntity _entity)
 					_entity.setHealth((float) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 0.05));

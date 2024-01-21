@@ -38,7 +38,7 @@ public class AdrenalineBoosterEffectProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		if (entity instanceof Mob || entity instanceof WaterAnimal) {
-			if ((CybercraftModItems.ADRENALINE_BOOSTER.get() == ((sourceentity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).circuletorysystem1).getItem()
+			if ((CybercraftModItems.ADRENALINE_BOOSTER.get() == ((sourceentity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).circulatorysystem1).getItem()
 					|| CybercraftModItems.ADRENALINE_BOOSTER.get() == ((sourceentity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).circulatorysystem2).getItem())
 					&& ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() instanceof SwordItem
 							|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() instanceof AxeItem

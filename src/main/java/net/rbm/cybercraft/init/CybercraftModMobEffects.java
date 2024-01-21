@@ -16,6 +16,7 @@ import net.rbm.cybercraft.potion.HealCooldownMobEffect;
 import net.rbm.cybercraft.potion.EnemyNearbyMobEffect;
 import net.rbm.cybercraft.potion.ChemicalDOTMobEffect;
 import net.rbm.cybercraft.potion.ChemicalDOTCooldownMobEffect;
+import net.rbm.cybercraft.potion.BiomonitorCooldownMobEffect;
 import net.rbm.cybercraft.CybercraftMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -38,4 +39,5 @@ public class CybercraftModMobEffects {
 	public static final RegistryObject<MobEffect> SECOND_HEART_COOLDOWN = REGISTRY.register("second_heart_cooldown", () -> new SecondHeartCooldownMobEffect());
 	public static final RegistryObject<MobEffect> CHEMICAL_DOT = REGISTRY.register("chemical_dot", () -> new ChemicalDOTMobEffect());
 	public static final RegistryObject<MobEffect> CHEMICAL_DOT_COOLDOWN = REGISTRY.register("chemical_dot_cooldown", () -> new ChemicalDOTCooldownMobEffect());
+	public static final RegistryObject<MobEffect> BIOMONITOR_COOLDOWN = REGISTRY.register("biomonitor_cooldown", () -> new BiomonitorCooldownMobEffect());
 }

@@ -31,7 +31,7 @@ public class SecondHeartEffectProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if ((CybercraftModItems.SECOND_HEART.get() == ((entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).circuletorysystem1).getItem()
+		if ((CybercraftModItems.SECOND_HEART.get() == ((entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).circulatorysystem1).getItem()
 				|| CybercraftModItems.SECOND_HEART.get() == ((entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).circulatorysystem2).getItem())
 				&& !(entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(CybercraftModMobEffects.SECOND_HEART_COOLDOWN.get()))) {
 			if (event != null && event.isCancelable()) {

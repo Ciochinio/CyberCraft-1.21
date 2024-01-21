@@ -32,7 +32,7 @@ public class ThreatEvacActivationProcedure {
 		if (entity == null)
 			return;
 		double dodgeChance = 0;
-		if ((((entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).circuletorysystem1).getItem() == CybercraftModItems.THREATEVAC.get()
+		if ((((entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).circulatorysystem1).getItem() == CybercraftModItems.THREATEVAC.get()
 				|| ((entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).circulatorysystem2).getItem() == CybercraftModItems.THREATEVAC.get())
 				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) <= (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 0.25) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())

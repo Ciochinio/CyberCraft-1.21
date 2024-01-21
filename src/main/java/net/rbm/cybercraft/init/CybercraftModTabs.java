@@ -33,6 +33,11 @@ public class CybercraftModTabs {
 				tabData.accept(CybercraftModItems.CHITIN.get());
 				tabData.accept(CybercraftModItems.SHOCK_N_AWE.get());
 				tabData.accept(CybercraftModItems.THREATEVAC.get());
+				tabData.accept(CybercraftModItems.SECOND_HEART.get());
+				tabData.accept(CybercraftModItems.MICROROTORS.get());
+				tabData.accept(CybercraftModItems.HEAL_ON_KILL.get());
+				tabData.accept(CybercraftModItems.ADRENALINE_BOOSTER.get());
+				tabData.accept(CybercraftModItems.BLACK_MAMBA.get());
 			})
 
 					.build());

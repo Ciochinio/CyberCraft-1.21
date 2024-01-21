@@ -32,7 +32,7 @@ public class PassiveHealthRegenStartedProcedure {
 		}
 		if (entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(CybercraftModMobEffects.PASSIVE_HEALTH_REGEN.get()) && (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) > 0) {
 			CybercraftMod.queueServerWork(20, () -> {
-				if (!(entity instanceof LivingEntity _livEnt3 && _livEnt3.hasEffect(CybercraftModMobEffects.HEAL_COOLDOWN.get()))) {
+				if (!(entity instanceof LivingEntity _livEnt3 && _livEnt3.hasEffect(CybercraftModMobEffects.HEAL_COOLDOWN.get())) && (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) > 0) {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.addEffect(new MobEffectInstance(CybercraftModMobEffects.HEAL_COOLDOWN.get(), 60, 0));
 					if (entity instanceof LivingEntity _entity)

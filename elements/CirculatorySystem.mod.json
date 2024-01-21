@@ -6,6 +6,21 @@
     "items": [
       {
         "value": "CUSTOM:Threatevac"
+      },
+      {
+        "value": "CUSTOM:SecondHeart"
+      },
+      {
+        "value": "CUSTOM:Microrotors"
+      },
+      {
+        "value": "CUSTOM:HealOnKill"
+      },
+      {
+        "value": "CUSTOM:AdrenalineBooster"
+      },
+      {
+        "value": "CUSTOM:BlackMamba"
       }
     ],
     "blocks": [],

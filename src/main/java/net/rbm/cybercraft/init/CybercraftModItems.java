@@ -7,17 +7,22 @@ package net.rbm.cybercraft.init;
 import net.rbm.cybercraft.item.ThreatevacItem;
 import net.rbm.cybercraft.item.SubdermalArmorItem;
 import net.rbm.cybercraft.item.ShockNAweItem;
+import net.rbm.cybercraft.item.SecondHeartItem;
 import net.rbm.cybercraft.item.ReinforcedTendonsItem;
 import net.rbm.cybercraft.item.RangeguardItem;
 import net.rbm.cybercraft.item.ProxishieldItem;
 import net.rbm.cybercraft.item.PainducerItem;
 import net.rbm.cybercraft.item.PainEditorItem;
 import net.rbm.cybercraft.item.NanoPlatingItem;
+import net.rbm.cybercraft.item.MicrorotorsItem;
 import net.rbm.cybercraft.item.LynxPawsItem;
 import net.rbm.cybercraft.item.LeeroyLigamentSystemItem;
+import net.rbm.cybercraft.item.HealOnKillItem;
 import net.rbm.cybercraft.item.FortifiedAnklesItem;
 import net.rbm.cybercraft.item.CountershellItem;
 import net.rbm.cybercraft.item.ChitinItem;
+import net.rbm.cybercraft.item.BlackMambaItem;
+import net.rbm.cybercraft.item.AdrenalineBoosterItem;
 import net.rbm.cybercraft.CybercraftMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -42,4 +47,9 @@ public class CybercraftModItems {
 	public static final RegistryObject<Item> CHITIN = REGISTRY.register("chitin", () -> new ChitinItem());
 	public static final RegistryObject<Item> SHOCK_N_AWE = REGISTRY.register("shock_n_awe", () -> new ShockNAweItem());
 	public static final RegistryObject<Item> THREATEVAC = REGISTRY.register("threatevac", () -> new ThreatevacItem());
+	public static final RegistryObject<Item> SECOND_HEART = REGISTRY.register("second_heart", () -> new SecondHeartItem());
+	public static final RegistryObject<Item> MICROROTORS = REGISTRY.register("microrotors", () -> new MicrorotorsItem());
+	public static final RegistryObject<Item> HEAL_ON_KILL = REGISTRY.register("heal_on_kill", () -> new HealOnKillItem());
+	public static final RegistryObject<Item> ADRENALINE_BOOSTER = REGISTRY.register("adrenaline_booster", () -> new AdrenalineBoosterItem());
+	public static final RegistryObject<Item> BLACK_MAMBA = REGISTRY.register("black_mamba", () -> new BlackMambaItem());
 }

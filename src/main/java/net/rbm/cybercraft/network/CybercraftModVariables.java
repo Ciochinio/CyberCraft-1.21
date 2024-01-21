@@ -96,6 +96,7 @@ public class CybercraftModVariables {
 				clone.cybercraftToughness = original.cybercraftToughness;
 				clone.cybercraftPassiveHealthRegeneration = original.cybercraftPassiveHealthRegeneration;
 				clone.sumPassiveHealthRegeneration = original.sumPassiveHealthRegeneration;
+				clone.cybercraftAttackSpeed = original.cybercraftAttackSpeed;
 			}
 		}
 	}
@@ -159,6 +160,7 @@ public class CybercraftModVariables {
 		public double cybercraftToughness = 0;
 		public double cybercraftPassiveHealthRegeneration = 0;
 		public double sumPassiveHealthRegeneration = 0;
+		public double cybercraftAttackSpeed = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -195,6 +197,7 @@ public class CybercraftModVariables {
 			nbt.putDouble("cybercraftToughness", cybercraftToughness);
 			nbt.putDouble("cybercraftPassiveHealthRegeneration", cybercraftPassiveHealthRegeneration);
 			nbt.putDouble("sumPassiveHealthRegeneration", sumPassiveHealthRegeneration);
+			nbt.putDouble("cybercraftAttackSpeed", cybercraftAttackSpeed);
 			return nbt;
 		}
 
@@ -228,6 +231,7 @@ public class CybercraftModVariables {
 			cybercraftToughness = nbt.getDouble("cybercraftToughness");
 			cybercraftPassiveHealthRegeneration = nbt.getDouble("cybercraftPassiveHealthRegeneration");
 			sumPassiveHealthRegeneration = nbt.getDouble("sumPassiveHealthRegeneration");
+			cybercraftAttackSpeed = nbt.getDouble("cybercraftAttackSpeed");
 		}
 	}
 
@@ -280,6 +284,7 @@ public class CybercraftModVariables {
 					variables.cybercraftToughness = message.data.cybercraftToughness;
 					variables.cybercraftPassiveHealthRegeneration = message.data.cybercraftPassiveHealthRegeneration;
 					variables.sumPassiveHealthRegeneration = message.data.sumPassiveHealthRegeneration;
+					variables.cybercraftAttackSpeed = message.data.cybercraftAttackSpeed;
 				}
 			});
 			context.setPacketHandled(true);

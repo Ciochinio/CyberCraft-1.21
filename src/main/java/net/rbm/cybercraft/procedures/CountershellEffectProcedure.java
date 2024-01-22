@@ -1,6 +1,7 @@
 package net.rbm.cybercraft.procedures;
 
 import net.rbm.cybercraft.network.CybercraftModVariables;
+import net.rbm.cybercraft.init.CybercraftModMobEffects;
 import net.rbm.cybercraft.init.CybercraftModItems;
 
 import net.minecraftforge.fml.common.Mod;
@@ -8,12 +9,9 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.util.RandomSource;
-import net.minecraft.util.Mth;
-import net.minecraft.network.chat.Component;
+import net.minecraft.world.effect.MobEffectInstance;
 
 import javax.annotation.Nullable;
 
@@ -38,14 +36,8 @@ public class CountershellEffectProcedure {
 				|| ((entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).integumentarysystem2).getItem() == CybercraftModItems.COUNTERSHELL.get()) {
 			if ((entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftDamageReduction >= (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1)
 					* 0.25) {
-				mitigationChance = Mth.nextInt(RandomSource.create(), 1, 100);
-				if (entity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(Component.literal(("Rolujemy>>>" + mitigationChance)), false);
-				if (mitigationChance <= 30) {
-					if (event != null && event.isCancelable()) {
-						event.setCanceled(true);
-					}
-				}
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(CybercraftModMobEffects.COUNTERSHELL_MITIGATION_CHANCE.get(), 80, 0));
 			}
 		}
 	}

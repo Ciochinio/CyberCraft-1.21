@@ -7,6 +7,6 @@ public class CybercraftIntegumentarySystemStatCheckProcedure {
 		if (entity == null)
 			return;
 		SubdermalArmorStatsProcedure.execute(entity);
-		ChitinEffectProcedure.execute(entity);
+		ChitinStatsProcedure.execute(entity);
 	}
 }

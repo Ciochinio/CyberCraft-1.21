@@ -6,6 +6,6 @@ public class CybercraftCirculetorySystemStatCheckProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		MicrotorsEffectProcedure.execute(entity);
+		MicrorotorsStatsProcedure.execute(entity);
 	}
 }

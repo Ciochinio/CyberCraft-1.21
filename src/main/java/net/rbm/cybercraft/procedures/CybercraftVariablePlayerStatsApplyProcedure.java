@@ -35,11 +35,17 @@ public class CybercraftVariablePlayerStatsApplyProcedure {
 		double sumMovementSpeed = 0;
 		double sumArmor = 0;
 		double sumAttackSpeed = 0;
+		double sumCritChance = 0;
 		sumMovementSpeed = (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftMovementSpeed;
 		sumArmor = (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftArmor;
 		sumAttackSpeed = (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftAttackSpeed;
+		sumCritChance = (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftCritChance;
 		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(CybercraftModMobEffects.THREATEVAC_ACTIVATION_THRESHOLD.get())) {
-			sumMovementSpeed = (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftMovementSpeed + 15;
+			sumMovementSpeed = sumMovementSpeed + 15;
+		}
+		if (entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(CybercraftModMobEffects.ADRENALINE_CONVERTER_ACTIVATION.get())
+				|| entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(CybercraftModMobEffects.ATOMIC_SENSORS_ACTIVATION.get())) {
+			sumMovementSpeed = sumMovementSpeed + 15;
 		}
 		{
 			Entity _ent = entity;
@@ -48,10 +54,7 @@ public class CybercraftVariablePlayerStatsApplyProcedure {
 						_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), ("/attribute @s minecraft:generic.movement_speed base set " + (0.1 + sumMovementSpeed * 0.001)));
 			}
 		}
-		if (entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(CybercraftModMobEffects.PROXISHIELD_ACTIVATION.get())) {
-			sumArmor = (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftArmor + 5;
-		}
-		if (entity instanceof LivingEntity _livEnt3 && _livEnt3.hasEffect(CybercraftModMobEffects.RANGEGUARD_ACTIVATION.get())) {
+		if (entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(CybercraftModMobEffects.PROXISHIELD_ACTIVATION.get()) || entity instanceof LivingEntity _livEnt5 && _livEnt5.hasEffect(CybercraftModMobEffects.RANGEGUARD_ACTIVATION.get())) {
 			sumArmor = (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftArmor + 5;
 		}
 		{

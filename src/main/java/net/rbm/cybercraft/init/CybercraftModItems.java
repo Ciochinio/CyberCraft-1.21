@@ -20,10 +20,13 @@ import net.rbm.cybercraft.item.LeeroyLigamentSystemItem;
 import net.rbm.cybercraft.item.IsometricStabilizerItem;
 import net.rbm.cybercraft.item.HealOnKillItem;
 import net.rbm.cybercraft.item.FortifiedAnklesItem;
+import net.rbm.cybercraft.item.DeepfieldVisualInterfaceItem;
 import net.rbm.cybercraft.item.CountershellItem;
 import net.rbm.cybercraft.item.ChitinItem;
 import net.rbm.cybercraft.item.BlackMambaItem;
 import net.rbm.cybercraft.item.BiomonitorItem;
+import net.rbm.cybercraft.item.AtomicSensorsItem;
+import net.rbm.cybercraft.item.AdrenalineConverterItem;
 import net.rbm.cybercraft.item.AdrenalineBoosterItem;
 import net.rbm.cybercraft.CybercraftMod;
 
@@ -56,4 +59,7 @@ public class CybercraftModItems {
 	public static final RegistryObject<Item> BLACK_MAMBA = REGISTRY.register("black_mamba", () -> new BlackMambaItem());
 	public static final RegistryObject<Item> ISOMETRIC_STABILIZER = REGISTRY.register("isometric_stabilizer", () -> new IsometricStabilizerItem());
 	public static final RegistryObject<Item> BIOMONITOR = REGISTRY.register("biomonitor", () -> new BiomonitorItem());
+	public static final RegistryObject<Item> ADRENALINE_CONVERTER = REGISTRY.register("adrenaline_converter", () -> new AdrenalineConverterItem());
+	public static final RegistryObject<Item> ATOMIC_SENSORS = REGISTRY.register("atomic_sensors", () -> new AtomicSensorsItem());
+	public static final RegistryObject<Item> DEEPFIELD_VISUAL_INTERFACE = REGISTRY.register("deepfield_visual_interface", () -> new DeepfieldVisualInterfaceItem());
 }

@@ -24,7 +24,7 @@ public class CybercrafPlayerStatCheckProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		CybercraftPlayerStatResetProcedure.execute(entity);
+		CybercraftPlayerBaseStatsProcedure.execute(entity);
 		CybercraftFrontalCortexStatCheckProcedure.execute();
 		CybercraftOperatingSystemStatCheckProcedure.execute();
 		CybercraftArmsStatCheckProcedure.execute();

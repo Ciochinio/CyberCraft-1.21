@@ -3,7 +3,17 @@
   "_type": "tag",
   "definition": {
     "type": "Items",
-    "items": [],
+    "items": [
+      {
+        "value": "CUSTOM:AdrenalineConverter"
+      },
+      {
+        "value": "CUSTOM:AtomicSensors"
+      },
+      {
+        "value": "CUSTOM:DeepfieldVisualInterface"
+      }
+    ],
     "blocks": [],
     "functions": [],
     "entities": [],

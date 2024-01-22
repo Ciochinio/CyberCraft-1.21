@@ -1,4 +1,8 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+    "cybercraft:adrenaline_converter",
+    "cybercraft:atomic_sensors",
+    "cybercraft:deepfield_visual_interface"
+  ]
 }

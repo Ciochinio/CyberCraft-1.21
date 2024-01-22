@@ -40,6 +40,9 @@ public class CybercraftModTabs {
 				tabData.accept(CybercraftModItems.BLACK_MAMBA.get());
 				tabData.accept(CybercraftModItems.ISOMETRIC_STABILIZER.get());
 				tabData.accept(CybercraftModItems.BIOMONITOR.get());
+				tabData.accept(CybercraftModItems.ADRENALINE_CONVERTER.get());
+				tabData.accept(CybercraftModItems.ATOMIC_SENSORS.get());
+				tabData.accept(CybercraftModItems.DEEPFIELD_VISUAL_INTERFACE.get());
 			})
 
 					.build());

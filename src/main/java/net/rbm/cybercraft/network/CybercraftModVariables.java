@@ -91,12 +91,13 @@ public class CybercraftModVariables {
 				clone.cybercraftHackDamage = original.cybercraftHackDamage;
 				clone.cybercraftAdditionalDamage = original.cybercraftAdditionalDamage;
 				clone.cybercraftDamageReduction = original.cybercraftDamageReduction;
-				clone.cybercraftCritRate = original.cybercraftCritRate;
+				clone.cybercraftCritChance = original.cybercraftCritChance;
 				clone.cybercraftCritDamage = original.cybercraftCritDamage;
 				clone.cybercraftToughness = original.cybercraftToughness;
 				clone.cybercraftPassiveHealthRegeneration = original.cybercraftPassiveHealthRegeneration;
 				clone.sumPassiveHealthRegeneration = original.sumPassiveHealthRegeneration;
 				clone.cybercraftAttackSpeed = original.cybercraftAttackSpeed;
+				clone.sumMitigationChance = original.sumMitigationChance;
 				clone.cybercraftMitigationChance = original.cybercraftMitigationChance;
 			}
 		}
@@ -154,14 +155,15 @@ public class CybercraftModVariables {
 		public double cybercraftHealth = 0;
 		public double cybercraftArmor = 0;
 		public double cybercraftHackDamage = 0;
-		public double cybercraftAdditionalDamage = 0;
+		public double cybercraftAdditionalDamage = 0.0;
 		public double cybercraftDamageReduction = 0;
-		public double cybercraftCritRate = 0;
+		public double cybercraftCritChance = 1.0;
 		public double cybercraftCritDamage = 0;
 		public double cybercraftToughness = 0;
 		public double cybercraftPassiveHealthRegeneration = 0;
 		public double sumPassiveHealthRegeneration = 0;
 		public double cybercraftAttackSpeed = 0;
+		public double sumMitigationChance = 0;
 		public double cybercraftMitigationChance = 0;
 
 		public void syncPlayerVariables(Entity entity) {
@@ -194,12 +196,13 @@ public class CybercraftModVariables {
 			nbt.putDouble("cybercraftHackDamage", cybercraftHackDamage);
 			nbt.putDouble("cybercraftAdditionalDamage", cybercraftAdditionalDamage);
 			nbt.putDouble("cybercraftDamageReduction", cybercraftDamageReduction);
-			nbt.putDouble("cybercraftCritRate", cybercraftCritRate);
+			nbt.putDouble("cybercraftCritChance", cybercraftCritChance);
 			nbt.putDouble("cybercraftCritDamage", cybercraftCritDamage);
 			nbt.putDouble("cybercraftToughness", cybercraftToughness);
 			nbt.putDouble("cybercraftPassiveHealthRegeneration", cybercraftPassiveHealthRegeneration);
 			nbt.putDouble("sumPassiveHealthRegeneration", sumPassiveHealthRegeneration);
 			nbt.putDouble("cybercraftAttackSpeed", cybercraftAttackSpeed);
+			nbt.putDouble("sumMitigationChance", sumMitigationChance);
 			nbt.putDouble("cybercraftMitigationChance", cybercraftMitigationChance);
 			return nbt;
 		}
@@ -229,12 +232,13 @@ public class CybercraftModVariables {
 			cybercraftHackDamage = nbt.getDouble("cybercraftHackDamage");
 			cybercraftAdditionalDamage = nbt.getDouble("cybercraftAdditionalDamage");
 			cybercraftDamageReduction = nbt.getDouble("cybercraftDamageReduction");
-			cybercraftCritRate = nbt.getDouble("cybercraftCritRate");
+			cybercraftCritChance = nbt.getDouble("cybercraftCritChance");
 			cybercraftCritDamage = nbt.getDouble("cybercraftCritDamage");
 			cybercraftToughness = nbt.getDouble("cybercraftToughness");
 			cybercraftPassiveHealthRegeneration = nbt.getDouble("cybercraftPassiveHealthRegeneration");
 			sumPassiveHealthRegeneration = nbt.getDouble("sumPassiveHealthRegeneration");
 			cybercraftAttackSpeed = nbt.getDouble("cybercraftAttackSpeed");
+			sumMitigationChance = nbt.getDouble("sumMitigationChance");
 			cybercraftMitigationChance = nbt.getDouble("cybercraftMitigationChance");
 		}
 	}
@@ -283,12 +287,13 @@ public class CybercraftModVariables {
 					variables.cybercraftHackDamage = message.data.cybercraftHackDamage;
 					variables.cybercraftAdditionalDamage = message.data.cybercraftAdditionalDamage;
 					variables.cybercraftDamageReduction = message.data.cybercraftDamageReduction;
-					variables.cybercraftCritRate = message.data.cybercraftCritRate;
+					variables.cybercraftCritChance = message.data.cybercraftCritChance;
 					variables.cybercraftCritDamage = message.data.cybercraftCritDamage;
 					variables.cybercraftToughness = message.data.cybercraftToughness;
 					variables.cybercraftPassiveHealthRegeneration = message.data.cybercraftPassiveHealthRegeneration;
 					variables.sumPassiveHealthRegeneration = message.data.sumPassiveHealthRegeneration;
 					variables.cybercraftAttackSpeed = message.data.cybercraftAttackSpeed;
+					variables.sumMitigationChance = message.data.sumMitigationChance;
 					variables.cybercraftMitigationChance = message.data.cybercraftMitigationChance;
 				}
 			});

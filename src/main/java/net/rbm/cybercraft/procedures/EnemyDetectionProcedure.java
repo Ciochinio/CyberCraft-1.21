@@ -46,7 +46,7 @@ public class EnemyDetectionProcedure {
 			for (Entity entityiterator : _entfound) {
 				if (!(entityiterator instanceof Player || entityiterator instanceof ServerPlayer) && (entityiterator instanceof Mob || entityiterator instanceof WaterAnimal)) {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(CybercraftModMobEffects.ENEMY_NEARBY.get(), 1, 0));
+						_entity.addEffect(new MobEffectInstance(CybercraftModMobEffects.ENEMY_NEARBY.get(), 5, 0));
 				}
 			}
 		}

@@ -14,9 +14,13 @@ import net.rbm.cybercraft.potion.ProxishieldActivationMobEffect;
 import net.rbm.cybercraft.potion.PassiveHealthRegenMobEffect;
 import net.rbm.cybercraft.potion.HealCooldownMobEffect;
 import net.rbm.cybercraft.potion.EnemyNearbyMobEffect;
+import net.rbm.cybercraft.potion.DeepfieldVisualInterfaceActivationMobEffect;
+import net.rbm.cybercraft.potion.CountershellMitigationChanceMobEffect;
 import net.rbm.cybercraft.potion.ChemicalDOTMobEffect;
 import net.rbm.cybercraft.potion.ChemicalDOTCooldownMobEffect;
 import net.rbm.cybercraft.potion.BiomonitorCooldownMobEffect;
+import net.rbm.cybercraft.potion.AtomicSensorsActivationMobEffect;
+import net.rbm.cybercraft.potion.AdrenalineConverterActivationMobEffect;
 import net.rbm.cybercraft.CybercraftMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -40,4 +44,8 @@ public class CybercraftModMobEffects {
 	public static final RegistryObject<MobEffect> CHEMICAL_DOT = REGISTRY.register("chemical_dot", () -> new ChemicalDOTMobEffect());
 	public static final RegistryObject<MobEffect> CHEMICAL_DOT_COOLDOWN = REGISTRY.register("chemical_dot_cooldown", () -> new ChemicalDOTCooldownMobEffect());
 	public static final RegistryObject<MobEffect> BIOMONITOR_COOLDOWN = REGISTRY.register("biomonitor_cooldown", () -> new BiomonitorCooldownMobEffect());
+	public static final RegistryObject<MobEffect> COUNTERSHELL_MITIGATION_CHANCE = REGISTRY.register("countershell_mitigation_chance", () -> new CountershellMitigationChanceMobEffect());
+	public static final RegistryObject<MobEffect> ADRENALINE_CONVERTER_ACTIVATION = REGISTRY.register("adrenaline_converter_activation", () -> new AdrenalineConverterActivationMobEffect());
+	public static final RegistryObject<MobEffect> ATOMIC_SENSORS_ACTIVATION = REGISTRY.register("atomic_sensors_activation", () -> new AtomicSensorsActivationMobEffect());
+	public static final RegistryObject<MobEffect> DEEPFIELD_VISUAL_INTERFACE_ACTIVATION = REGISTRY.register("deepfield_visual_interface_activation", () -> new DeepfieldVisualInterfaceActivationMobEffect());
 }

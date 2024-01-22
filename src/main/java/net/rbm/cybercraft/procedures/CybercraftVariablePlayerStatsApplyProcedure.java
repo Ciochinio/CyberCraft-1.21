@@ -64,6 +64,9 @@ public class CybercraftVariablePlayerStatsApplyProcedure {
 						_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), ("/attribute @s minecraft:generic.armor base set " + (0 + sumArmor)));
 			}
 		}
+		if (entity instanceof LivingEntity _livEnt7 && _livEnt7.hasEffect(CybercraftModMobEffects.DEEPFIELD_VISUAL_INTERFACE_ACTIVATION.get())) {
+			sumCritChance = sumCritChance + 15;
+		}
 		{
 			Entity _ent = entity;
 			if (!_ent.level().isClientSide() && _ent.getServer() != null) {

@@ -64,5 +64,19 @@ public class CybercraftPlayerBaseStatsProcedure {
 				capability.syncPlayerVariables(entity);
 			});
 		}
+		{
+			double _setval = 5;
+			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.cybercraftCritChance = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
+		{
+			double _setval = 50;
+			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.cybercraftCritDamage = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
 	}
 }

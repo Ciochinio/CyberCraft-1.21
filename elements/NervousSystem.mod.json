@@ -12,6 +12,15 @@
       },
       {
         "value": "CUSTOM:DeepfieldVisualInterface"
+      },
+      {
+        "value": "CUSTOM:Stabber"
+      },
+      {
+        "value": "CUSTOM:Neofiber"
+      },
+      {
+        "value": "CUSTOM:TyrosineInjector"
       }
     ],
     "blocks": [],

@@ -4,8 +4,10 @@
  */
 package net.rbm.cybercraft.init;
 
+import net.rbm.cybercraft.item.TyrosineInjectorItem;
 import net.rbm.cybercraft.item.ThreatevacItem;
 import net.rbm.cybercraft.item.SubdermalArmorItem;
+import net.rbm.cybercraft.item.StabberItem;
 import net.rbm.cybercraft.item.ShockNAweItem;
 import net.rbm.cybercraft.item.SecondHeartItem;
 import net.rbm.cybercraft.item.ReinforcedTendonsItem;
@@ -13,6 +15,7 @@ import net.rbm.cybercraft.item.RangeguardItem;
 import net.rbm.cybercraft.item.ProxishieldItem;
 import net.rbm.cybercraft.item.PainducerItem;
 import net.rbm.cybercraft.item.PainEditorItem;
+import net.rbm.cybercraft.item.NeofiberItem;
 import net.rbm.cybercraft.item.NanoPlatingItem;
 import net.rbm.cybercraft.item.MicrorotorsItem;
 import net.rbm.cybercraft.item.LynxPawsItem;
@@ -62,4 +65,7 @@ public class CybercraftModItems {
 	public static final RegistryObject<Item> ADRENALINE_CONVERTER = REGISTRY.register("adrenaline_converter", () -> new AdrenalineConverterItem());
 	public static final RegistryObject<Item> ATOMIC_SENSORS = REGISTRY.register("atomic_sensors", () -> new AtomicSensorsItem());
 	public static final RegistryObject<Item> DEEPFIELD_VISUAL_INTERFACE = REGISTRY.register("deepfield_visual_interface", () -> new DeepfieldVisualInterfaceItem());
+	public static final RegistryObject<Item> STABBER = REGISTRY.register("stabber", () -> new StabberItem());
+	public static final RegistryObject<Item> NEOFIBER = REGISTRY.register("neofiber", () -> new NeofiberItem());
+	public static final RegistryObject<Item> TYROSINE_INJECTOR = REGISTRY.register("tyrosine_injector", () -> new TyrosineInjectorItem());
 }

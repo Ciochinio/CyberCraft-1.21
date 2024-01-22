@@ -43,6 +43,9 @@ public class CybercraftModTabs {
 				tabData.accept(CybercraftModItems.ADRENALINE_CONVERTER.get());
 				tabData.accept(CybercraftModItems.ATOMIC_SENSORS.get());
 				tabData.accept(CybercraftModItems.DEEPFIELD_VISUAL_INTERFACE.get());
+				tabData.accept(CybercraftModItems.STABBER.get());
+				tabData.accept(CybercraftModItems.NEOFIBER.get());
+				tabData.accept(CybercraftModItems.TYROSINE_INJECTOR.get());
 			})
 
 					.build());

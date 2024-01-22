@@ -4,8 +4,10 @@
  */
 package net.rbm.cybercraft.init;
 
+import net.rbm.cybercraft.potion.TyrosineInjectorActivationMobEffect;
 import net.rbm.cybercraft.potion.ThreatevacActivationThresholdMobEffect;
 import net.rbm.cybercraft.potion.TestinstanthealcdMobEffect;
+import net.rbm.cybercraft.potion.StabberActivationMobEffect;
 import net.rbm.cybercraft.potion.SecondHeartCooldownMobEffect;
 import net.rbm.cybercraft.potion.RegenTestPlus5MobEffect;
 import net.rbm.cybercraft.potion.ReducedFallDamageMobEffect;
@@ -48,4 +50,6 @@ public class CybercraftModMobEffects {
 	public static final RegistryObject<MobEffect> ADRENALINE_CONVERTER_ACTIVATION = REGISTRY.register("adrenaline_converter_activation", () -> new AdrenalineConverterActivationMobEffect());
 	public static final RegistryObject<MobEffect> ATOMIC_SENSORS_ACTIVATION = REGISTRY.register("atomic_sensors_activation", () -> new AtomicSensorsActivationMobEffect());
 	public static final RegistryObject<MobEffect> DEEPFIELD_VISUAL_INTERFACE_ACTIVATION = REGISTRY.register("deepfield_visual_interface_activation", () -> new DeepfieldVisualInterfaceActivationMobEffect());
+	public static final RegistryObject<MobEffect> STABBER_ACTIVATION = REGISTRY.register("stabber_activation", () -> new StabberActivationMobEffect());
+	public static final RegistryObject<MobEffect> TYROSINE_INJECTOR_ACTIVATION = REGISTRY.register("tyrosine_injector_activation", () -> new TyrosineInjectorActivationMobEffect());
 }

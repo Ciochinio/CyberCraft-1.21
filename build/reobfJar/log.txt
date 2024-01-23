@@ -134,87 +134,6 @@ Adding Libraries to Inheritance
 Reading Input: C:\Users\cioch\Documents\GitHub\CyberCraft-1.20.1\build\libs\modid-1.0.jar
 Adding input to inheritance map
 Processing entries
-Conflicting propagated mapping for net/rbm/cybercraft/init/CybercraftModKeyMappings$1/setDown(Z)V from net/minecraft/client/KeyMapping/setDown(Z)V: setDown -> m_7249_
-Conflicting propagated mapping for net/rbm/cybercraft/init/CybercraftModKeyMappings$2/setDown(Z)V from net/minecraft/client/KeyMapping/setDown(Z)V: setDown -> m_7249_
-Conflicting propagated mapping for net/rbm/cybercraft/item/AdrenalineBoosterItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
-Conflicting propagated mapping for net/rbm/cybercraft/item/BiomonitorItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
-Conflicting propagated mapping for net/rbm/cybercraft/item/AdrenalineConverterItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
-Conflicting propagated mapping for net/rbm/cybercraft/item/AtomicSensorsItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
-Conflicting propagated mapping for net/rbm/cybercraft/client/gui/CyberwareGuiScreen/keyPressed(III)Z from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/keyPressed(III)Z: keyPressed -> m_7933_
-Conflicting propagated mapping for net/rbm/cybercraft/client/gui/CyberwareGuiScreen/render(Lnet/minecraft/client/gui/GuiGraphics;IIF)V from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/render(Lnet/minecraft/client/gui/GuiGraphics;IIF)V: render -> m_88315_
-Conflicting propagated mapping for net/rbm/cybercraft/client/gui/CyberwareGuiScreen/onClose()V from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/onClose()V: onClose -> m_7379_
-Conflicting propagated mapping for net/rbm/cybercraft/client/gui/CyberwareGuiScreen/init()V from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/init()V: init -> m_7856_
-Conflicting propagated mapping for net/rbm/cybercraft/client/gui/CyberwareGuiScreen/renderLabels(Lnet/minecraft/client/gui/GuiGraphics;II)V from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/renderLabels(Lnet/minecraft/client/gui/GuiGraphics;II)V: renderLabels -> m_280003_
-Conflicting propagated mapping for net/rbm/cybercraft/client/gui/CyberwareGuiScreen/containerTick()V from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/containerTick()V: containerTick -> m_181908_
-Conflicting propagated mapping for net/rbm/cybercraft/client/gui/CyberwareGuiScreen/renderBg(Lnet/minecraft/client/gui/GuiGraphics;FII)V from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/renderBg(Lnet/minecraft/client/gui/GuiGraphics;FII)V: renderBg -> m_7286_
-Conflicting propagated mapping for net/rbm/cybercraft/world/inventory/CyberwareGuiMenu/moveItemStackTo(Lnet/minecraft/world/item/ItemStack;IIZ)Z from net/minecraft/world/inventory/AbstractContainerMenu/moveItemStackTo(Lnet/minecraft/world/item/ItemStack;IIZ)Z: moveItemStackTo -> m_38903_
-Conflicting propagated mapping for net/rbm/cybercraft/world/inventory/CyberwareGuiMenu/removed(Lnet/minecraft/world/entity/player/Player;)V from net/minecraft/world/inventory/AbstractContainerMenu/removed(Lnet/minecraft/world/entity/player/Player;)V: removed -> m_6877_
-Conflicting propagated mapping for net/rbm/cybercraft/world/inventory/CyberwareGuiMenu/stillValid(Lnet/minecraft/world/entity/player/Player;)Z from net/minecraft/world/inventory/AbstractContainerMenu/stillValid(Lnet/minecraft/world/entity/player/Player;)Z: stillValid -> m_6875_
-Conflicting propagated mapping for net/rbm/cybercraft/world/inventory/CyberwareGuiMenu/quickMoveStack(Lnet/minecraft/world/entity/player/Player;I)Lnet/minecraft/world/item/ItemStack; from net/minecraft/world/inventory/AbstractContainerMenu/quickMoveStack(Lnet/minecraft/world/entity/player/Player;I)Lnet/minecraft/world/item/ItemStack;: quickMoveStack -> m_7648_
-Conflicting propagated mapping for net/rbm/cybercraft/item/TyrosineInjectorItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/TyrosineInjectorActivationMobEffect/getDescriptionId()Ljava/lang/String; from net/minecraft/world/effect/MobEffect/getDescriptionId()Ljava/lang/String;: getDescriptionId -> m_19481_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/TyrosineInjectorActivationMobEffect/isDurationEffectTick(II)Z from net/minecraft/world/effect/MobEffect/isDurationEffectTick(II)Z: isDurationEffectTick -> m_6584_
-Conflicting propagated mapping for net/rbm/cybercraft/item/NeofiberItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/StabberActivationMobEffect/getDescriptionId()Ljava/lang/String; from net/minecraft/world/effect/MobEffect/getDescriptionId()Ljava/lang/String;: getDescriptionId -> m_19481_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/StabberActivationMobEffect/isDurationEffectTick(II)Z from net/minecraft/world/effect/MobEffect/isDurationEffectTick(II)Z: isDurationEffectTick -> m_6584_
-Conflicting propagated mapping for net/rbm/cybercraft/item/StabberItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/DeepfieldVisualInterfaceActivationMobEffect/getDescriptionId()Ljava/lang/String; from net/minecraft/world/effect/MobEffect/getDescriptionId()Ljava/lang/String;: getDescriptionId -> m_19481_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/DeepfieldVisualInterfaceActivationMobEffect/isDurationEffectTick(II)Z from net/minecraft/world/effect/MobEffect/isDurationEffectTick(II)Z: isDurationEffectTick -> m_6584_
-Conflicting propagated mapping for net/rbm/cybercraft/item/DeepfieldVisualInterfaceItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/AtomicSensorsActivationMobEffect/getDescriptionId()Ljava/lang/String; from net/minecraft/world/effect/MobEffect/getDescriptionId()Ljava/lang/String;: getDescriptionId -> m_19481_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/AtomicSensorsActivationMobEffect/isDurationEffectTick(II)Z from net/minecraft/world/effect/MobEffect/isDurationEffectTick(II)Z: isDurationEffectTick -> m_6584_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/AdrenalineConverterActivationMobEffect/getDescriptionId()Ljava/lang/String; from net/minecraft/world/effect/MobEffect/getDescriptionId()Ljava/lang/String;: getDescriptionId -> m_19481_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/AdrenalineConverterActivationMobEffect/isDurationEffectTick(II)Z from net/minecraft/world/effect/MobEffect/isDurationEffectTick(II)Z: isDurationEffectTick -> m_6584_
-Conflicting propagated mapping for net/rbm/cybercraft/item/IsometricStabilizerItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/CountershellMitigationChanceMobEffect/getDescriptionId()Ljava/lang/String; from net/minecraft/world/effect/MobEffect/getDescriptionId()Ljava/lang/String;: getDescriptionId -> m_19481_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/CountershellMitigationChanceMobEffect/isDurationEffectTick(II)Z from net/minecraft/world/effect/MobEffect/isDurationEffectTick(II)Z: isDurationEffectTick -> m_6584_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/BiomonitorCooldownMobEffect/getDescriptionId()Ljava/lang/String; from net/minecraft/world/effect/MobEffect/getDescriptionId()Ljava/lang/String;: getDescriptionId -> m_19481_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/BiomonitorCooldownMobEffect/isDurationEffectTick(II)Z from net/minecraft/world/effect/MobEffect/isDurationEffectTick(II)Z: isDurationEffectTick -> m_6584_
-Conflicting propagated mapping for net/rbm/cybercraft/item/BlackMambaItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/ChemicalDOTCooldownMobEffect/getDescriptionId()Ljava/lang/String; from net/minecraft/world/effect/MobEffect/getDescriptionId()Ljava/lang/String;: getDescriptionId -> m_19481_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/ChemicalDOTCooldownMobEffect/isDurationEffectTick(II)Z from net/minecraft/world/effect/MobEffect/isDurationEffectTick(II)Z: isDurationEffectTick -> m_6584_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/ChemicalDOTMobEffect/getDescriptionId()Ljava/lang/String; from net/minecraft/world/effect/MobEffect/getDescriptionId()Ljava/lang/String;: getDescriptionId -> m_19481_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/ChemicalDOTMobEffect/isDurationEffectTick(II)Z from net/minecraft/world/effect/MobEffect/isDurationEffectTick(II)Z: isDurationEffectTick -> m_6584_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/ChemicalDOTMobEffect/addAttributeModifiers(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/ai/attributes/AttributeMap;I)V from net/minecraft/world/effect/MobEffect/addAttributeModifiers(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/ai/attributes/AttributeMap;I)V: addAttributeModifiers -> m_6385_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/SecondHeartCooldownMobEffect/getDescriptionId()Ljava/lang/String; from net/minecraft/world/effect/MobEffect/getDescriptionId()Ljava/lang/String;: getDescriptionId -> m_19481_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/SecondHeartCooldownMobEffect/isDurationEffectTick(II)Z from net/minecraft/world/effect/MobEffect/isDurationEffectTick(II)Z: isDurationEffectTick -> m_6584_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/TestinstanthealcdMobEffect/getDescriptionId()Ljava/lang/String; from net/minecraft/world/effect/MobEffect/getDescriptionId()Ljava/lang/String;: getDescriptionId -> m_19481_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/TestinstanthealcdMobEffect/isDurationEffectTick(II)Z from net/minecraft/world/effect/MobEffect/isDurationEffectTick(II)Z: isDurationEffectTick -> m_6584_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/PassiveHealthRegenMobEffect/getDescriptionId()Ljava/lang/String; from net/minecraft/world/effect/MobEffect/getDescriptionId()Ljava/lang/String;: getDescriptionId -> m_19481_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/PassiveHealthRegenMobEffect/isDurationEffectTick(II)Z from net/minecraft/world/effect/MobEffect/isDurationEffectTick(II)Z: isDurationEffectTick -> m_6584_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/PassiveHealthRegenMobEffect/addAttributeModifiers(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/ai/attributes/AttributeMap;I)V from net/minecraft/world/effect/MobEffect/addAttributeModifiers(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/ai/attributes/AttributeMap;I)V: addAttributeModifiers -> m_6385_
-Conflicting propagated mapping for net/rbm/cybercraft/item/HealOnKillItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/RegenTestPlus5MobEffect/getDescriptionId()Ljava/lang/String; from net/minecraft/world/effect/MobEffect/getDescriptionId()Ljava/lang/String;: getDescriptionId -> m_19481_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/RegenTestPlus5MobEffect/isDurationEffectTick(II)Z from net/minecraft/world/effect/MobEffect/isDurationEffectTick(II)Z: isDurationEffectTick -> m_6584_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/RangeguardActivationMobEffect/getDescriptionId()Ljava/lang/String; from net/minecraft/world/effect/MobEffect/getDescriptionId()Ljava/lang/String;: getDescriptionId -> m_19481_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/RangeguardActivationMobEffect/isDurationEffectTick(II)Z from net/minecraft/world/effect/MobEffect/isDurationEffectTick(II)Z: isDurationEffectTick -> m_6584_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/ProxishieldActivationMobEffect/getDescriptionId()Ljava/lang/String; from net/minecraft/world/effect/MobEffect/getDescriptionId()Ljava/lang/String;: getDescriptionId -> m_19481_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/ProxishieldActivationMobEffect/isDurationEffectTick(II)Z from net/minecraft/world/effect/MobEffect/isDurationEffectTick(II)Z: isDurationEffectTick -> m_6584_
-Conflicting propagated mapping for net/rbm/cybercraft/item/MicrorotorsItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/ThreatevacActivationThresholdMobEffect/getDescriptionId()Ljava/lang/String; from net/minecraft/world/effect/MobEffect/getDescriptionId()Ljava/lang/String;: getDescriptionId -> m_19481_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/ThreatevacActivationThresholdMobEffect/isDurationEffectTick(II)Z from net/minecraft/world/effect/MobEffect/isDurationEffectTick(II)Z: isDurationEffectTick -> m_6584_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/HealCooldownMobEffect/getDescriptionId()Ljava/lang/String; from net/minecraft/world/effect/MobEffect/getDescriptionId()Ljava/lang/String;: getDescriptionId -> m_19481_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/HealCooldownMobEffect/isDurationEffectTick(II)Z from net/minecraft/world/effect/MobEffect/isDurationEffectTick(II)Z: isDurationEffectTick -> m_6584_
-Conflicting propagated mapping for net/rbm/cybercraft/item/SecondHeartItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/EnemyNearbyMobEffect/getDescriptionId()Ljava/lang/String; from net/minecraft/world/effect/MobEffect/getDescriptionId()Ljava/lang/String;: getDescriptionId -> m_19481_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/EnemyNearbyMobEffect/isDurationEffectTick(II)Z from net/minecraft/world/effect/MobEffect/isDurationEffectTick(II)Z: isDurationEffectTick -> m_6584_
-Conflicting propagated mapping for net/rbm/cybercraft/item/ThreatevacItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/ReducedFallDamageMobEffect/getDescriptionId()Ljava/lang/String; from net/minecraft/world/effect/MobEffect/getDescriptionId()Ljava/lang/String;: getDescriptionId -> m_19481_
-Conflicting propagated mapping for net/rbm/cybercraft/potion/ReducedFallDamageMobEffect/isDurationEffectTick(II)Z from net/minecraft/world/effect/MobEffect/isDurationEffectTick(II)Z: isDurationEffectTick -> m_6584_
-Conflicting propagated mapping for net/rbm/cybercraft/item/ShockNAweItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
-Conflicting propagated mapping for net/rbm/cybercraft/item/ChitinItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
-Conflicting propagated mapping for net/rbm/cybercraft/item/SubdermalArmorItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
-Conflicting propagated mapping for net/rbm/cybercraft/item/RangeguardItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
-Conflicting propagated mapping for net/rbm/cybercraft/item/FortifiedAnklesItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
-Conflicting propagated mapping for net/rbm/cybercraft/item/CountershellItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
-Conflicting propagated mapping for net/rbm/cybercraft/item/LeeroyLigamentSystemItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
-Conflicting propagated mapping for net/rbm/cybercraft/item/LynxPawsItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
-Conflicting propagated mapping for net/rbm/cybercraft/item/NanoPlatingItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
-Conflicting propagated mapping for net/rbm/cybercraft/item/ProxishieldItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
-Conflicting propagated mapping for net/rbm/cybercraft/item/PainducerItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
-Conflicting propagated mapping for net/rbm/cybercraft/item/PainEditorItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
-Conflicting propagated mapping for net/rbm/cybercraft/item/ReinforcedTendonsItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
-Conflicting propagated mapping for net/minecraftforge/network/IContainerFactory/create(ILnet/minecraft/world/entity/player/Inventory;)Lnet/minecraft/world/inventory/AbstractContainerMenu; from net/minecraft/world/inventory/MenuType$MenuSupplier/create(ILnet/minecraft/world/entity/player/Inventory;)Lnet/minecraft/world/inventory/AbstractContainerMenu;: create -> m_39994_
 Conflicting propagated mapping for net/minecraft/world/entity/LivingEntity/lambda$addAdditionalSaveData$3(Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/nbt/Tag;)V from net/minecraft/world/entity/player/Player/lambda$addAdditionalSaveData$3(Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/nbt/Tag;)V: lambda$addAdditionalSaveData$3 -> m_219754_
 Conflicting propagated mapping for net/minecraftforge/common/util/FakePlayer/isInvulnerableTo(Lnet/minecraft/world/damagesource/DamageSource;)Z from net/minecraft/server/level/ServerPlayer/isInvulnerableTo(Lnet/minecraft/world/damagesource/DamageSource;)Z: isInvulnerableTo -> m_6673_
 Conflicting propagated mapping for net/minecraftforge/common/util/FakePlayer/canHarmPlayer(Lnet/minecraft/world/entity/player/Player;)Z from net/minecraft/server/level/ServerPlayer/canHarmPlayer(Lnet/minecraft/world/entity/player/Player;)Z: canHarmPlayer -> m_7099_
@@ -224,8 +143,7 @@ Conflicting propagated mapping for net/minecraftforge/common/util/FakePlayer/die
 Conflicting propagated mapping for net/minecraftforge/common/util/FakePlayer/tick()V from net/minecraft/server/level/ServerPlayer/tick()V: tick -> m_8119_
 Conflicting propagated mapping for net/minecraftforge/common/util/FakePlayer/getServer()Lnet/minecraft/server/MinecraftServer; from net/minecraft/world/entity/Entity/getServer()Lnet/minecraft/server/MinecraftServer;: getServer -> m_20194_
 Conflicting propagated mapping for net/minecraftforge/common/util/FakePlayer/awardStat(Lnet/minecraft/stats/Stat;I)V from net/minecraft/server/level/ServerPlayer/awardStat(Lnet/minecraft/stats/Stat;I)V: awardStat -> m_6278_
-Conflicting propagated mapping for net/rbm/cybercraft/procedures/CyberwareMenuOnKeyPressedProcedure$1/createMenu(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/entity/player/Player;)Lnet/minecraft/world/inventory/AbstractContainerMenu; from net/minecraft/world/inventory/MenuConstructor/createMenu(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/entity/player/Player;)Lnet/minecraft/world/inventory/AbstractContainerMenu;: createMenu -> m_7208_
-Conflicting propagated mapping for net/rbm/cybercraft/procedures/CyberwareMenuOnKeyPressedProcedure$1/getDisplayName()Lnet/minecraft/network/chat/Component; from net/minecraft/world/MenuProvider/getDisplayName()Lnet/minecraft/network/chat/Component;: getDisplayName -> m_5446_
+Conflicting propagated mapping for net/minecraftforge/network/IContainerFactory/create(ILnet/minecraft/world/entity/player/Inventory;)Lnet/minecraft/world/inventory/AbstractContainerMenu; from net/minecraft/world/inventory/MenuType$MenuSupplier/create(ILnet/minecraft/world/entity/player/Inventory;)Lnet/minecraft/world/inventory/AbstractContainerMenu;: create -> m_39994_
 Conflicting propagated mapping for net/minecraftforge/items/SlotItemHandler/set(Lnet/minecraft/world/item/ItemStack;)V from net/minecraft/world/inventory/Slot/set(Lnet/minecraft/world/item/ItemStack;)V: set -> m_5852_
 Conflicting propagated mapping for net/minecraftforge/items/SlotItemHandler/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z from net/minecraft/world/inventory/Slot/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z: mayPlace -> m_5857_
 Conflicting propagated mapping for net/minecraftforge/items/SlotItemHandler/remove(I)Lnet/minecraft/world/item/ItemStack; from net/minecraft/world/inventory/Slot/remove(I)Lnet/minecraft/world/item/ItemStack;: remove -> m_6201_
@@ -234,21 +152,6 @@ Conflicting propagated mapping for net/minecraftforge/items/SlotItemHandler/getI
 Conflicting propagated mapping for net/minecraftforge/items/SlotItemHandler/getMaxStackSize(Lnet/minecraft/world/item/ItemStack;)I from net/minecraft/world/inventory/Slot/getMaxStackSize(Lnet/minecraft/world/item/ItemStack;)I: getMaxStackSize -> m_5866_
 Conflicting propagated mapping for net/minecraftforge/items/SlotItemHandler/mayPickup(Lnet/minecraft/world/entity/player/Player;)Z from net/minecraft/world/inventory/Slot/mayPickup(Lnet/minecraft/world/entity/player/Player;)Z: mayPickup -> m_8010_
 Conflicting propagated mapping for net/minecraftforge/items/SlotItemHandler/getMaxStackSize()I from net/minecraft/world/inventory/Slot/getMaxStackSize()I: getMaxStackSize -> m_6641_
-Conflicting propagated mapping for net/rbm/cybercraft/world/inventory/CyberwareGuiMenu$1/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z from net/minecraftforge/items/SlotItemHandler/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z: mayPlace -> m_5857_
-Conflicting propagated mapping for net/rbm/cybercraft/world/inventory/CyberwareGuiMenu$10/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z from net/minecraftforge/items/SlotItemHandler/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z: mayPlace -> m_5857_
-Conflicting propagated mapping for net/rbm/cybercraft/world/inventory/CyberwareGuiMenu$15/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z from net/minecraftforge/items/SlotItemHandler/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z: mayPlace -> m_5857_
-Conflicting propagated mapping for net/rbm/cybercraft/world/inventory/CyberwareGuiMenu$14/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z from net/minecraftforge/items/SlotItemHandler/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z: mayPlace -> m_5857_
-Conflicting propagated mapping for net/rbm/cybercraft/world/inventory/CyberwareGuiMenu$13/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z from net/minecraftforge/items/SlotItemHandler/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z: mayPlace -> m_5857_
-Conflicting propagated mapping for net/rbm/cybercraft/world/inventory/CyberwareGuiMenu$12/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z from net/minecraftforge/items/SlotItemHandler/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z: mayPlace -> m_5857_
-Conflicting propagated mapping for net/rbm/cybercraft/world/inventory/CyberwareGuiMenu$11/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z from net/minecraftforge/items/SlotItemHandler/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z: mayPlace -> m_5857_
-Conflicting propagated mapping for net/rbm/cybercraft/world/inventory/CyberwareGuiMenu$2/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z from net/minecraftforge/items/SlotItemHandler/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z: mayPlace -> m_5857_
-Conflicting propagated mapping for net/rbm/cybercraft/world/inventory/CyberwareGuiMenu$3/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z from net/minecraftforge/items/SlotItemHandler/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z: mayPlace -> m_5857_
-Conflicting propagated mapping for net/rbm/cybercraft/world/inventory/CyberwareGuiMenu$5/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z from net/minecraftforge/items/SlotItemHandler/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z: mayPlace -> m_5857_
-Conflicting propagated mapping for net/rbm/cybercraft/world/inventory/CyberwareGuiMenu$6/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z from net/minecraftforge/items/SlotItemHandler/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z: mayPlace -> m_5857_
-Conflicting propagated mapping for net/rbm/cybercraft/world/inventory/CyberwareGuiMenu$7/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z from net/minecraftforge/items/SlotItemHandler/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z: mayPlace -> m_5857_
-Conflicting propagated mapping for net/rbm/cybercraft/world/inventory/CyberwareGuiMenu$4/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z from net/minecraftforge/items/SlotItemHandler/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z: mayPlace -> m_5857_
-Conflicting propagated mapping for net/rbm/cybercraft/world/inventory/CyberwareGuiMenu$8/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z from net/minecraftforge/items/SlotItemHandler/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z: mayPlace -> m_5857_
-Conflicting propagated mapping for net/rbm/cybercraft/world/inventory/CyberwareGuiMenu$9/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z from net/minecraftforge/items/SlotItemHandler/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z: mayPlace -> m_5857_
 Adding extras
 Sorting
 Writing Output: C:\Users\cioch\Documents\GitHub\CyberCraft-1.20.1\build\reobfJar\output.jar
@@ -260,6 +163,9 @@ Writing Output: C:\Users\cioch\Documents\GitHub\CyberCraft-1.20.1\build\reobfJar
   assets/cybercraft/lang/
   assets/cybercraft/lang/en_us.json
   assets/cybercraft/models/
+  assets/cybercraft/models/custom/
+  assets/cybercraft/models/custom/bow.json
+  assets/cybercraft/models/custom/testgun.json
   assets/cybercraft/models/item/
   assets/cybercraft/models/item/adrenaline_booster.json
   assets/cybercraft/models/item/adrenaline_converter.json
@@ -270,6 +176,7 @@ Writing Output: C:\Users\cioch\Documents\GitHub\CyberCraft-1.20.1\build\reobfJar
   assets/cybercraft/models/item/countershell.json
   assets/cybercraft/models/item/deepfield_visual_interface.json
   assets/cybercraft/models/item/fortified_ankles.json
+  assets/cybercraft/models/item/handgun_ammo.json
   assets/cybercraft/models/item/heal_on_kill.json
   assets/cybercraft/models/item/isometric_stabilizer.json
   assets/cybercraft/models/item/leeroy_ligament_system.json
@@ -286,9 +193,14 @@ Writing Output: C:\Users\cioch\Documents\GitHub\CyberCraft-1.20.1\build\reobfJar
   assets/cybercraft/models/item/shock_n_awe.json
   assets/cybercraft/models/item/stabber.json
   assets/cybercraft/models/item/subdermal_armor.json
+  assets/cybercraft/models/item/testgun.json
   assets/cybercraft/models/item/threatevac.json
   assets/cybercraft/models/item/tyrosine_injector.json
   assets/cybercraft/textures/
+  assets/cybercraft/textures/block/
+  assets/cybercraft/textures/block/face.png
+  assets/cybercraft/textures/block/glide.png
+  assets/cybercraft/textures/block/gray_stuff.png
   assets/cybercraft/textures/item/
   assets/cybercraft/textures/item/biomonitor.png
   assets/cybercraft/textures/item/blooddepleter.png
@@ -301,12 +213,14 @@ Writing Output: C:\Users\cioch\Documents\GitHub\CyberCraft-1.20.1\build\reobfJar
   assets/cybercraft/textures/item/cyberrotors.png
   assets/cybercraft/textures/item/detectorrush.png
   assets/cybercraft/textures/item/electroshockmechanism.png
+  assets/cybercraft/textures/item/handgunammo.png
   assets/cybercraft/textures/item/healonkill.png
   assets/cybercraft/textures/item/jenkinstendons.png
   assets/cybercraft/textures/item/nanotechplates.png
   assets/cybercraft/textures/item/neofiber.png
   assets/cybercraft/textures/item/oildispenser.png
   assets/cybercraft/textures/item/painreductor.png
+  assets/cybercraft/textures/item/piupiu.png
   assets/cybercraft/textures/item/proximityreducer.png
   assets/cybercraft/textures/item/reinforcedmuscles.png
   assets/cybercraft/textures/item/secondheart.png
@@ -331,14 +245,13 @@ Writing Output: C:\Users\cioch\Documents\GitHub\CyberCraft-1.20.1\build\reobfJar
   assets/cybercraft/textures/mob_effect/passive_health_regen.png
   assets/cybercraft/textures/mob_effect/proxishield_activation.png
   assets/cybercraft/textures/mob_effect/rangeguard_activation.png
+  assets/cybercraft/textures/mob_effect/recent_shot.png
+  assets/cybercraft/textures/mob_effect/recentshot.png
   assets/cybercraft/textures/mob_effect/reduced_fall_damage.png
-  assets/cybercraft/textures/mob_effect/regen_test_plus_5.png
   assets/cybercraft/textures/mob_effect/second_heart_cooldown.png
   assets/cybercraft/textures/mob_effect/stabber_activation.png
-  assets/cybercraft/textures/mob_effect/testinstanthealcd.png
+  assets/cybercraft/textures/mob_effect/test.png
   assets/cybercraft/textures/mob_effect/threat_evac_activation_effect.png
-  assets/cybercraft/textures/mob_effect/threatevac_activation_threshold.png
-  assets/cybercraft/textures/mob_effect/threatevac_movement_speed.png
   assets/cybercraft/textures/mob_effect/tyrosine_injector_activation.png
   assets/cybercraft/textures/screens/
   assets/cybercraft/textures/screens/cyberware_gui.png
@@ -374,7 +287,11 @@ Writing Output: C:\Users\cioch\Documents\GitHub\CyberCraft-1.20.1\build\reobfJar
   net/rbm/cybercraft/client/gui/CyberwareGuiScreen.class
   net/rbm/cybercraft/command/
   net/rbm/cybercraft/command/CybercraftstatsCommand.class
+  net/rbm/cybercraft/entity/
+  net/rbm/cybercraft/entity/CybercraftBulletEntity.class
   net/rbm/cybercraft/init/
+  net/rbm/cybercraft/init/CybercraftModEntities.class
+  net/rbm/cybercraft/init/CybercraftModEntityRenderers.class
   net/rbm/cybercraft/init/CybercraftModItems.class
   net/rbm/cybercraft/init/CybercraftModKeyMappings$1.class
   net/rbm/cybercraft/init/CybercraftModKeyMappings$2.class
@@ -394,6 +311,7 @@ Writing Output: C:\Users\cioch\Documents\GitHub\CyberCraft-1.20.1\build\reobfJar
   net/rbm/cybercraft/item/CountershellItem.class
   net/rbm/cybercraft/item/DeepfieldVisualInterfaceItem.class
   net/rbm/cybercraft/item/FortifiedAnklesItem.class
+  net/rbm/cybercraft/item/HandgunAmmoItem.class
   net/rbm/cybercraft/item/HealOnKillItem.class
   net/rbm/cybercraft/item/IsometricStabilizerItem.class
   net/rbm/cybercraft/item/LeeroyLigamentSystemItem.class
@@ -410,6 +328,7 @@ Writing Output: C:\Users\cioch\Documents\GitHub\CyberCraft-1.20.1\build\reobfJar
   net/rbm/cybercraft/item/ShockNAweItem.class
   net/rbm/cybercraft/item/StabberItem.class
   net/rbm/cybercraft/item/SubdermalArmorItem.class
+  net/rbm/cybercraft/item/TestgunItem.class
   net/rbm/cybercraft/item/ThreatevacItem.class
   net/rbm/cybercraft/item/TyrosineInjectorItem.class
   net/rbm/cybercraft/network/
@@ -435,11 +354,11 @@ Writing Output: C:\Users\cioch\Documents\GitHub\CyberCraft-1.20.1\build\reobfJar
   net/rbm/cybercraft/potion/PassiveHealthRegenMobEffect.class
   net/rbm/cybercraft/potion/ProxishieldActivationMobEffect.class
   net/rbm/cybercraft/potion/RangeguardActivationMobEffect.class
+  net/rbm/cybercraft/potion/RecentShotMobEffect.class
   net/rbm/cybercraft/potion/ReducedFallDamageMobEffect.class
   net/rbm/cybercraft/potion/RegenTestPlus5MobEffect.class
   net/rbm/cybercraft/potion/SecondHeartCooldownMobEffect.class
   net/rbm/cybercraft/potion/StabberActivationMobEffect.class
-  net/rbm/cybercraft/potion/TestinstanthealcdMobEffect.class
   net/rbm/cybercraft/potion/ThreatevacActivationThresholdMobEffect.class
   net/rbm/cybercraft/potion/TyrosineInjectorActivationMobEffect.class
   net/rbm/cybercraft/procedures/
@@ -482,6 +401,7 @@ Writing Output: C:\Users\cioch\Documents\GitHub\CyberCraft-1.20.1\build\reobfJar
   net/rbm/cybercraft/procedures/FortifiedAnklesHigherJumpProcedure.class
   net/rbm/cybercraft/procedures/HealOnKillEffectProcedure.class
   net/rbm/cybercraft/procedures/HpProcedure.class
+  net/rbm/cybercraft/procedures/InaccuracyProcedure.class
   net/rbm/cybercraft/procedures/IsometricStabilizerEffectProcedure.class
   net/rbm/cybercraft/procedures/LeeroyLigamentSystemStatsProcedure.class
   net/rbm/cybercraft/procedures/LynxPawsFallDamageProcedure.class
@@ -506,7 +426,9 @@ Writing Output: C:\Users\cioch\Documents\GitHub\CyberCraft-1.20.1\build\reobfJar
   net/rbm/cybercraft/procedures/ShockNAweEffectProcedure.class
   net/rbm/cybercraft/procedures/StabberEffectProcedure.class
   net/rbm/cybercraft/procedures/SubdermalArmorStatsProcedure.class
-  net/rbm/cybercraft/procedures/TestInstaHealProcedure.class
+  net/rbm/cybercraft/procedures/TestgunRightclickedProcedure$1.class
+  net/rbm/cybercraft/procedures/TestgunRightclickedProcedure$2.class
+  net/rbm/cybercraft/procedures/TestgunRightclickedProcedure.class
   net/rbm/cybercraft/procedures/ThreatevacEffectProcedure.class
   net/rbm/cybercraft/procedures/TyrosineInjectorEffectProcedure.class
   net/rbm/cybercraft/procedures/WriteProcedure.class

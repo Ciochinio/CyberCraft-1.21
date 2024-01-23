@@ -101,6 +101,7 @@ public class CybercraftModVariables {
 				clone.cybercraftMitigationChance = original.cybercraftMitigationChance;
 				clone.sumCritChance = original.sumCritChance;
 				clone.sumCritDamage = original.sumCritDamage;
+				clone.cybercraftInaccuracy = original.cybercraftInaccuracy;
 			}
 		}
 	}
@@ -169,6 +170,7 @@ public class CybercraftModVariables {
 		public double cybercraftMitigationChance = 0;
 		public double sumCritChance = 0;
 		public double sumCritDamage = 0;
+		public double cybercraftInaccuracy = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -210,6 +212,7 @@ public class CybercraftModVariables {
 			nbt.putDouble("cybercraftMitigationChance", cybercraftMitigationChance);
 			nbt.putDouble("sumCritChance", sumCritChance);
 			nbt.putDouble("sumCritDamage", sumCritDamage);
+			nbt.putDouble("cybercraftInaccuracy", cybercraftInaccuracy);
 			return nbt;
 		}
 
@@ -248,6 +251,7 @@ public class CybercraftModVariables {
 			cybercraftMitigationChance = nbt.getDouble("cybercraftMitigationChance");
 			sumCritChance = nbt.getDouble("sumCritChance");
 			sumCritDamage = nbt.getDouble("sumCritDamage");
+			cybercraftInaccuracy = nbt.getDouble("cybercraftInaccuracy");
 		}
 	}
 
@@ -305,6 +309,7 @@ public class CybercraftModVariables {
 					variables.cybercraftMitigationChance = message.data.cybercraftMitigationChance;
 					variables.sumCritChance = message.data.sumCritChance;
 					variables.sumCritDamage = message.data.sumCritDamage;
+					variables.cybercraftInaccuracy = message.data.cybercraftInaccuracy;
 				}
 			});
 			context.setPacketHandled(true);

@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Deep-field Visual Interface Activation",
-    "icon": "adrenaline_converter_activation.png",
+    "icon": "deepfield_visual_interface_activation.png",
     "color": {
       "value": -16777216,
       "falpha": 0.0

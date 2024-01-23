@@ -46,6 +46,8 @@ public class CybercraftModTabs {
 				tabData.accept(CybercraftModItems.STABBER.get());
 				tabData.accept(CybercraftModItems.NEOFIBER.get());
 				tabData.accept(CybercraftModItems.TYROSINE_INJECTOR.get());
+				tabData.accept(CybercraftModItems.TESTGUN.get());
+				tabData.accept(CybercraftModItems.HANDGUN_AMMO.get());
 			})
 
 					.build());

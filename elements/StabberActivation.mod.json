@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Stabber Activation",
-    "icon": "adrenaline_converter_activation.png",
+    "icon": "stabber_activation.png",
     "color": {
       "value": -16777216,
       "falpha": 0.0

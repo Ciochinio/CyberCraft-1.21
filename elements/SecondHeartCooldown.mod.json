@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Second Heart Cooldown",
-    "icon": "threat_evac_activation_effect.png",
+    "icon": "second_heart_cooldown.png",
     "color": {
       "value": -1,
       "falpha": 0.0

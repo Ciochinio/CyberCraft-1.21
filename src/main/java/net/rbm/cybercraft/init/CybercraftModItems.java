@@ -6,6 +6,7 @@ package net.rbm.cybercraft.init;
 
 import net.rbm.cybercraft.item.TyrosineInjectorItem;
 import net.rbm.cybercraft.item.ThreatevacItem;
+import net.rbm.cybercraft.item.TestgunItem;
 import net.rbm.cybercraft.item.SubdermalArmorItem;
 import net.rbm.cybercraft.item.StabberItem;
 import net.rbm.cybercraft.item.ShockNAweItem;
@@ -22,6 +23,7 @@ import net.rbm.cybercraft.item.LynxPawsItem;
 import net.rbm.cybercraft.item.LeeroyLigamentSystemItem;
 import net.rbm.cybercraft.item.IsometricStabilizerItem;
 import net.rbm.cybercraft.item.HealOnKillItem;
+import net.rbm.cybercraft.item.HandgunAmmoItem;
 import net.rbm.cybercraft.item.FortifiedAnklesItem;
 import net.rbm.cybercraft.item.DeepfieldVisualInterfaceItem;
 import net.rbm.cybercraft.item.CountershellItem;
@@ -68,4 +70,6 @@ public class CybercraftModItems {
 	public static final RegistryObject<Item> STABBER = REGISTRY.register("stabber", () -> new StabberItem());
 	public static final RegistryObject<Item> NEOFIBER = REGISTRY.register("neofiber", () -> new NeofiberItem());
 	public static final RegistryObject<Item> TYROSINE_INJECTOR = REGISTRY.register("tyrosine_injector", () -> new TyrosineInjectorItem());
+	public static final RegistryObject<Item> TESTGUN = REGISTRY.register("testgun", () -> new TestgunItem());
+	public static final RegistryObject<Item> HANDGUN_AMMO = REGISTRY.register("handgun_ammo", () -> new HandgunAmmoItem());
 }

@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Chemical Damage Over Time",
-    "icon": "threat_evac_activation_effect.png",
+    "icon": "chemical_dot.png",
     "color": {
       "value": -16764160,
       "falpha": 0.0

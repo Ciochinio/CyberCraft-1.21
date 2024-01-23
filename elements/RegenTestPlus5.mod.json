@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "HP Regen Test",
-    "icon": "threatevac_activation_threshold.png",
+    "icon": "test.png",
     "color": {
       "value": -1,
       "falpha": 0.0

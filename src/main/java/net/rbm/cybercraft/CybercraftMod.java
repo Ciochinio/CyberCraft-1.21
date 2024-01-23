@@ -20,6 +20,7 @@ import net.rbm.cybercraft.init.CybercraftModTabs;
 import net.rbm.cybercraft.init.CybercraftModMobEffects;
 import net.rbm.cybercraft.init.CybercraftModMenus;
 import net.rbm.cybercraft.init.CybercraftModItems;
+import net.rbm.cybercraft.init.CybercraftModEntities;
 
 import net.minecraftforge.network.simple.SimpleChannel;
 import net.minecraftforge.network.NetworkRegistry;
@@ -53,6 +54,7 @@ public class CybercraftMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		CybercraftModItems.REGISTRY.register(bus);
+		CybercraftModEntities.REGISTRY.register(bus);
 
 		CybercraftModTabs.REGISTRY.register(bus);
 

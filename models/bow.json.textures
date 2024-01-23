@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "glide",
+        "1": "gray_stuff",
+        "2": "face"
+      },
+      "name": "default"
+    }
+  }
+}

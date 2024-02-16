@@ -8,13 +8,18 @@ import net.rbm.cybercraft.CybercraftMod;
 
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
+@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class CybercraftModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CybercraftMod.MODID);
 	public static final RegistryObject<CreativeModeTab> CYBER_CRAFT_TAB = REGISTRY.register("cyber_craft_tab",
@@ -46,9 +51,20 @@ public class CybercraftModTabs {
 				tabData.accept(CybercraftModItems.STABBER.get());
 				tabData.accept(CybercraftModItems.NEOFIBER.get());
 				tabData.accept(CybercraftModItems.TYROSINE_INJECTOR.get());
-				tabData.accept(CybercraftModItems.TESTGUN.get());
 				tabData.accept(CybercraftModItems.HANDGUN_AMMO.get());
+				tabData.accept(CybercraftModItems.NBGHFVC.get());
+				tabData.accept(CybercraftModItems.BIONIC_JOINTS.get());
+				tabData.accept(CybercraftModItems.DENSE_MARROW.get());
+				tabData.accept(CybercraftModItems.EPIMORPHIC_SKELETON.get());
 			})
 
 					.build());
+
+	@SubscribeEvent
+	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
+
+		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
+			tabData.accept(CybercraftModItems.LAPKI_CHESTPLATE.get());
+		}
+	}
 }

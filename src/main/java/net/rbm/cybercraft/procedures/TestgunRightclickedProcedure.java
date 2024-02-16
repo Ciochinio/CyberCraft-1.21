@@ -18,7 +18,7 @@ public class TestgunRightclickedProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (CybercraftModItems.TESTGUN.get() == (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) {
+		if (CybercraftModItems.NBGHFVC.get() == (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) {
 			if (entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(CybercraftModMobEffects.RECENT_SHOT.get())) {
 				{
 					double _setval = (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftInaccuracy + 1;
@@ -50,7 +50,7 @@ public class TestgunRightclickedProcedure {
 				{
 					Entity _ent = entity;
 					_ent.setYRot(entity.getYRot());
-					_ent.setXRot((float) (entity.getXRot() - 3));
+					_ent.setXRot((float) (entity.getXRot() - 2));
 					_ent.setYBodyRot(_ent.getYRot());
 					_ent.setYHeadRot(_ent.getYRot());
 					_ent.yRotO = _ent.getYRot();

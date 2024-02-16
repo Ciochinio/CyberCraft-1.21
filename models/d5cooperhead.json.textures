@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "d5cooperheadtexture"
+      },
+      "name": "default"
+    }
+  }
+}

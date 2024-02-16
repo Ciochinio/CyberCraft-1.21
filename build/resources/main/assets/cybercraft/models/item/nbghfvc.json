@@ -1,0 +1,7 @@
+{
+  "parent": "cybercraft:custom/d5cooperhead",
+  "textures": {
+    "0": "cybercraft:block/d5cooperheadtexture",
+    "particle": "cybercraft:item/piupiu"
+  }
+}

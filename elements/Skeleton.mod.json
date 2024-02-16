@@ -3,7 +3,17 @@
   "_type": "tag",
   "definition": {
     "type": "Items",
-    "items": [],
+    "items": [
+      {
+        "value": "CUSTOM:BionicJoints"
+      },
+      {
+        "value": "CUSTOM:DenseMarrow"
+      },
+      {
+        "value": "CUSTOM:EpimorphicSkeleton"
+      }
+    ],
     "blocks": [],
     "functions": [],
     "entities": [],

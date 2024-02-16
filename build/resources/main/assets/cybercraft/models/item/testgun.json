@@ -1,9 +1,0 @@
-{
-  "parent": "cybercraft:custom/bow",
-  "textures": {
-    "0": "cybercraft:block/glide",
-    "1": "cybercraft:block/gray_stuff",
-    "2": "cybercraft:block/face",
-    "particle": "cybercraft:item/piupiu"
-  }
-}

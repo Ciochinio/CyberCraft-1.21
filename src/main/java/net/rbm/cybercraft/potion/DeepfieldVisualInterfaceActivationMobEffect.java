@@ -10,11 +10,6 @@ public class DeepfieldVisualInterfaceActivationMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.cybercraft.deepfield_visual_interface_activation";
-	}
-
-	@Override
 	public boolean isDurationEffectTick(int duration, int amplifier) {
 		return true;
 	}

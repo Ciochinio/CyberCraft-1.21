@@ -10,6 +10,8 @@ import net.rbm.cybercraft.potion.StabberActivationMobEffect;
 import net.rbm.cybercraft.potion.SecondHeartCooldownMobEffect;
 import net.rbm.cybercraft.potion.RegenTestPlus5MobEffect;
 import net.rbm.cybercraft.potion.ReducedFallDamageMobEffect;
+import net.rbm.cybercraft.potion.RecoilLowMobEffect;
+import net.rbm.cybercraft.potion.RecoilHighMobEffect;
 import net.rbm.cybercraft.potion.RecentShotMobEffect;
 import net.rbm.cybercraft.potion.RangeguardActivationMobEffect;
 import net.rbm.cybercraft.potion.ProxishieldActivationMobEffect;
@@ -52,4 +54,6 @@ public class CybercraftModMobEffects {
 	public static final RegistryObject<MobEffect> STABBER_ACTIVATION = REGISTRY.register("stabber_activation", () -> new StabberActivationMobEffect());
 	public static final RegistryObject<MobEffect> TYROSINE_INJECTOR_ACTIVATION = REGISTRY.register("tyrosine_injector_activation", () -> new TyrosineInjectorActivationMobEffect());
 	public static final RegistryObject<MobEffect> RECENT_SHOT = REGISTRY.register("recent_shot", () -> new RecentShotMobEffect());
+	public static final RegistryObject<MobEffect> RECOIL_LOW = REGISTRY.register("recoil_low", () -> new RecoilLowMobEffect());
+	public static final RegistryObject<MobEffect> RECOIL_HIGH = REGISTRY.register("recoil_high", () -> new RecoilHighMobEffect());
 }

@@ -47,19 +47,8 @@ public class TestgunRightclickedProcedure {
 						projectileLevel.addFreshEntity(_entityToSpawn);
 					}
 				}
-				{
-					Entity _ent = entity;
-					_ent.setYRot(entity.getYRot());
-					_ent.setXRot((float) (entity.getXRot() - 2));
-					_ent.setYBodyRot(_ent.getYRot());
-					_ent.setYHeadRot(_ent.getYRot());
-					_ent.yRotO = _ent.getYRot();
-					_ent.xRotO = _ent.getXRot();
-					if (_ent instanceof LivingEntity _entity) {
-						_entity.yBodyRotO = _entity.getYRot();
-						_entity.yHeadRotO = _entity.getYRot();
-					}
-				}
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(CybercraftModMobEffects.RECOIL_LOW.get(), 4, 0));
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(CybercraftModMobEffects.RECENT_SHOT.get(), 10, 0));
 			} else {
@@ -89,19 +78,8 @@ public class TestgunRightclickedProcedure {
 						projectileLevel.addFreshEntity(_entityToSpawn);
 					}
 				}
-				{
-					Entity _ent = entity;
-					_ent.setYRot(entity.getYRot());
-					_ent.setXRot((float) (entity.getXRot() - 3));
-					_ent.setYBodyRot(_ent.getYRot());
-					_ent.setYHeadRot(_ent.getYRot());
-					_ent.yRotO = _ent.getYRot();
-					_ent.xRotO = _ent.getXRot();
-					if (_ent instanceof LivingEntity _entity) {
-						_entity.yBodyRotO = _entity.getYRot();
-						_entity.yHeadRotO = _entity.getYRot();
-					}
-				}
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(CybercraftModMobEffects.RECOIL_LOW.get(), 4, 0));
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(CybercraftModMobEffects.RECENT_SHOT.get(), 10, 0));
 			}

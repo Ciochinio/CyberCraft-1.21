@@ -10,11 +10,6 @@ public class CountershellMitigationChanceMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.cybercraft.countershell_mitigation_chance";
-	}
-
-	@Override
 	public boolean isDurationEffectTick(int duration, int amplifier) {
 		return true;
 	}

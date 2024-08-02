@@ -10,11 +10,6 @@ public class ThreatevacActivationThresholdMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.cybercraft.threatevac_activation_threshold";
-	}
-
-	@Override
 	public boolean isDurationEffectTick(int duration, int amplifier) {
 		return true;
 	}

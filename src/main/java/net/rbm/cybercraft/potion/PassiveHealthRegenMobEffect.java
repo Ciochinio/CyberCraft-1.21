@@ -14,11 +14,6 @@ public class PassiveHealthRegenMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.cybercraft.passive_health_regen";
-	}
-
-	@Override
 	public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		PassiveHealthRegenStartedProcedure.execute(entity.level(), entity);
 	}

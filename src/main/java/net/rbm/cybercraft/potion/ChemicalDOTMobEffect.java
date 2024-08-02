@@ -14,11 +14,6 @@ public class ChemicalDOTMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.cybercraft.chemical_dot";
-	}
-
-	@Override
 	public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		ChemicalDOTEffectStartedProcedure.execute(entity.level(), entity);
 	}

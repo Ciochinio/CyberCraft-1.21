@@ -19,7 +19,7 @@ import net.minecraft.world.entity.Entity;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class CybercraftModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, CybercraftMod.MODID);
-	public static final RegistryObject<EntityType<CybercraftBulletEntity>> CYBERCRAFT_BULLET = register("projectile_cybercraft_bullet", EntityType.Builder.<CybercraftBulletEntity>of(CybercraftBulletEntity::new, MobCategory.MISC)
+	public static final RegistryObject<EntityType<CybercraftBulletEntity>> CYBERCRAFT_BULLET = register("cybercraft_bullet", EntityType.Builder.<CybercraftBulletEntity>of(CybercraftBulletEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(CybercraftBulletEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {

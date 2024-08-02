@@ -102,6 +102,7 @@ public class CybercraftModVariables {
 				clone.sumCritChance = original.sumCritChance;
 				clone.sumCritDamage = original.sumCritDamage;
 				clone.cybercraftInaccuracy = original.cybercraftInaccuracy;
+				clone.cybercraftRecoilYaw = original.cybercraftRecoilYaw;
 			}
 		}
 	}
@@ -171,6 +172,7 @@ public class CybercraftModVariables {
 		public double sumCritChance = 0;
 		public double sumCritDamage = 0;
 		public double cybercraftInaccuracy = 0;
+		public double cybercraftRecoilYaw = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -213,11 +215,12 @@ public class CybercraftModVariables {
 			nbt.putDouble("sumCritChance", sumCritChance);
 			nbt.putDouble("sumCritDamage", sumCritDamage);
 			nbt.putDouble("cybercraftInaccuracy", cybercraftInaccuracy);
+			nbt.putDouble("cybercraftRecoilYaw", cybercraftRecoilYaw);
 			return nbt;
 		}
 
-		public void readNBT(Tag Tag) {
-			CompoundTag nbt = (CompoundTag) Tag;
+		public void readNBT(Tag tag) {
+			CompoundTag nbt = (CompoundTag) tag;
 			save = nbt.getBoolean("save");
 			operatingsystem1 = ItemStack.of(nbt.getCompound("operatingsystem1"));
 			frontalcortex1 = ItemStack.of(nbt.getCompound("frontalcortex1"));
@@ -252,6 +255,7 @@ public class CybercraftModVariables {
 			sumCritChance = nbt.getDouble("sumCritChance");
 			sumCritDamage = nbt.getDouble("sumCritDamage");
 			cybercraftInaccuracy = nbt.getDouble("cybercraftInaccuracy");
+			cybercraftRecoilYaw = nbt.getDouble("cybercraftRecoilYaw");
 		}
 	}
 
@@ -310,6 +314,7 @@ public class CybercraftModVariables {
 					variables.sumCritChance = message.data.sumCritChance;
 					variables.sumCritDamage = message.data.sumCritDamage;
 					variables.cybercraftInaccuracy = message.data.cybercraftInaccuracy;
+					variables.cybercraftRecoilYaw = message.data.cybercraftRecoilYaw;
 				}
 			});
 			context.setPacketHandled(true);

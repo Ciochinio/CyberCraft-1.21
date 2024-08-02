@@ -8,6 +8,7 @@ import net.rbm.cybercraft.item.TyrosineInjectorItem;
 import net.rbm.cybercraft.item.ThreatevacItem;
 import net.rbm.cybercraft.item.SubdermalArmorItem;
 import net.rbm.cybercraft.item.StabberItem;
+import net.rbm.cybercraft.item.ShotgunItem;
 import net.rbm.cybercraft.item.ShockNAweItem;
 import net.rbm.cybercraft.item.SecondHeartItem;
 import net.rbm.cybercraft.item.ReinforcedTendonsItem;
@@ -21,7 +22,6 @@ import net.rbm.cybercraft.item.NanoPlatingItem;
 import net.rbm.cybercraft.item.MicrorotorsItem;
 import net.rbm.cybercraft.item.LynxPawsItem;
 import net.rbm.cybercraft.item.LeeroyLigamentSystemItem;
-import net.rbm.cybercraft.item.LapkiItem;
 import net.rbm.cybercraft.item.IsometricStabilizerItem;
 import net.rbm.cybercraft.item.HealOnKillItem;
 import net.rbm.cybercraft.item.HandgunAmmoItem;
@@ -76,8 +76,10 @@ public class CybercraftModItems {
 	public static final RegistryObject<Item> TYROSINE_INJECTOR = REGISTRY.register("tyrosine_injector", () -> new TyrosineInjectorItem());
 	public static final RegistryObject<Item> HANDGUN_AMMO = REGISTRY.register("handgun_ammo", () -> new HandgunAmmoItem());
 	public static final RegistryObject<Item> NBGHFVC = REGISTRY.register("nbghfvc", () -> new NbghfvcItem());
-	public static final RegistryObject<Item> LAPKI_CHESTPLATE = REGISTRY.register("lapki_chestplate", () -> new LapkiItem.Chestplate());
 	public static final RegistryObject<Item> BIONIC_JOINTS = REGISTRY.register("bionic_joints", () -> new BionicJointsItem());
 	public static final RegistryObject<Item> DENSE_MARROW = REGISTRY.register("dense_marrow", () -> new DenseMarrowItem());
 	public static final RegistryObject<Item> EPIMORPHIC_SKELETON = REGISTRY.register("epimorphic_skeleton", () -> new EpimorphicSkeletonItem());
+	public static final RegistryObject<Item> SHOTGUN = REGISTRY.register("shotgun", () -> new ShotgunItem());
+	// Start of user code block custom items
+	// End of user code block custom items
 }

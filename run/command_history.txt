@@ -1,0 +1,29 @@
+/cybercraftplayerstats
+/tick
+/tick freeze
+/tick unfreeze
+/tick sprint
+/tick sprint 3d
+/tick sprint stop
+/cyber
+/cybercraftplayerstats
+/time set 8
+/time set 10
+/tick unfreeze
+/gamerule doDaylightCycle
+/time set 18
+/time set night
+/time set day
+/tick freeze
+/tick unfreeze
+/time set day
+/time set night
+/tick freeze
+/tick unfreeze
+/tick rate
+/tick rate 20
+/tick rate 2
+/tick rate 100
+/tick rate 20
+/tick step 1s
+/tick

@@ -9,14 +9,12 @@ public class NeoFiberStatsProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (((entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).nervoussystem1).getItem() == CybercraftModItems.NEOFIBER.get()
-				|| ((entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).nervoussystem2).getItem() == CybercraftModItems.NEOFIBER.get()) {
+		if (entity.getData(CybercraftModVariables.PLAYER_VARIABLES).nervoussystem1.getItem() == CybercraftModItems.NEOFIBER.get()
+				|| entity.getData(CybercraftModVariables.PLAYER_VARIABLES).nervoussystem2.getItem() == CybercraftModItems.NEOFIBER.get()) {
 			{
-				double _setval = (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftMitigationChance + 10;
-				entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.cybercraftMitigationChance = _setval;
-					capability.syncPlayerVariables(entity);
-				});
+				CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
+				_vars.cybercraftMitigationChance = entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftMitigationChance + 10;
+				_vars.syncPlayerVariables(entity);
 			}
 		}
 	}

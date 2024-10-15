@@ -2,10 +2,10 @@ package net.rbm.cybercraft.procedures;
 
 import net.rbm.cybercraft.network.CybercraftModVariables;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.TickEvent;
+import net.neoforged.neoforge.event.tick.PlayerTickEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.GameType;
 import net.minecraft.world.entity.player.Player;
@@ -15,13 +15,11 @@ import net.minecraft.client.Minecraft;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class RestoreJumpProcedure {
 	@SubscribeEvent
-	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
-		if (event.phase == TickEvent.Phase.END) {
-			execute(event, event.player);
-		}
+	public static void onPlayerTick(PlayerTickEvent.Post event) {
+		execute(event, event.getEntity());
 	}
 
 	public static void execute(Entity entity) {
@@ -49,13 +47,11 @@ public class RestoreJumpProcedure {
 				}
 				return false;
 			}
-		}.checkGamemode(entity)) && entity.onGround() && (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).doublejump < 1) {
+		}.checkGamemode(entity)) && entity.onGround() && entity.getData(CybercraftModVariables.PLAYER_VARIABLES).doublejump < 1) {
 			{
-				double _setval = 1;
-				entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.doublejump = _setval;
-					capability.syncPlayerVariables(entity);
-				});
+				CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
+				_vars.doublejump = 1;
+				_vars.syncPlayerVariables(entity);
 			}
 		}
 	}

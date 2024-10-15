@@ -3,17 +3,17 @@ package net.rbm.cybercraft.procedures;
 import net.rbm.cybercraft.network.CybercraftModVariables;
 import net.rbm.cybercraft.init.CybercraftModItems;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.living.LivingEvent;
+import net.neoforged.neoforge.event.entity.living.LivingEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.entity.Entity;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class FortifiedAnklesHigherJumpProcedure {
 	@SubscribeEvent
 	public static void onEntityJump(LivingEvent.LivingJumpEvent event) {
@@ -27,7 +27,7 @@ public class FortifiedAnklesHigherJumpProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if (((entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).legs1).getItem() == CybercraftModItems.FORTIFIED_ANKLES.get()) {
+		if (entity.getData(CybercraftModVariables.PLAYER_VARIABLES).legs1.getItem() == CybercraftModItems.FORTIFIED_ANKLES.get()) {
 			entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), (entity.getDeltaMovement().y() + 0.4), (entity.getDeltaMovement().z())));
 		}
 	}

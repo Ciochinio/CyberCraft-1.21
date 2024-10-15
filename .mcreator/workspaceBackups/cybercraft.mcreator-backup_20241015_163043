@@ -1,0 +1,3004 @@
+{
+  "mod_elements": [
+    {
+      "name": "CyberwareMenuOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyberware_menu_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/CyberwareMenuOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Gui"
+    },
+    {
+      "name": "CyberwareMenu",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyberware_menu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/network/CyberwareMenuMessage.java"
+        ]
+      },
+      "path": "~/Cyberware/Gui"
+    },
+    {
+      "name": "CyberwareGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyberware_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/client/gui/CyberwareGuiScreen.java",
+          "src/main/java/net/rbm/cybercraft/world/inventory/CyberwareGuiMenu.java"
+        ]
+      },
+      "path": "~/Cyberware/Gui"
+    },
+    {
+      "name": "Read",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "read",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/ReadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Gui"
+    },
+    {
+      "name": "Save",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "save",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/SaveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Gui"
+    },
+    {
+      "name": "Write",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "write",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/WriteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Gui"
+    },
+    {
+      "name": "CyberCraftTab",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyber_craft_tab",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Main"
+    },
+    {
+      "name": "ReinforcedTendons",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_tendons",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/item/ReinforcedTendonsItem.java",
+          "src/main/resources/assets/cybercraft/models/item/reinforced_tendons.json"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Legs/ReinforcedTendons"
+    },
+    {
+      "name": "DoubleJump",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_jump",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/network/DoubleJumpMessage.java"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Legs/ReinforcedTendons"
+    },
+    {
+      "name": "RestoreJump",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "restore_jump",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/RestoreJumpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Legs/ReinforcedTendons"
+    },
+    {
+      "name": "FortifiedAnkles",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fortified_ankles",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cybercraft/models/item/fortified_ankles.json",
+          "src/main/java/net/rbm/cybercraft/item/FortifiedAnklesItem.java"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Legs/Fortified Ankles"
+    },
+    {
+      "name": "ReducedFallDamage",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reduced_fall_damage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/potion/ReducedFallDamageMobEffect.java"
+        ]
+      },
+      "path": "~/Main/ReducedFallDamage"
+    },
+    {
+      "name": "ReducedFallDamageWithLegs",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reduced_fall_damage_with_legs",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/ReducedFallDamageWithLegsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Main/ReducedFallDamage"
+    },
+    {
+      "name": "FallDamageReduction",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fall_damage_reduction",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/FallDamageReductionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Main/ReducedFallDamage"
+    },
+    {
+      "name": "LynxPaws",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lynx_paws",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/item/LynxPawsItem.java",
+          "src/main/resources/assets/cybercraft/models/item/lynx_paws.json"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Legs/Lynx Paws"
+    },
+    {
+      "name": "LynxPawsFallDamage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lynx_paws_fall_damage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/LynxPawsFallDamageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Legs/Lynx Paws"
+    },
+    {
+      "name": "LynxPawsLeap",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lynx_paws_leap",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/LynxPawsLeapProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Legs/Lynx Paws"
+    },
+    {
+      "name": "FortifiedAnklesHigherJump",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fortified_ankles_higher_jump",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/FortifiedAnklesHigherJumpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Legs/Fortified Ankles"
+    },
+    {
+      "name": "ReinforcedTendonsDoubleJump",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_tendons_double_jump",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/ReinforcedTendonsDoubleJumpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Legs/ReinforcedTendons"
+    },
+    {
+      "name": "LeeroyLigamentSystem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leeroy_ligament_system",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/item/LeeroyLigamentSystemItem.java",
+          "src/main/resources/assets/cybercraft/models/item/leeroy_ligament_system.json"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Legs/Leeroy Ligament System"
+    },
+    {
+      "name": "CybercraftPlayerStatApply",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cybercraft_player_stat_apply",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/CybercraftPlayerStatApplyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character/Stats/ConstStats"
+    },
+    {
+      "name": "CybercraftPlayerStats",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cybercraft_player_stats",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/CybercraftPlayerStatsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character/Commands"
+    },
+    {
+      "name": "Cybercraftstats",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cybercraftstats",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/command/CybercraftstatsCommand.java"
+        ]
+      },
+      "path": "~/Character/Commands"
+    },
+    {
+      "name": "CybercraftLegsStatCheck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cybercraft_legs_stat_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/CybercraftLegsStatCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Legs/Main"
+    },
+    {
+      "name": "CybercraftIntegumentarySystemStatCheck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cybercraft_integumentary_system_stat_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/CybercraftIntegumentarySystemStatCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Integumentary System/Main"
+    },
+    {
+      "name": "CybercraftNervousSystemStatCheck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cybercraft_nervous_system_stat_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/CybercraftNervousSystemStatCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Nervous System/Main"
+    },
+    {
+      "name": "CybercraftCirculetorySystemStatCheck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cybercraft_circuletory_system_stat_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/CybercraftCirculetorySystemStatCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Circulatory System/Main"
+    },
+    {
+      "name": "CybercraftSkeletonStatCheck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cybercraft_skeleton_stat_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/CybercraftSkeletonStatCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Skeleton/Main"
+    },
+    {
+      "name": "CybercraftHandsStatCheck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cybercraft_hands_stat_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/CybercraftHandsStatCheckProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Cyberware/Cyberwares/Hands/Main"
+    },
+    {
+      "name": "CybercraftArmsStatCheck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cybercraft_arms_stat_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/CybercraftArmsStatCheckProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Cyberware/Cyberwares/Arms"
+    },
+    {
+      "name": "CybercraftFaceStatCheck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cybercraft_face_stat_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/CybercraftFaceStatCheckProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Cyberware/Cyberwares/Face"
+    },
+    {
+      "name": "CybercraftFrontalCortexStatCheck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cybercraft_frontal_cortex_stat_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/CybercraftFrontalCortexStatCheckProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Cyberware/Cyberwares/Frontal Cortex"
+    },
+    {
+      "name": "CybercraftOperatingSystemStatCheck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cybercraft_operating_system_stat_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/CybercraftOperatingSystemStatCheckProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Cyberware/Cyberwares/Operating System/Main"
+    },
+    {
+      "name": "NanoPlating",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nano_plating",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cybercraft/models/item/nano_plating.json",
+          "src/main/java/net/rbm/cybercraft/item/NanoPlatingItem.java"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Integumentary System/Nano-plating"
+    },
+    {
+      "name": "LeeroyLigamentSystemStats",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leeroy_ligament_system_stats",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/LeeroyLigamentSystemStatsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Legs/Leeroy Ligament System"
+    },
+    {
+      "name": "NanoPlatingEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nano_plating_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/NanoPlatingEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Integumentary System/Nano-plating"
+    },
+    {
+      "name": "Painducer",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "painducer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/item/PainducerItem.java",
+          "src/main/resources/assets/cybercraft/models/item/painducer.json"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Integumentary System/Painducer"
+    },
+    {
+      "name": "PainducerEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "painducer_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/PainducerEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Integumentary System/Painducer"
+    },
+    {
+      "name": "Countershell",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "countershell",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/item/CountershellItem.java",
+          "src/main/resources/assets/cybercraft/models/item/countershell.json"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Integumentary System/Countershell"
+    },
+    {
+      "name": "CountershellEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "countershell_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/CountershellEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Integumentary System/Countershell"
+    },
+    {
+      "name": "DamageReductionCalculator",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "damage_reduction_calculator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/DamageReductionCalculatorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Character/Stats/DamageReduction"
+    },
+    {
+      "name": "PainEditor",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pain_editor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cybercraft/models/item/pain_editor.json",
+          "src/main/java/net/rbm/cybercraft/item/PainEditorItem.java"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Integumentary System/Pain Editor"
+    },
+    {
+      "name": "PainEditorEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pain_editor_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/PainEditorEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Integumentary System/Pain Editor"
+    },
+    {
+      "name": "Proxishield",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "proxishield",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cybercraft/models/item/proxishield.json",
+          "src/main/java/net/rbm/cybercraft/item/ProxishieldItem.java"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Integumentary System/ProxiShield"
+    },
+    {
+      "name": "ProxishieldEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "proxishield_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/ProxishieldEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Integumentary System/ProxiShield"
+    },
+    {
+      "name": "EnemyDetection",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enemy_detection",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/EnemyDetectionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Main/EnemyDetection"
+    },
+    {
+      "name": "EnemyNearby",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enemy_nearby",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/potion/EnemyNearbyMobEffect.java"
+        ]
+      },
+      "path": "~/Main/EnemyDetection"
+    },
+    {
+      "name": "Rangeguard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rangeguard",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/item/RangeguardItem.java",
+          "src/main/resources/assets/cybercraft/models/item/rangeguard.json"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Integumentary System/RangeGuard"
+    },
+    {
+      "name": "RangeguardEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rangeguard_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/RangeguardEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Integumentary System/RangeGuard"
+    },
+    {
+      "name": "SubdermalArmor",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "subdermal_armor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/item/SubdermalArmorItem.java",
+          "src/main/resources/assets/cybercraft/models/item/subdermal_armor.json"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Integumentary System/Subdermal Armor"
+    },
+    {
+      "name": "SubdermalArmorStats",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "subdermal_armor_stats",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/SubdermalArmorStatsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Integumentary System/Subdermal Armor"
+    },
+    {
+      "name": "Chitin",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chitin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/item/ChitinItem.java",
+          "src/main/resources/assets/cybercraft/models/item/chitin.json"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Integumentary System/Chitin "
+    },
+    {
+      "name": "HealCooldown",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heal_cooldown",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/potion/HealCooldownMobEffect.java"
+        ]
+      },
+      "path": "~/Character/Stats/VariableStats/PassiveRegeneration"
+    },
+    {
+      "name": "CybercrafPlayerStatCheck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cybercraf_player_stat_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/CybercrafPlayerStatCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Character/Stats/Stat Reload"
+    },
+    {
+      "name": "CybercraftPlayerStatReload",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cybercraft_player_stat_reload",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/CybercraftPlayerStatReloadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Character/Stats/Stat Reload"
+    },
+    {
+      "name": "CybercraftHealAdditionalHeal",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cybercraft_heal_additional_heal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/CybercraftHealAdditionalHealProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Character/Stats"
+    },
+    {
+      "name": "ShockNAwe",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shock_n_awe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/item/ShockNAweItem.java",
+          "src/main/resources/assets/cybercraft/models/item/shock_n_awe.json"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Integumentary System/Shock-n-Awe"
+    },
+    {
+      "name": "ShockNAweEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shock_n_awe_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/ShockNAweEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Integumentary System/Shock-n-Awe"
+    },
+    {
+      "name": "Threatevac",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "threatevac",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cybercraft/models/item/threatevac.json",
+          "src/main/java/net/rbm/cybercraft/item/ThreatevacItem.java"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Circulatory System/ThreatEvac"
+    },
+    {
+      "name": "ThreatevacActivationThreshold",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "threatevac_activation_threshold",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/potion/ThreatevacActivationThresholdMobEffect.java"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Circulatory System/ThreatEvac"
+    },
+    {
+      "name": "ProxishieldActivation",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "proxishield_activation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/potion/ProxishieldActivationMobEffect.java"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Integumentary System/ProxiShield"
+    },
+    {
+      "name": "RangeguardActivation",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rangeguard_activation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/potion/RangeguardActivationMobEffect.java"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Integumentary System/RangeGuard"
+    },
+    {
+      "name": "RegenTestPlus5",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "regen_test_plus_5",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/potion/RegenTestPlus5MobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "PassiveHealthRegen",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "passive_health_regen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/potion/PassiveHealthRegenMobEffect.java"
+        ]
+      },
+      "path": "~/Character/Stats/VariableStats/PassiveRegeneration"
+    },
+    {
+      "name": "PassiveHealthRegenStarted",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "passive_health_regen_started",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/PassiveHealthRegenStartedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Character/Stats/VariableStats/PassiveRegeneration"
+    },
+    {
+      "name": "SecondHeart",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "second_heart",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/item/SecondHeartItem.java",
+          "src/main/resources/assets/cybercraft/models/item/second_heart.json"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Circulatory System/Second Heart"
+    },
+    {
+      "name": "SecondHeartCooldown",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "second_heart_cooldown",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/potion/SecondHeartCooldownMobEffect.java"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Circulatory System/Second Heart"
+    },
+    {
+      "name": "SecondHeartEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "second_heart_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/SecondHeartEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Circulatory System/Second Heart"
+    },
+    {
+      "name": "Microrotors",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "microrotors",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/item/MicrorotorsItem.java",
+          "src/main/resources/assets/cybercraft/models/item/microrotors.json"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Circulatory System/Microrotors"
+    },
+    {
+      "name": "HealOnKill",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heal_on_kill",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/item/HealOnKillItem.java",
+          "src/main/resources/assets/cybercraft/models/item/heal_on_kill.json"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Circulatory System/Heal-On-Kill"
+    },
+    {
+      "name": "HealOnKillEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heal_on_kill_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/HealOnKillEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Circulatory System/Heal-On-Kill"
+    },
+    {
+      "name": "AdrenalineBooster",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adrenaline_booster",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cybercraft/models/item/adrenaline_booster.json",
+          "src/main/java/net/rbm/cybercraft/item/AdrenalineBoosterItem.java"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Circulatory System/Adrenaline Booster"
+    },
+    {
+      "name": "AdrenalineBoosterEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adrenaline_booster_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/AdrenalineBoosterEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Circulatory System/Adrenaline Booster"
+    },
+    {
+      "name": "ChemicalDamageApply",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chemical_damage_apply",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/ChemicalDamageApplyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Main/Chemical DOT"
+    },
+    {
+      "name": "ChemicalDOT",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chemical_dot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/potion/ChemicalDOTMobEffect.java"
+        ]
+      },
+      "path": "~/Main/Chemical DOT"
+    },
+    {
+      "name": "ChemicalDOTEffectStarted",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chemical_dot_effect_started",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/ChemicalDOTEffectStartedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Main/Chemical DOT"
+    },
+    {
+      "name": "ChemicalDOTCooldown",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chemical_dot_cooldown",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/potion/ChemicalDOTCooldownMobEffect.java"
+        ]
+      },
+      "path": "~/Main/Chemical DOT"
+    },
+    {
+      "name": "BlackMamba",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_mamba",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cybercraft/models/item/black_mamba.json",
+          "src/main/java/net/rbm/cybercraft/item/BlackMambaItem.java"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Circulatory System/Black Mamba"
+    },
+    {
+      "name": "BlackMambaEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_mamba_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/BlackMambaEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Circulatory System/Black Mamba"
+    },
+    {
+      "name": "IsometricStabilizer",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "isometric_stabilizer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/item/IsometricStabilizerItem.java",
+          "src/main/resources/assets/cybercraft/models/item/isometric_stabilizer.json"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Circulatory System/Isometric Stabilizer"
+    },
+    {
+      "name": "IsometricStabilizerEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "isometric_stabilizer_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/IsometricStabilizerEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Circulatory System/Isometric Stabilizer"
+    },
+    {
+      "name": "Biomonitor",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "biomonitor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/item/BiomonitorItem.java",
+          "src/main/resources/assets/cybercraft/models/item/biomonitor.json"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Circulatory System/Biomonitor"
+    },
+    {
+      "name": "BiomonitorEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "biomonitor_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/BiomonitorEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Circulatory System/Biomonitor"
+    },
+    {
+      "name": "BiomonitorCooldown",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "biomonitor_cooldown",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/potion/BiomonitorCooldownMobEffect.java"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Circulatory System/Biomonitor"
+    },
+    {
+      "name": "DamageMitigation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "damage_mitigation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/DamageMitigationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Character/Stats/VariableStats/Mitigation"
+    },
+    {
+      "name": "CountershellMitigationChance",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "countershell_mitigation_chance",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/potion/CountershellMitigationChanceMobEffect.java"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Integumentary System/Countershell"
+    },
+    {
+      "name": "Hp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/HpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AdrenalineConverter",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adrenaline_converter",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cybercraft/models/item/adrenaline_converter.json",
+          "src/main/java/net/rbm/cybercraft/item/AdrenalineConverterItem.java"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Nervous System/Adrenaline Converter"
+    },
+    {
+      "name": "AdrenalineConverterEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adrenaline_converter_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/AdrenalineConverterEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Nervous System/Adrenaline Converter"
+    },
+    {
+      "name": "AdrenalineConverterActivation",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adrenaline_converter_activation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/potion/AdrenalineConverterActivationMobEffect.java"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Nervous System/Adrenaline Converter"
+    },
+    {
+      "name": "ChitinStats",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chitin_stats",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/ChitinStatsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Integumentary System/Chitin "
+    },
+    {
+      "name": "ThreatevacEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "threatevac_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/ThreatevacEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Circulatory System/ThreatEvac"
+    },
+    {
+      "name": "MicrorotorsStats",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "microrotors_stats",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/MicrorotorsStatsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Circulatory System/Microrotors"
+    },
+    {
+      "name": "AtomicSensors",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "atomic_sensors",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cybercraft/models/item/atomic_sensors.json",
+          "src/main/java/net/rbm/cybercraft/item/AtomicSensorsItem.java"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Nervous System/Atomic Sensors"
+    },
+    {
+      "name": "AtomicSensorsEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "atomic_sensors_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/AtomicSensorsEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Nervous System/Atomic Sensors"
+    },
+    {
+      "name": "AtomicSensorsActivation",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "atomic_sensors_activation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/potion/AtomicSensorsActivationMobEffect.java"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Nervous System/Atomic Sensors"
+    },
+    {
+      "name": "DeepfieldVisualInterface",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deepfield_visual_interface",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/item/DeepfieldVisualInterfaceItem.java",
+          "src/main/resources/assets/cybercraft/models/item/deepfield_visual_interface.json"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Nervous System/Deep-field Visual Interface"
+    },
+    {
+      "name": "DeepfieldVisualInterfaceEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deepfield_visual_interface_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/DeepfieldVisualInterfaceEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Nervous System/Deep-field Visual Interface"
+    },
+    {
+      "name": "DeepfieldVisualInterfaceActivation",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deepfield_visual_interface_activation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/potion/DeepfieldVisualInterfaceActivationMobEffect.java"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Nervous System/Deep-field Visual Interface"
+    },
+    {
+      "name": "CybercraftPlayerBaseStats",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cybercraft_player_base_stats",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/CybercraftPlayerBaseStatsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character/Stats/Stat Reload"
+    },
+    {
+      "name": "Stabber",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stabber",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cybercraft/models/item/stabber.json",
+          "src/main/java/net/rbm/cybercraft/item/StabberItem.java"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Nervous System/Stabber"
+    },
+    {
+      "name": "StabberEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stabber_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/StabberEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Nervous System/Stabber"
+    },
+    {
+      "name": "StabberActivation",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stabber_activation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/potion/StabberActivationMobEffect.java"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Nervous System/Stabber"
+    },
+    {
+      "name": "CritChance",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crit_chance",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/CritChanceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Character/Stats/VariableStats/Crit"
+    },
+    {
+      "name": "Neofiber",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "neofiber",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/item/NeofiberItem.java",
+          "src/main/resources/assets/cybercraft/models/item/neofiber.json"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Nervous System/NeoFiber"
+    },
+    {
+      "name": "NeoFiberStats",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "neo_fiber_stats",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/NeoFiberStatsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Nervous System/NeoFiber"
+    },
+    {
+      "name": "TyrosineInjector",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tyrosine_injector",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cybercraft/models/item/tyrosine_injector.json",
+          "src/main/java/net/rbm/cybercraft/item/TyrosineInjectorItem.java"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Nervous System/Tyrosine Injector"
+    },
+    {
+      "name": "TyrosineInjectorActivation",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tyrosine_injector_activation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/potion/TyrosineInjectorActivationMobEffect.java"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Nervous System/Tyrosine Injector"
+    },
+    {
+      "name": "TyrosineInjectorEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tyrosine_injector_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/TyrosineInjectorEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Nervous System/Tyrosine Injector"
+    },
+    {
+      "name": "CritDamage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crit_damage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/CritDamageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character/Stats/VariableStats/Crit"
+    },
+    {
+      "name": "Armor",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/ArmorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character/Stats/VariableStats/Armor"
+    },
+    {
+      "name": "MovementSpeed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "movement_speed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/MovementSpeedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character/Stats/VariableStats/MovementSpeed"
+    },
+    {
+      "name": "AttackSpeed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "attack_speed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/AttackSpeedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Character/Stats/VariableStats/AttackSpeed"
+    },
+    {
+      "name": "HandgunAmmo",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "handgun_ammo",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cybercraft/models/item/handgun_ammo.json",
+          "src/main/java/net/rbm/cybercraft/item/HandgunAmmoItem.java"
+        ]
+      },
+      "path": "~/Ranged Weapons/Handguns"
+    },
+    {
+      "name": "CybercraftBullet",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cybercraft_bullet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/entity/CybercraftBulletEntity.java"
+        ]
+      },
+      "path": "~/Ranged Weapons/General"
+    },
+    {
+      "name": "TestgunRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testgun_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/TestgunRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ranged Weapons/Rifiles"
+    },
+    {
+      "name": "RecentShot",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recent_shot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/potion/RecentShotMobEffect.java"
+        ]
+      },
+      "path": "~/Ranged Weapons/General/Recoil"
+    },
+    {
+      "name": "Nbghfvc",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nbghfvc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/item/NbghfvcItem.java",
+          "src/main/resources/assets/cybercraft/models/item/nbghfvc.json"
+        ]
+      },
+      "path": "~/Ranged Weapons/Rifiles"
+    },
+    {
+      "name": "BionicJoints",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bionic_joints",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cybercraft/models/item/bionic_joints.json",
+          "src/main/java/net/rbm/cybercraft/item/BionicJointsItem.java"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Skeleton/BionicJoints"
+    },
+    {
+      "name": "BionicJointsStats",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bionic_joints_stats",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/BionicJointsStatsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Skeleton/BionicJoints"
+    },
+    {
+      "name": "DenseMarrow",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dense_marrow",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/item/DenseMarrowItem.java",
+          "src/main/resources/assets/cybercraft/models/item/dense_marrow.json"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Skeleton/Dense Marrow "
+    },
+    {
+      "name": "DenseMarrowEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dense_marrow_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/DenseMarrowEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Nervous System/Stabber"
+    },
+    {
+      "name": "EpimorphicSkeleton",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "epimorphic_skeleton",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cybercraft/models/item/epimorphic_skeleton.json",
+          "src/main/java/net/rbm/cybercraft/item/EpimorphicSkeletonItem.java"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Skeleton/Epimorphic Skeleton"
+    },
+    {
+      "name": "EpimorphicSkeletonStats",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "epimorphic_skeleton_stats",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/EpimorphicSkeletonStatsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Skeleton/Epimorphic Skeleton"
+    },
+    {
+      "name": "RecoilLow",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recoil_low",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/potion/RecoilLowMobEffect.java"
+        ]
+      },
+      "path": "~/Ranged Weapons/General/Recoil/RecoilLow"
+    },
+    {
+      "name": "RecoilLowOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recoil_low_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/RecoilLowOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ranged Weapons/General/Recoil/RecoilLow"
+    },
+    {
+      "name": "RecoilHighOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recoil_high_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/RecoilHighOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ranged Weapons/General/Recoil/RecoilHigh"
+    },
+    {
+      "name": "RecoilHigh",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recoil_high",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/potion/RecoilHighMobEffect.java"
+        ]
+      },
+      "path": "~/Ranged Weapons/General/Recoil/RecoilHigh"
+    },
+    {
+      "name": "Shotgun",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shotgun",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/item/ShotgunItem.java",
+          "src/main/resources/assets/cybercraft/models/item/shotgun.json"
+        ]
+      },
+      "path": "~/Ranged Weapons/Shotguns"
+    },
+    {
+      "name": "ShotgunRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shotgun_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/ShotgunRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ranged Weapons/Shotguns"
+    },
+    {
+      "name": "Sandevistan",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sandevistan",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cybercraft/models/item/sandevistan.json",
+          "src/main/java/net/rbm/cybercraft/item/SandevistanItem.java"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Operating System/Sandevistan"
+    },
+    {
+      "name": "OperatingSystemActivate",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "operating_system_activate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/network/OperatingSystemActivateMessage.java"
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Operating System/Sandevistan"
+    },
+    {
+      "name": "OperatingSystemActivateOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "operating_system_activate_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rbm/cybercraft/procedures/OperatingSystemActivateOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Cyberware/Cyberwares/Operating System/Sandevistan"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "save",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "true"
+    },
+    {
+      "name": "operatingsystem1",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "frontalcortex1",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "frontalcortex2",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "face1",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "arms1",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "hands1",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "skeleton1",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "skeleton2",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "circulatorysystem1",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "circulatorysystem2",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "nervoussystem1",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "nervoussystem2",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "legs1",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "integumentarysystem1",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "integumentarysystem2",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "doublejump",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "2.0"
+    },
+    {
+      "name": "cybercraftMovementSpeed",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "cybercraftHealth",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "cybercraftArmor",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "cybercraftHackDamage",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "cybercraftAdditionalDamage",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0.0"
+    },
+    {
+      "name": "cybercraftDamageReduction",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "cybercraftCritChance",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "1.0"
+    },
+    {
+      "name": "cybercraftCritDamage",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "cybercraftToughness",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "cybercraftPassiveHealthRegeneration",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "sumPassiveHealthRegeneration",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "cybercraftAttackSpeed",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "sumMitigationChance",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "cybercraftMitigationChance",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "sumCritChance",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "sumCritDamage",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "cybercraftInaccuracy",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "cybercraftRecoilYaw",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {
+    "ITEMS:mod:integumentary_system": [
+      "CUSTOM:NanoPlating",
+      "CUSTOM:Painducer",
+      "CUSTOM:Countershell",
+      "CUSTOM:PainEditor",
+      "CUSTOM:Proxishield",
+      "CUSTOM:Rangeguard",
+      "CUSTOM:SubdermalArmor",
+      "CUSTOM:Chitin",
+      "CUSTOM:ShockNAwe"
+    ],
+    "ITEMS:mod:passive_regeneration_cyberware": [
+      "CUSTOM:Chitin"
+    ],
+    "ITEMS:cybercraft:operating_system": [
+      "CUSTOM:Sandevistan"
+    ],
+    "ITEMS:mod:throwable_weapon": [
+      "Items.TRIDENT"
+    ],
+    "DAMAGE_TYPES:forge:cybercraft_projectiles": [
+      "#is_projectile"
+    ],
+    "ITEMS:mod:skeleton": [
+      "CUSTOM:BionicJoints",
+      "CUSTOM:DenseMarrow",
+      "CUSTOM:EpimorphicSkeleton"
+    ],
+    "ITEMS:mod:legs": [
+      "CUSTOM:ReinforcedTendons",
+      "CUSTOM:FortifiedAnkles",
+      "CUSTOM:LynxPaws",
+      "CUSTOM:LeeroyLigamentSystem"
+    ],
+    "ITEMS:mod:nervous_system": [
+      "CUSTOM:AdrenalineConverter",
+      "CUSTOM:AtomicSensors",
+      "CUSTOM:DeepfieldVisualInterface",
+      "CUSTOM:Stabber",
+      "CUSTOM:Neofiber",
+      "CUSTOM:TyrosineInjector"
+    ],
+    "ENTITIES:mod:enderdragon": [
+      "EntityDragon"
+    ],
+    "ITEMS:mod:circulatory_system": [
+      "CUSTOM:Threatevac",
+      "CUSTOM:SecondHeart",
+      "CUSTOM:Microrotors",
+      "CUSTOM:HealOnKill",
+      "CUSTOM:AdrenalineBooster",
+      "CUSTOM:BlackMamba",
+      "CUSTOM:IsometricStabilizer",
+      "CUSTOM:Biomonitor"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.cybercraft.epimorphic_skeleton": "Epimorphic Skeleton",
+      "item.cybercraft.neofiber": "NeoFiber",
+      "item.cybercraft.adrenaline_converter": "Adrenaline Converter",
+      "item.cybercraft.bionic_joints": "Bionic Joints",
+      "effect.cybercraft.rangeguard_activation": "RangeGuard Activation",
+      "gui.cybercraft.cyberware_gui.label_nervous_s_ystem": "NERVOUS SYSTEM",
+      "item.cybercraft.leeroy_ligament_system": "Leeroy Ligament System",
+      "item.cybercraft.pain_editor": "Pain Editor",
+      "item.cybercraft.isometric_stabilizer": "Isometric Stabilizer",
+      "item.cybercraft.heal_on_kill": "Heal On Kill",
+      "gui.cybercraft.cyberware_gui.label_integumentary_system": "INTEGUMENTARY SYSTEM",
+      "item.cybercraft.reinforced_tendons": "Reinforced Tendons",
+      "effect.cybercraft.countershell_mitigation_chance": "Countershell Mitigation Chance",
+      "gui.cybercraft.cyberware_gui.label_hands": "HANDS",
+      "effect.cybercraft.adrenaline_converter_activation": "Adrenaline Converter Activation",
+      "effect.cybercraft.stabber_activation": "Stabber Activation",
+      "item.cybercraft.lynx_paws": "Lynx Paws",
+      "gui.cybercraft.cyberware_gui.label_face": "FACE",
+      "item.cybercraft.shotgun": "Shotgun",
+      "item.cybercraft.shock_n_awe": "Shock-n-Awe",
+      "item.cybercraft.subdermal_armor": "Subdermal Armor",
+      "item.cybercraft.handgun_ammo": "Handgun Ammo",
+      "effect.cybercraft.recoil_high": "Recoil High",
+      "effect.cybercraft.chemical_dot": "Chemical Damage Over Time",
+      "effect.cybercraft.reduced_fall_damage": "Reduced Fall Damage",
+      "effect.cybercraft.tyrosine_injector_activation": "Tyrosine Injector Activation",
+      "key.cybercraft.cyberware_menu": "Cyberware Menu",
+      "item.cybercraft.countershell": "Countershell",
+      "gui.cybercraft.cyberware_gui.label_skeleton": "SKELETON",
+      "item.cybercraft.sandevistan": "Sandevistan",
+      "gui.cybercraft.cyberware_gui.label_circulatory_system": "CIRCULATORY SYSTEM",
+      "item.cybercraft.nano_plating": "Nano Plating",
+      "item.cybercraft.nbghfvc": "Nbghfvc",
+      "effect.cybercraft.enemy_nearby": "Enemy Nearby",
+      "item.cybercraft.biomonitor": "Biomonitor",
+      "gui.cybercraft.cyberware_gui.label_operating_system": "OPERATING SYSTEM",
+      "item.cybercraft.black_mamba": "Black Mamba",
+      "item_group.cybercraft.cyber_craft_tab": "CyberCraft ",
+      "item.cybercraft.painducer": "Painducer",
+      "effect.cybercraft.regen_test_plus_5": "HP Regen Test",
+      "item.cybercraft.second_heart": "Second Heart",
+      "effect.cybercraft.recoil_low": "Recoil Low",
+      "gui.cybercraft.cyberware_gui.label_legs": "LEGS",
+      "item.cybercraft.tyrosine_injector": "Tyrosine Injector",
+      "item.cybercraft.fortified_ankles": "Fortified Ankles",
+      "effect.cybercraft.passive_health_regen": "Passive Health Regen",
+      "effect.cybercraft.second_heart_cooldown": "Second Heart Cooldown",
+      "effect.cybercraft.heal_cooldown": "HealCooldown",
+      "item.cybercraft.rangeguard": "RangeGuard",
+      "effect.cybercraft.threatevac_activation_threshold": "ThreatEvac Activation Thresholder",
+      "item.cybercraft.adrenaline_booster": "Adrenaline Booster",
+      "item.cybercraft.chitin": "Chitin",
+      "effect.cybercraft.biomonitor_cooldown": "Biomonitor Cooldown",
+      "item.cybercraft.dense_marrow": "Dense Marrow",
+      "gui.cybercraft.cyberware_gui.label_frontal_cortex": "FRONTAL CORTEX",
+      "key.cybercraft.operating_system_activate": "Operating System Activate",
+      "effect.cybercraft.atomic_sensors_activation": "Atomic Sensors Activation",
+      "item.cybercraft.threatevac": "ThreatEvac",
+      "item.cybercraft.microrotors": "Microrotors",
+      "item.cybercraft.atomic_sensors": "Atomic Sensors",
+      "key.cybercraft.double_jump": "Jump",
+      "effect.cybercraft.recent_shot": "Recent Shot",
+      "effect.cybercraft.deepfield_visual_interface_activation": "Deep-field Visual Interface Activation",
+      "key.categories.cybercraft": "CyberCraft",
+      "item.cybercraft.stabber": "Stabber",
+      "gui.cybercraft.cyberware_gui.label_arms": "      ARMS",
+      "effect.cybercraft.proxishield_activation": "ProxiShield Activation",
+      "effect.cybercraft.chemical_dot_cooldown": "Chemical DOT Cooldown",
+      "item.cybercraft.proxishield": "ProxiShield",
+      "item.cybercraft.deepfield_visual_interface": "Deepfield Visual Interface"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Cyberware",
+        "children": [
+          {
+            "name": "Main",
+            "children": []
+          },
+          {
+            "name": "Cyberwares",
+            "children": [
+              {
+                "name": "Frontal Cortex",
+                "children": []
+              },
+              {
+                "name": "Operating System",
+                "children": [
+                  {
+                    "name": "Main",
+                    "children": []
+                  },
+                  {
+                    "name": "Sandevistan",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "Arms",
+                "children": []
+              },
+              {
+                "name": "Face",
+                "children": []
+              },
+              {
+                "name": "Skeleton",
+                "children": [
+                  {
+                    "name": "Main",
+                    "children": []
+                  },
+                  {
+                    "name": "BionicJoints",
+                    "children": []
+                  },
+                  {
+                    "name": "Dense Marrow ",
+                    "children": []
+                  },
+                  {
+                    "name": "Epimorphic Skeleton",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "Hands",
+                "children": [
+                  {
+                    "name": "Main",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "Nervous System",
+                "children": [
+                  {
+                    "name": "Main",
+                    "children": []
+                  },
+                  {
+                    "name": "Adrenaline Converter",
+                    "children": []
+                  },
+                  {
+                    "name": "Atomic Sensors",
+                    "children": []
+                  },
+                  {
+                    "name": "Deep-field Visual Interface",
+                    "children": []
+                  },
+                  {
+                    "name": "Stabber",
+                    "children": []
+                  },
+                  {
+                    "name": "NeoFiber",
+                    "children": []
+                  },
+                  {
+                    "name": "Tyrosine Injector",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "Circulatory System",
+                "children": [
+                  {
+                    "name": "ThreatEvac",
+                    "children": []
+                  },
+                  {
+                    "name": "Second Heart",
+                    "children": []
+                  },
+                  {
+                    "name": "Microrotors",
+                    "children": []
+                  },
+                  {
+                    "name": "Heal-On-Kill",
+                    "children": []
+                  },
+                  {
+                    "name": "Adrenaline Booster",
+                    "children": []
+                  },
+                  {
+                    "name": "Main",
+                    "children": []
+                  },
+                  {
+                    "name": "Black Mamba",
+                    "children": []
+                  },
+                  {
+                    "name": "Isometric Stabilizer",
+                    "children": []
+                  },
+                  {
+                    "name": "Biomonitor",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "Integumentary System",
+                "children": [
+                  {
+                    "name": "Main",
+                    "children": []
+                  },
+                  {
+                    "name": "Countershell",
+                    "children": []
+                  },
+                  {
+                    "name": "Painducer",
+                    "children": []
+                  },
+                  {
+                    "name": "Nano-plating",
+                    "children": []
+                  },
+                  {
+                    "name": "Pain Editor",
+                    "children": []
+                  },
+                  {
+                    "name": "ProxiShield",
+                    "children": []
+                  },
+                  {
+                    "name": "RangeGuard",
+                    "children": []
+                  },
+                  {
+                    "name": "Subdermal Armor",
+                    "children": []
+                  },
+                  {
+                    "name": "Chitin ",
+                    "children": []
+                  },
+                  {
+                    "name": "Shock-n-Awe",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "Legs",
+                "children": [
+                  {
+                    "name": "Main",
+                    "children": []
+                  },
+                  {
+                    "name": "ReinforcedTendons",
+                    "children": []
+                  },
+                  {
+                    "name": "Fortified Ankles",
+                    "children": []
+                  },
+                  {
+                    "name": "Lynx Paws",
+                    "children": []
+                  },
+                  {
+                    "name": "Leeroy Ligament System",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Gui",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Character",
+        "children": [
+          {
+            "name": "Stats",
+            "children": [
+              {
+                "name": "DamageReduction",
+                "children": []
+              },
+              {
+                "name": "VariableStats",
+                "children": [
+                  {
+                    "name": "Mitigation",
+                    "children": []
+                  },
+                  {
+                    "name": "PassiveRegeneration",
+                    "children": []
+                  },
+                  {
+                    "name": "Crit",
+                    "children": []
+                  },
+                  {
+                    "name": "Armor",
+                    "children": []
+                  },
+                  {
+                    "name": "MovementSpeed",
+                    "children": []
+                  },
+                  {
+                    "name": "AttackSpeed",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "ConstStats",
+                "children": []
+              },
+              {
+                "name": "Stat Reload",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Commands",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Main",
+        "children": [
+          {
+            "name": "EnemyDetection",
+            "children": []
+          },
+          {
+            "name": "ReducedFallDamage",
+            "children": []
+          },
+          {
+            "name": "Chemical DOT",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Ranged Weapons",
+        "children": [
+          {
+            "name": "General",
+            "children": [
+              {
+                "name": "Recoil",
+                "children": [
+                  {
+                    "name": "RecoilLow",
+                    "children": []
+                  },
+                  {
+                    "name": "RecoilHigh",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Handguns",
+            "children": []
+          },
+          {
+            "name": "Rifiles",
+            "children": []
+          },
+          {
+            "name": "Shotguns",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "cybercraft",
+    "modName": "CyberCraft",
+    "version": "1.0.0",
+    "author": "Ciochu",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.rbm.cybercraft"
+  },
+  "mcreatorVersion": 202400340615
+}

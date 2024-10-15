@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "cybercraft:nano_plating",
+    "cybercraft:painducer",
+    "cybercraft:countershell",
+    "cybercraft:pain_editor",
+    "cybercraft:proxishield",
+    "cybercraft:rangeguard",
+    "cybercraft:subdermal_armor",
+    "cybercraft:chitin",
+    "cybercraft:shock_n_awe"
+  ]
+}

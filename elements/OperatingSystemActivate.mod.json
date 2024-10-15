@@ -1,0 +1,12 @@
+{
+  "_fv": 69,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "X",
+    "keyBindingName": "Operating System Activate",
+    "keyBindingCategoryKey": "cybercraft",
+    "onKeyPressed": {
+      "name": "OperatingSystemActivateOnKeyPressed"
+    }
+  }
+}

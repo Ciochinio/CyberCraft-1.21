@@ -3,10 +3,10 @@ package net.rbm.cybercraft.procedures;
 import net.rbm.cybercraft.network.CybercraftModVariables;
 import net.rbm.cybercraft.CybercraftMod;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.player.PlayerEvent;
+import net.neoforged.neoforge.event.entity.player.PlayerEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.LivingEntity;
@@ -16,7 +16,7 @@ import net.minecraft.world.effect.MobEffectInstance;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class CybercraftHealAdditionalHealProcedure {
 	@SubscribeEvent
 	public static void onPlayerRespawned(PlayerEvent.PlayerRespawnEvent event) {
@@ -31,7 +31,7 @@ public class CybercraftHealAdditionalHealProcedure {
 		if (entity == null)
 			return;
 		CybercraftMod.queueServerWork(1, () -> {
-			if ((entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftHealth > 0) {
+			if (entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftHealth > 0) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 1, 5));
 			}

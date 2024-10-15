@@ -8,9 +8,4 @@ public class CountershellMitigationChanceMobEffect extends MobEffect {
 	public CountershellMitigationChanceMobEffect() {
 		super(MobEffectCategory.NEUTRAL, -16777216);
 	}
-
-	@Override
-	public boolean isDurationEffectTick(int duration, int amplifier) {
-		return true;
-	}
 }

@@ -9,74 +9,54 @@ public class CybercraftPlayerBaseStatsProcedure {
 		if (entity == null)
 			return;
 		{
-			double _setval = 0;
-			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.cybercraftHealth = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+			CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
+			_vars.cybercraftHealth = 0;
+			_vars.syncPlayerVariables(entity);
 		}
 		{
-			double _setval = 0;
-			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.cybercraftMovementSpeed = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+			CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
+			_vars.cybercraftMovementSpeed = 0;
+			_vars.syncPlayerVariables(entity);
 		}
 		{
-			double _setval = 0;
-			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.cybercraftArmor = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+			CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
+			_vars.cybercraftArmor = 0;
+			_vars.syncPlayerVariables(entity);
 		}
 		{
-			double _setval = 0;
-			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.cybercraftToughness = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+			CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
+			_vars.cybercraftToughness = 0;
+			_vars.syncPlayerVariables(entity);
 		}
 		{
-			double _setval = 0;
-			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.cybercraftPassiveHealthRegeneration = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+			CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
+			_vars.cybercraftPassiveHealthRegeneration = 0;
+			_vars.syncPlayerVariables(entity);
 		}
 		{
-			double _setval = 10;
-			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.cybercraftMitigationChance = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+			CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
+			_vars.cybercraftMitigationChance = 10;
+			_vars.syncPlayerVariables(entity);
 		}
 		{
-			double _setval = 0;
-			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.cybercraftHackDamage = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+			CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
+			_vars.cybercraftHackDamage = 0;
+			_vars.syncPlayerVariables(entity);
 		}
 		{
-			double _setval = 0;
-			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.cybercraftAttackSpeed = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+			CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
+			_vars.cybercraftAttackSpeed = 0;
+			_vars.syncPlayerVariables(entity);
 		}
 		{
-			double _setval = 5;
-			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.cybercraftCritChance = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+			CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
+			_vars.cybercraftCritChance = 5;
+			_vars.syncPlayerVariables(entity);
 		}
 		{
-			double _setval = 50;
-			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.cybercraftCritDamage = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+			CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
+			_vars.cybercraftCritDamage = 50;
+			_vars.syncPlayerVariables(entity);
 		}
 	}
 }

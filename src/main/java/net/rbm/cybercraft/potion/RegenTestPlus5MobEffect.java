@@ -8,9 +8,4 @@ public class RegenTestPlus5MobEffect extends MobEffect {
 	public RegenTestPlus5MobEffect() {
 		super(MobEffectCategory.NEUTRAL, -1);
 	}
-
-	@Override
-	public boolean isDurationEffectTick(int duration, int amplifier) {
-		return true;
-	}
 }

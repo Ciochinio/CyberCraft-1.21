@@ -3,10 +3,10 @@ package net.rbm.cybercraft.procedures;
 import net.rbm.cybercraft.network.CybercraftModVariables;
 import net.rbm.cybercraft.init.CybercraftModMobEffects;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.living.LivingEvent;
+import net.neoforged.neoforge.event.entity.living.LivingEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
@@ -16,7 +16,7 @@ import net.minecraft.resources.ResourceLocation;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class ReducedFallDamageWithLegsProcedure {
 	@SubscribeEvent
 	public static void onEntityJump(LivingEvent.LivingJumpEvent event) {
@@ -30,9 +30,9 @@ public class ReducedFallDamageWithLegsProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if (((entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).legs1).is(ItemTags.create(new ResourceLocation("cybercraft:legs")))) {
+		if (entity.getData(CybercraftModVariables.PLAYER_VARIABLES).legs1.is(ItemTags.create(ResourceLocation.parse("cybercraft:legs")))) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(CybercraftModMobEffects.REDUCED_FALL_DAMAGE.get(), 30, 0));
+				_entity.addEffect(new MobEffectInstance(CybercraftModMobEffects.REDUCED_FALL_DAMAGE, 30, 0));
 		}
 	}
 }

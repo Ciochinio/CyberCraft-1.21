@@ -4,10 +4,10 @@ import net.rbm.cybercraft.network.CybercraftModVariables;
 import net.rbm.cybercraft.init.CybercraftModMobEffects;
 import net.rbm.cybercraft.init.CybercraftModItems;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.living.LivingEvent;
+import net.neoforged.neoforge.event.entity.living.LivingEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.entity.LivingEntity;
@@ -16,7 +16,7 @@ import net.minecraft.world.effect.MobEffectInstance;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class ReinforcedTendonsDoubleJumpProcedure {
 	@SubscribeEvent
 	public static void onEntityJump(LivingEvent.LivingJumpEvent event) {
@@ -30,18 +30,15 @@ public class ReinforcedTendonsDoubleJumpProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if (((entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).legs1).getItem() == CybercraftModItems.REINFORCED_TENDONS.get() && !entity.onGround()
-				&& (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).doublejump > 0) {
+		if (entity.getData(CybercraftModVariables.PLAYER_VARIABLES).legs1.getItem() == CybercraftModItems.REINFORCED_TENDONS.get() && !entity.onGround() && entity.getData(CybercraftModVariables.PLAYER_VARIABLES).doublejump > 0) {
 			entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), (entity.getDeltaMovement().y() + 0.5), (entity.getDeltaMovement().z())));
 			{
-				double _setval = (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).doublejump - 1;
-				entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.doublejump = _setval;
-					capability.syncPlayerVariables(entity);
-				});
+				CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
+				_vars.doublejump = entity.getData(CybercraftModVariables.PLAYER_VARIABLES).doublejump - 1;
+				_vars.syncPlayerVariables(entity);
 			}
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(CybercraftModMobEffects.REDUCED_FALL_DAMAGE.get(), 25, 0));
+				_entity.addEffect(new MobEffectInstance(CybercraftModMobEffects.REDUCED_FALL_DAMAGE, 25, 0));
 		}
 	}
 }

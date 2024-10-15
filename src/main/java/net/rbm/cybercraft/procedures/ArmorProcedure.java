@@ -3,10 +3,10 @@ package net.rbm.cybercraft.procedures;
 import net.rbm.cybercraft.network.CybercraftModVariables;
 import net.rbm.cybercraft.init.CybercraftModMobEffects;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.TickEvent;
+import net.neoforged.neoforge.event.tick.PlayerTickEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
@@ -16,13 +16,11 @@ import net.minecraft.commands.CommandSource;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class ArmorProcedure {
 	@SubscribeEvent
-	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
-		if (event.phase == TickEvent.Phase.END) {
-			execute(event, event.player);
-		}
+	public static void onPlayerTick(PlayerTickEvent.Post event) {
+		execute(event, event.getEntity());
 	}
 
 	public static void execute(Entity entity) {
@@ -33,8 +31,8 @@ public class ArmorProcedure {
 		if (entity == null)
 			return;
 		double sumArmor = 0;
-		sumArmor = (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftArmor;
-		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(CybercraftModMobEffects.PROXISHIELD_ACTIVATION.get()) || entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(CybercraftModMobEffects.RANGEGUARD_ACTIVATION.get())) {
+		sumArmor = entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftArmor;
+		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(CybercraftModMobEffects.PROXISHIELD_ACTIVATION) || entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(CybercraftModMobEffects.RANGEGUARD_ACTIVATION)) {
 			sumArmor = sumArmor + 5;
 		}
 		{

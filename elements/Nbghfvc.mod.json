@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 69,
   "_type": "item",
   "definition": {
     "renderType": 1,
@@ -9,9 +9,11 @@
     "states": [],
     "name": "Nbghfvc",
     "rarity": "COMMON",
-    "creativeTab": {
-      "value": "CUSTOM:CyberCraftTab"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:CyberCraftTab"
+      }
+    ],
     "stackSize": 1,
     "enchantability": 0,
     "useDuration": 0,
@@ -40,9 +42,11 @@
     },
     "enableRanged": false,
     "shootConstantly": false,
+    "rangedItemChargesPower": false,
     "projectile": {
       "value": "CUSTOM:CybercraftBullet"
     },
+    "projectileDisableAmmoCheck": false,
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

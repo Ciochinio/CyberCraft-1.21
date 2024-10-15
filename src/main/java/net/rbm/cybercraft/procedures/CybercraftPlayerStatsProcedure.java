@@ -12,26 +12,24 @@ public class CybercraftPlayerStatsProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof Player _player && !_player.level().isClientSide())
-			_player.displayClientMessage(Component.literal(("Health" + (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftHealth)), false);
+			_player.displayClientMessage(Component.literal(("Health" + entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftHealth)), false);
 		if (entity instanceof Player _player && !_player.level().isClientSide())
-			_player.displayClientMessage(Component.literal(("Movement Speed " + (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftMovementSpeed)), false);
+			_player.displayClientMessage(Component.literal(("Movement Speed " + entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftMovementSpeed)), false);
 		if (entity instanceof Player _player && !_player.level().isClientSide())
 			_player.displayClientMessage(Component.literal(("Armor" + (entity instanceof LivingEntity _livEnt ? _livEnt.getArmorValue() : 0))), false);
 		if (entity instanceof Player _player && !_player.level().isClientSide())
-			_player.displayClientMessage(Component.literal(("Intelligence" + (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftHackDamage)), false);
+			_player.displayClientMessage(Component.literal(("Intelligence" + entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftHackDamage)), false);
 		if (entity instanceof Player _player && !_player.level().isClientSide())
-			_player.displayClientMessage(Component.literal(("Toughness" + (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftToughness)), false);
+			_player.displayClientMessage(Component.literal(("Toughness" + entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftToughness)), false);
 		if (entity instanceof Player _player && !_player.level().isClientSide())
-			_player.displayClientMessage(Component.literal(("HP Regen" + (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftPassiveHealthRegeneration)),
-					false);
+			_player.displayClientMessage(Component.literal(("HP Regen" + entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftPassiveHealthRegeneration)), false);
 		if (entity instanceof Player _player && !_player.level().isClientSide())
-			_player.displayClientMessage(Component.literal(("Mitigation Chance" + (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftMitigationChance)),
-					false);
+			_player.displayClientMessage(Component.literal(("Mitigation Chance" + entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftMitigationChance)), false);
 		if (entity instanceof Player _player && !_player.level().isClientSide())
-			_player.displayClientMessage(Component.literal(("Attack Speed" + (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftAttackSpeed)), false);
+			_player.displayClientMessage(Component.literal(("Attack Speed" + entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftAttackSpeed)), false);
 		if (entity instanceof Player _player && !_player.level().isClientSide())
-			_player.displayClientMessage(Component.literal(("Crit Rate" + (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftCritChance)), false);
+			_player.displayClientMessage(Component.literal(("Crit Rate" + entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftCritChance)), false);
 		if (entity instanceof Player _player && !_player.level().isClientSide())
-			_player.displayClientMessage(Component.literal(("Crit Damage" + (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftCritDamage)), false);
+			_player.displayClientMessage(Component.literal(("Crit Damage" + entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftCritDamage)), false);
 	}
 }

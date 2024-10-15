@@ -31,11 +31,11 @@ public class CyberwareGuiScreen extends AbstractContainerScreen<CyberwareGuiMenu
 		this.imageHeight = 235;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("cybercraft:textures/screens/cyberware_gui.png");
+	private static final ResourceLocation texture = ResourceLocation.parse("cybercraft:textures/screens/cyberware_gui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(guiGraphics);
+		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
@@ -47,7 +47,7 @@ public class CyberwareGuiScreen extends AbstractContainerScreen<CyberwareGuiMenu
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("cybercraft:textures/screens/test.png"), this.leftPos + 104, this.topPos + 9, 0, 0, 85, 140, 85, 140);
+		guiGraphics.blit(ResourceLocation.parse("cybercraft:textures/screens/test.png"), this.leftPos + 104, this.topPos + 9, 0, 0, 85, 140, 85, 140);
 
 		RenderSystem.disableBlend();
 	}
@@ -59,11 +59,6 @@ public class CyberwareGuiScreen extends AbstractContainerScreen<CyberwareGuiMenu
 			return true;
 		}
 		return super.keyPressed(key, b, c);
-	}
-
-	@Override
-	public void containerTick() {
-		super.containerTick();
 	}
 
 	@Override

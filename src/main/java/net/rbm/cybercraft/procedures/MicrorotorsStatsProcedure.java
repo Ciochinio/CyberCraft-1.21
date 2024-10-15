@@ -9,14 +9,12 @@ public class MicrorotorsStatsProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (((entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).circulatorysystem1).getItem() == CybercraftModItems.MICROROTORS.get()
-				|| ((entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).circulatorysystem2).getItem() == CybercraftModItems.MICROROTORS.get()) {
+		if (entity.getData(CybercraftModVariables.PLAYER_VARIABLES).circulatorysystem1.getItem() == CybercraftModItems.MICROROTORS.get()
+				|| entity.getData(CybercraftModVariables.PLAYER_VARIABLES).circulatorysystem2.getItem() == CybercraftModItems.MICROROTORS.get()) {
 			{
-				double _setval = (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftAttackSpeed + 1;
-				entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.cybercraftAttackSpeed = _setval;
-					capability.syncPlayerVariables(entity);
-				});
+				CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
+				_vars.cybercraftAttackSpeed = entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftAttackSpeed + 1;
+				_vars.syncPlayerVariables(entity);
 			}
 		}
 	}

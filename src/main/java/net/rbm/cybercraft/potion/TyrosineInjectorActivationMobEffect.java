@@ -8,9 +8,4 @@ public class TyrosineInjectorActivationMobEffect extends MobEffect {
 	public TyrosineInjectorActivationMobEffect() {
 		super(MobEffectCategory.NEUTRAL, -16777216);
 	}
-
-	@Override
-	public boolean isDurationEffectTick(int duration, int amplifier) {
-		return true;
-	}
 }

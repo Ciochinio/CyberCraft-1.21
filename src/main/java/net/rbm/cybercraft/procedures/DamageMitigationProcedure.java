@@ -3,10 +3,11 @@ package net.rbm.cybercraft.procedures;
 import net.rbm.cybercraft.network.CybercraftModVariables;
 import net.rbm.cybercraft.init.CybercraftModMobEffects;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.living.LivingAttackEvent;
+import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.ICancellableEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
@@ -17,11 +18,11 @@ import net.minecraft.network.chat.Component;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class DamageMitigationProcedure {
 	@SubscribeEvent
-	public static void onEntityAttacked(LivingAttackEvent event) {
-		if (event != null && event.getEntity() != null) {
+	public static void onEntityAttacked(LivingIncomingDamageEvent event) {
+		if (event.getEntity() != null) {
 			execute(event, event.getEntity(), event.getAmount());
 		}
 	}
@@ -35,34 +36,28 @@ public class DamageMitigationProcedure {
 			return;
 		double mitigationRoll = 0;
 		{
-			double _setval = (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftMitigationChance;
-			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.sumMitigationChance = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+			CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
+			_vars.sumMitigationChance = entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftMitigationChance;
+			_vars.syncPlayerVariables(entity);
 		}
 		mitigationRoll = Mth.nextInt(RandomSource.create(), 1, 100);
-		if (entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(CybercraftModMobEffects.COUNTERSHELL_MITIGATION_CHANCE.get())) {
+		if (entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(CybercraftModMobEffects.COUNTERSHELL_MITIGATION_CHANCE)) {
 			{
-				double _setval = (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).sumMitigationChance + 20;
-				entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.sumMitigationChance = _setval;
-					capability.syncPlayerVariables(entity);
-				});
+				CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
+				_vars.sumMitigationChance = entity.getData(CybercraftModVariables.PLAYER_VARIABLES).sumMitigationChance + 20;
+				_vars.syncPlayerVariables(entity);
 			}
 		}
 		if (entity instanceof Player _player && !_player.level().isClientSide())
-			_player.displayClientMessage(Component.literal(("Rolujemy>>>" + mitigationRoll)), false);
+			_player.displayClientMessage(Component.literal(("dmg mitigation roll>>>" + mitigationRoll)), false);
 		if (entity instanceof Player _player && !_player.level().isClientSide())
-			_player.displayClientMessage(Component.literal(("szansa?" + (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).sumMitigationChance)), false);
-		if (mitigationRoll <= (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).sumMitigationChance
-				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) - amount > 0) {
-			if (event != null && event.isCancelable()) {
-				event.setCanceled(true);
+			_player.displayClientMessage(Component.literal(("chance:" + entity.getData(CybercraftModVariables.PLAYER_VARIABLES).sumMitigationChance)), false);
+		if (mitigationRoll <= entity.getData(CybercraftModVariables.PLAYER_VARIABLES).sumMitigationChance && (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) - amount > 0) {
+			if (event instanceof ICancellableEvent _cancellable) {
+				_cancellable.setCanceled(true);
 			}
 			if (entity instanceof LivingEntity _entity)
-				_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)
-						- (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftDamageReduction * 0.5));
+				_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) - entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftDamageReduction * 0.5));
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("Damage Mitigated"), true);
 		}

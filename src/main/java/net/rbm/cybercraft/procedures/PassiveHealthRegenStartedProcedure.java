@@ -15,32 +15,27 @@ public class PassiveHealthRegenStartedProcedure {
 			return;
 		double sumPassiveHealthRegeneration = 0;
 		{
-			double _setval = (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftPassiveHealthRegeneration;
-			entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.sumPassiveHealthRegeneration = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+			CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
+			_vars.sumPassiveHealthRegeneration = entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftPassiveHealthRegeneration;
+			_vars.syncPlayerVariables(entity);
 		}
-		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(CybercraftModMobEffects.REGEN_TEST_PLUS_5.get())) {
+		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(CybercraftModMobEffects.REGEN_TEST_PLUS_5)) {
 			{
-				double _setval = (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).sumPassiveHealthRegeneration + 1;
-				entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.sumPassiveHealthRegeneration = _setval;
-					capability.syncPlayerVariables(entity);
-				});
+				CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
+				_vars.sumPassiveHealthRegeneration = entity.getData(CybercraftModVariables.PLAYER_VARIABLES).sumPassiveHealthRegeneration + 1;
+				_vars.syncPlayerVariables(entity);
 			}
 		}
-		if (entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(CybercraftModMobEffects.PASSIVE_HEALTH_REGEN.get()) && (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) > 0) {
+		if (entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(CybercraftModMobEffects.PASSIVE_HEALTH_REGEN) && (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) > 0) {
 			CybercraftMod.queueServerWork(20, () -> {
-				if (!(entity instanceof LivingEntity _livEnt3 && _livEnt3.hasEffect(CybercraftModMobEffects.HEAL_COOLDOWN.get())) && (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) > 0) {
+				if (!(entity instanceof LivingEntity _livEnt3 && _livEnt3.hasEffect(CybercraftModMobEffects.HEAL_COOLDOWN)) && (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) > 0) {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(CybercraftModMobEffects.HEAL_COOLDOWN.get(), 60, 0));
+						_entity.addEffect(new MobEffectInstance(CybercraftModMobEffects.HEAL_COOLDOWN, 60, 0));
 					if (entity instanceof LivingEntity _entity)
-						_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)
-								+ (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).sumPassiveHealthRegeneration));
+						_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + entity.getData(CybercraftModVariables.PLAYER_VARIABLES).sumPassiveHealthRegeneration));
 				}
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(CybercraftModMobEffects.PASSIVE_HEALTH_REGEN.get(), 30, 0));
+					_entity.addEffect(new MobEffectInstance(CybercraftModMobEffects.PASSIVE_HEALTH_REGEN, 30, 0));
 				PassiveHealthRegenStartedProcedure.execute(world, entity);
 			});
 		}

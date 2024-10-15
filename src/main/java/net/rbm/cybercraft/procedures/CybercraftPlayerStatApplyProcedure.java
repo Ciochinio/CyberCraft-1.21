@@ -13,14 +13,13 @@ public class CybercraftPlayerStatApplyProcedure {
 		if (entity == null)
 			return;
 		double nigga = 0;
-		if ((entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftHealth != 0) {
+		if (entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftHealth != 0) {
 			{
 				Entity _ent = entity;
 				if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-					_ent.getServer().getCommands().performPrefixedCommand(
-							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
-									_ent.level().getServer(), _ent),
-							("/attribute @s minecraft:generic.max_health base set " + (20 + (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftHealth)));
+					_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+							_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent),
+							("/attribute @s minecraft:generic.max_health base set " + (20 + entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftHealth)));
 				}
 			}
 		} else {
@@ -36,15 +35,13 @@ public class CybercraftPlayerStatApplyProcedure {
 			if (entity instanceof LivingEntity _entity)
 				_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + 1));
 		}
-		if ((entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftToughness != 0) {
+		if (entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftToughness != 0) {
 			{
 				Entity _ent = entity;
 				if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-					_ent.getServer().getCommands().performPrefixedCommand(
-							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
-									_ent.level().getServer(), _ent),
-							("/attribute @s minecraft:generic.armor_toughness base set "
-									+ (0 + (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftToughness)));
+					_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+							_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent),
+							("/attribute @s minecraft:generic.armor_toughness base set " + (0 + entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftToughness)));
 				}
 			}
 		} else {
@@ -56,14 +53,12 @@ public class CybercraftPlayerStatApplyProcedure {
 				}
 			}
 		}
-		if ((entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftHackDamage != 0) {
+		if (entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftHackDamage != 0) {
 			{
 				Entity _ent = entity;
 				if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-					_ent.getServer().getCommands().performPrefixedCommand(
-							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
-									_ent.level().getServer(), _ent),
-							("" + ((entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftMovementSpeed * 0.001 + 0.1)));
+					_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+							_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), ("" + (entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftMovementSpeed * 0.001 + 0.1)));
 				}
 			}
 		} else {
@@ -75,14 +70,12 @@ public class CybercraftPlayerStatApplyProcedure {
 				}
 			}
 		}
-		if ((entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftAdditionalDamage != 0) {
+		if (entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftAdditionalDamage != 0) {
 			{
 				Entity _ent = entity;
 				if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-					_ent.getServer().getCommands().performPrefixedCommand(
-							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
-									_ent.level().getServer(), _ent),
-							("" + ((entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftMovementSpeed * 0.001 + 0.1)));
+					_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+							_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), ("" + (entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftMovementSpeed * 0.001 + 0.1)));
 				}
 			}
 		} else {

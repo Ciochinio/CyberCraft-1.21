@@ -13,12 +13,13 @@ public class RecoilHighMobEffect extends MobEffect {
 	}
 
 	@Override
-	public void applyEffectTick(LivingEntity entity, int amplifier) {
-		RecoilHighOnEffectActiveTickProcedure.execute(entity);
+	public boolean shouldApplyEffectTickThisTick(int duration, int amplifier) {
+		return true;
 	}
 
 	@Override
-	public boolean isDurationEffectTick(int duration, int amplifier) {
-		return true;
+	public boolean applyEffectTick(LivingEntity entity, int amplifier) {
+		RecoilHighOnEffectActiveTickProcedure.execute(entity);
+		return super.applyEffectTick(entity, amplifier);
 	}
 }

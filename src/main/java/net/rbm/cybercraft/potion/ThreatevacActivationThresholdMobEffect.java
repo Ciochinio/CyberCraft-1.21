@@ -8,9 +8,4 @@ public class ThreatevacActivationThresholdMobEffect extends MobEffect {
 	public ThreatevacActivationThresholdMobEffect() {
 		super(MobEffectCategory.NEUTRAL, -16777216);
 	}
-
-	@Override
-	public boolean isDurationEffectTick(int duration, int amplifier) {
-		return true;
-	}
 }

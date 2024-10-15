@@ -9,13 +9,11 @@ public class LeeroyLigamentSystemStatsProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (CybercraftModItems.LEEROY_LIGAMENT_SYSTEM.get() == ((entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).legs1).getItem()) {
+		if (CybercraftModItems.LEEROY_LIGAMENT_SYSTEM.get() == entity.getData(CybercraftModVariables.PLAYER_VARIABLES).legs1.getItem()) {
 			{
-				double _setval = (entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CybercraftModVariables.PlayerVariables())).cybercraftMovementSpeed + 20;
-				entity.getCapability(CybercraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.cybercraftMovementSpeed = _setval;
-					capability.syncPlayerVariables(entity);
-				});
+				CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
+				_vars.cybercraftMovementSpeed = entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftMovementSpeed + 20;
+				_vars.syncPlayerVariables(entity);
 			}
 		}
 	}

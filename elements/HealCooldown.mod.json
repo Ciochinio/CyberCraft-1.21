@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "HealCooldown",
-    "icon": "heal_cooldown.png",
+    "icon": "heal_cooldown",
     "color": {
       "value": -16777216,
       "falpha": 0.0

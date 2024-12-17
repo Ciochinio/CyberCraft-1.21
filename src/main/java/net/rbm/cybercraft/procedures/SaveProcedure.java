@@ -12,7 +12,7 @@ import java.util.function.Supplier;
 import java.util.Map;
 
 public class SaveProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		{
@@ -155,6 +155,6 @@ public class SaveProcedure {
 			_vars.save = true;
 			_vars.syncPlayerVariables(entity);
 		}
-		CybercrafPlayerStatCheckProcedure.execute(world, x, y, z, entity);
+		CybercrafPlayerStatCheckProcedure.execute(world, entity);
 	}
 }

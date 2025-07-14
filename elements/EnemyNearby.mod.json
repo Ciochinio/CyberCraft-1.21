@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 79,
   "_type": "potioneffect",
   "definition": {
     "effectName": "Enemy Nearby",
@@ -12,8 +12,7 @@
     "mobEffectCategory": "NEUTRAL",
     "renderStatusInInventory": false,
     "renderStatusInHUD": true,
-    "isCuredByMilk": true,
-    "isProtectedByTotem": true,
-    "isCuredbyHoney": false
+    "isCuredbyHoney": false,
+    "modifiers": []
   }
 }

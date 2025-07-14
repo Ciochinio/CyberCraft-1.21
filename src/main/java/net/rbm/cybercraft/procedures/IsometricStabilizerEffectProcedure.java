@@ -35,7 +35,7 @@ public class IsometricStabilizerEffectProcedure {
 				|| CybercraftModItems.ISOMETRIC_STABILIZER.get() == sourceentity.getData(CybercraftModVariables.PLAYER_VARIABLES).circulatorysystem2.getItem()) {
 			if (entity instanceof Mob || entity instanceof WaterAnimal) {
 				if (sourceentity instanceof Player _player)
-					_player.getFoodData().setFoodLevel((int) ((sourceentity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) + 1));
+					_player.getFoodData().setFoodLevel((sourceentity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) + 1);
 			}
 		}
 	}

@@ -10,7 +10,7 @@ public class RecoilHighOnEffectActiveTickProcedure {
 		{
 			Entity _ent = entity;
 			_ent.setYRot(entity.getYRot());
-			_ent.setXRot((float) (entity.getXRot() - 15));
+			_ent.setXRot(entity.getXRot() - 15);
 			_ent.setYBodyRot(_ent.getYRot());
 			_ent.setYHeadRot(_ent.getYRot());
 			_ent.yRotO = _ent.getYRot();

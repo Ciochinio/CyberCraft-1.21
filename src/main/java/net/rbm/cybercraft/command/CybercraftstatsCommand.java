@@ -1,4 +1,3 @@
-
 package net.rbm.cybercraft.command;
 
 import net.rbm.cybercraft.procedures.CybercraftPlayerStatsProcedure;
@@ -36,4 +35,5 @@ public class CybercraftstatsCommand {
 					return 0;
 				}));
 	}
+
 }

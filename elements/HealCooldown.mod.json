@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 79,
   "_type": "potioneffect",
   "definition": {
     "effectName": "HealCooldown",
@@ -8,12 +8,14 @@
       "value": -16777216,
       "falpha": 0.0
     },
+    "onAddedSound": {
+      "value": ""
+    },
     "isInstant": false,
     "mobEffectCategory": "NEUTRAL",
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,
-    "isCuredByMilk": true,
-    "isProtectedByTotem": true,
-    "isCuredbyHoney": false
+    "isCuredbyHoney": false,
+    "modifiers": []
   }
 }

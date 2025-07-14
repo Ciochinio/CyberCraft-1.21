@@ -24,7 +24,6 @@ import net.minecraft.core.particles.ParticleTypes;
 
 import javax.annotation.Nullable;
 
-import java.util.List;
 import java.util.Comparator;
 
 @EventBusSubscriber
@@ -53,8 +52,7 @@ public class ShockNAweEffectProcedure {
 			if (shockChance <= 99) {
 				{
 					final Vec3 _center = new Vec3(x, y, z);
-					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(6 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-					for (Entity entityiterator : _entfound) {
+					for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(6 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 						if (!(entityiterator instanceof Player || entityiterator instanceof ServerPlayer)) {
 							if (world instanceof ServerLevel _level)
 								_level.sendParticles(ParticleTypes.ELECTRIC_SPARK, x, y, z, 500, 3, 0.5, 3, 0.3);

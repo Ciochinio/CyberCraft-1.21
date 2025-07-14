@@ -1,51 +1,61 @@
-[17Dec2024 04:28:47.303] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, 21.1.65, --assetIndex, 17, --assetsDir, C:\\Users\\cioch\\.mcreator\\gradle\\caches\\neoformruntime\\assets, --gameDir, ., --fml.neoForgeVersion, 21.1.65, --fml.fmlVersion, 4.0.24, --fml.mcVersion, 1.21.1, --fml.neoFormVersion, 20240808.144430]
-[17Dec2024 04:28:47.306] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.4+7-LTS
-[17Dec2024 04:28:47.307] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 11.0.4+main.d2e20e43 starting: java version 21.0.4 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
-[17Dec2024 04:28:47.449] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
-[17Dec2024 04:28:47.572] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
-[17Dec2024 04:28:47.717] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
-[17Dec2024 04:28:47.822] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/cioch/.mcreator/gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23131!/ Service=ModLauncher Env=CLIENT
-[17Dec2024 04:28:48.064] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce RTX 3070 Laptop GPU/PCIe/SSE2 GL version 4.6.0 NVIDIA 566.14, NVIDIA Corporation
-[17Dec2024 04:28:48.224] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
-[17Dec2024 04:28:49.058] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, 21.1.65, --gameDir, ., --assetsDir, C:\Users\cioch\.mcreator\gradle\caches\neoformruntime\assets, --assetIndex, 17]
-[17Dec2024 04:28:51.211] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 229 Datafixer optimizations took 391 milliseconds
-[17Dec2024 04:28:51.463] [pool-7-thread-1/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
-[17Dec2024 04:28:56.501] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[17Dec2024 04:28:56.503] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[17Dec2024 04:28:56.506] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[17Dec2024 04:28:56.506] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[17Dec2024 04:28:56.508] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[17Dec2024 04:28:56.664] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/cioch/Documents/GitHub/CyberCraft-1.21/build/moddev/artifacts/neoforge-21.1.65-minecraft.jar%23183!/assets/.mcassetsroot' uses unexpected schema
-[17Dec2024 04:28:56.664] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/cioch/Documents/GitHub/CyberCraft-1.21/build/moddev/artifacts/neoforge-21.1.65-minecraft.jar%23183!/data/.mcassetsroot' uses unexpected schema
-[17Dec2024 04:28:56.699] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[17Dec2024 04:28:56.708] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[17Dec2024 04:28:56.837] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
-[17Dec2024 04:28:57.166] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.65, for MC 1.21.1
-[17Dec2024 04:28:58.078] [Render thread/INFO] [net.neoforged.neoforge.gametest.GameTestHooks/]: Enabled Gametest Namespaces: []
-[17Dec2024 04:28:58.309] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/neoforge, mod/cybercraft
-[17Dec2024 04:28:58.504] [Worker-Main-12/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.1.05.hex, loading
-[17Dec2024 04:28:58.596] [Worker-Main-10/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-15.1.05.hex, loading
-[17Dec2024 04:28:58.718] [Worker-Main-9/ERROR] [net.minecraft.client.resources.model.ModelManager/]: Failed to load model cybercraft:models/custom/testgun.json
+[14Jul2025 17:48:09.645] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientdev, --version, 21.1.176, --assetIndex, 17, --assetsDir, C:\\Users\\cioch\\.mcreator\\gradle\\caches\\neoformruntime\\assets, --gameDir, ., --fml.fmlVersion, 4.0.39, --fml.mcVersion, 1.21.1, --fml.neoForgeVersion, 21.1.176, --fml.neoFormVersion, 20240808.144430]
+[14Jul2025 17:48:09.649] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.7+6-LTS
+[14Jul2025 17:48:09.651] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 11.0.4+main.d2e20e43 starting: java version 21.0.7 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[14Jul2025 17:48:09.765] [main/WARN] [net.neoforged.fml.loading.FMLConfig/CORE]: Configuration file G:\GitHub\CyberCraft-1.21\run\config\fml.toml is not correct. Correcting
+[14Jul2025 17:48:09.802] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[14Jul2025 17:48:09.926] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[14Jul2025 17:48:10.187] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[14Jul2025 17:48:10.340] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/cioch/.mcreator/gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23138!/ Service=ModLauncher Env=CLIENT
+[14Jul2025 17:48:10.355] [main/WARN] [net.neoforged.fml.loading.FMLConfig/CORE]: Configuration file G:\GitHub\CyberCraft-1.21\run\config\fml.toml is not correct. Correcting
+[14Jul2025 17:48:10.688] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce RTX 2060/PCIe/SSE2 GL version 4.6.0 NVIDIA 572.16, NVIDIA Corporation
+[14Jul2025 17:48:10.973] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
+[14Jul2025 17:48:10.975] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
+     Mod List:
+		Name Version (Mod Id)
+
+		CyberCraft 1.0.0 (cybercraft)
+		Minecraft 1.21.1 (minecraft)
+		NeoForge 21.1.176 (neoforge)
+[14Jul2025 17:48:12.080] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientdev' with arguments [--version, 21.1.176, --gameDir, ., --assetsDir, C:\Users\cioch\.mcreator\gradle\caches\neoformruntime\assets, --assetIndex, 17]
+[14Jul2025 17:48:14.724] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 229 Datafixer optimizations took 604 milliseconds
+[14Jul2025 17:48:14.912] [pool-7-thread-1/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[14Jul2025 17:48:21.454] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[14Jul2025 17:48:21.456] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[14Jul2025 17:48:21.460] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[14Jul2025 17:48:21.461] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[14Jul2025 17:48:21.463] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[14Jul2025 17:48:21.621] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/G:/GitHub/CyberCraft-1.21/build/moddev/artifacts/neoforge-21.1.176.jar%23189!/assets/.mcassetsroot' uses unexpected schema
+[14Jul2025 17:48:21.621] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/G:/GitHub/CyberCraft-1.21/build/moddev/artifacts/neoforge-21.1.176.jar%23189!/data/.mcassetsroot' uses unexpected schema
+[14Jul2025 17:48:21.664] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[14Jul2025 17:48:21.674] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[14Jul2025 17:48:21.785] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
+[14Jul2025 17:48:22.091] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.176, for MC 1.21.1
+[14Jul2025 17:48:23.233] [Render thread/INFO] [net.neoforged.neoforge.gametest.GameTestHooks/]: Enabled Gametest Namespaces: []
+[14Jul2025 17:48:23.495] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/neoforge, mod/cybercraft
+[14Jul2025 17:48:23.693] [Worker-Main-13/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.1.05.hex, loading
+[14Jul2025 17:48:23.781] [Worker-Main-11/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-15.1.05.hex, loading
+[14Jul2025 17:48:24.019] [Worker-Main-14/WARN] [net.minecraft.client.renderer.texture.SpriteLoader/]: Texture cybercraft:item/chargesystem with size 150x150 limits mip level from 2 to 1
+[14Jul2025 17:48:24.060] [Worker-Main-15/ERROR] [net.minecraft.client.resources.model.ModelManager/]: Failed to load model cybercraft:models/custom/testgun.json
 com.google.gson.JsonParseException: Invalid rotation 20.0 found, only -45/-22.5/0/22.5/45 allowed
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockElement$Deserializer.getAngle(BlockElement.java:115) ~[neoforge-21.1.65-minecraft.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockElement$Deserializer.getRotation(BlockElement.java:104) ~[neoforge-21.1.65-minecraft.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockElement$Deserializer.deserialize(BlockElement.java:84) ~[neoforge-21.1.65-minecraft.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockElement$Deserializer.deserialize(BlockElement.java:76) ~[neoforge-21.1.65-minecraft.jar%23183!/:?]
-	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.1.jar%23103!/:?]
-	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.Gson.fromJson(Gson.java:1227) ~[gson-2.10.1.jar%23103!/:?]
-	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.Gson.fromJson(Gson.java:1329) ~[gson-2.10.1.jar%23103!/:?]
-	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.Gson.fromJson(Gson.java:1300) ~[gson-2.10.1.jar%23103!/:?]
-	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:179) ~[gson-2.10.1.jar%23103!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel$Deserializer.getElements(BlockModel.java:409) ~[neoforge-21.1.65-minecraft.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel$Deserializer.deserialize(BlockModel.java:338) ~[neoforge-21.1.65-minecraft.jar%23183!/:?]
-	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:51) ~[neoforge-21.1.65-minecraft.jar%23184!/:?]
-	at TRANSFORMER/neoforge@21.1.65/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:37) ~[neoforge-21.1.65-minecraft.jar%23184!/:?]
-	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.1.jar%23103!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromNullableJson(GsonHelper.java:432) ~[neoforge-21.1.65-minecraft.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:439) ~[neoforge-21.1.65-minecraft.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:491) ~[neoforge-21.1.65-minecraft.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel.fromStream(BlockModel.java:83) ~[neoforge-21.1.65-minecraft.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.resources.model.ModelManager.lambda$loadBlockModels$8(ModelManager.java:143) ~[neoforge-21.1.65-minecraft.jar%23183!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockElement$Deserializer.getAngle(BlockElement.java:115) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockElement$Deserializer.getRotation(BlockElement.java:104) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockElement$Deserializer.deserialize(BlockElement.java:84) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockElement$Deserializer.deserialize(BlockElement.java:76) ~[neoforge-21.1.176.jar%23189!/:?]
+	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.1.jar%23110!/:?]
+	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.Gson.fromJson(Gson.java:1227) ~[gson-2.10.1.jar%23110!/:?]
+	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.Gson.fromJson(Gson.java:1329) ~[gson-2.10.1.jar%23110!/:?]
+	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.Gson.fromJson(Gson.java:1300) ~[gson-2.10.1.jar%23110!/:?]
+	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:179) ~[gson-2.10.1.jar%23110!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel$Deserializer.getElements(BlockModel.java:409) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel$Deserializer.deserialize(BlockModel.java:338) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/neoforge@21.1.176/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:51) ~[neoforge-21.1.176.jar%23190!/:?]
+	at TRANSFORMER/neoforge@21.1.176/net.neoforged.neoforge.client.model.ExtendedBlockModelDeserializer.deserialize(ExtendedBlockModelDeserializer.java:37) ~[neoforge-21.1.176.jar%23190!/:?]
+	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.1.jar%23110!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromNullableJson(GsonHelper.java:432) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:439) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:491) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.block.model.BlockModel.fromStream(BlockModel.java:83) ~[neoforge-21.1.176.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.resources.model.ModelManager.lambda$loadBlockModels$8(ModelManager.java:144) ~[neoforge-21.1.176.jar%23189!/:?]
 	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
 	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) [?:?]
 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) [?:?]
@@ -53,102 +63,98 @@ com.google.gson.JsonParseException: Invalid rotation 20.0 found, only -45/-22.5/
 	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) [?:?]
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) [?:?]
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) [?:?]
-[17Dec2024 04:28:58.742] [Worker-Main-5/WARN] [net.minecraft.client.renderer.texture.SpriteLoader/]: Texture cybercraft:item/chargesystem with size 150x150 limits mip level from 2 to 1
-[17Dec2024 04:29:00.370] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
-[17Dec2024 04:29:00.371] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[17Dec2024 04:29:00.426] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Headphones (2- Arctis 7 Game)
-[17Dec2024 04:29:00.427] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
-[17Dec2024 04:29:00.589] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x2 minecraft:textures/atlas/blocks.png-atlas
-[17Dec2024 04:29:00.601] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/signs.png-atlas
-[17Dec2024 04:29:00.601] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/shield_patterns.png-atlas
-[17Dec2024 04:29:00.602] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/banner_patterns.png-atlas
-[17Dec2024 04:29:00.602] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x2 minecraft:textures/atlas/armor_trims.png-atlas
-[17Dec2024 04:29:00.605] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/chest.png-atlas
-[17Dec2024 04:29:00.605] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x2 minecraft:textures/atlas/decorated_pot.png-atlas
-[17Dec2024 04:29:00.605] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/shulker_boxes.png-atlas
-[17Dec2024 04:29:00.606] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/beds.png-atlas
-[17Dec2024 04:29:00.806] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[17Dec2024 04:29:00.809] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
-[17Dec2024 04:29:00.810] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[17Dec2024 04:29:00.810] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
-[17Dec2024 04:29:00.810] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
-[17Dec2024 04:29:00.865] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[17Dec2024 04:29:00.980] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
-[17Dec2024 04:29:22.458] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1290 recipes
-[17Dec2024 04:29:22.636] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1399 advancements
-[17Dec2024 04:29:23.078] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.1
-[17Dec2024 04:29:23.079] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[17Dec2024 04:29:24.168] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[17Dec2024 04:29:24.509] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[17Dec2024 04:29:24.698] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
-[17Dec2024 04:29:24.700] [Server thread/WARN] [net.neoforged.neoforge.common.TagConventionLogWarning/]: 
+[14Jul2025 17:48:25.915] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[14Jul2025 17:48:25.916] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[14Jul2025 17:48:26.114] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on SteelSeries Sonar - Gaming (SteelSeries Sonar Virtual Audio Device)
+[14Jul2025 17:48:26.116] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[14Jul2025 17:48:26.285] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x2 minecraft:textures/atlas/blocks.png-atlas
+[14Jul2025 17:48:26.296] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/signs.png-atlas
+[14Jul2025 17:48:26.297] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/shield_patterns.png-atlas
+[14Jul2025 17:48:26.297] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/banner_patterns.png-atlas
+[14Jul2025 17:48:26.298] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x2 minecraft:textures/atlas/armor_trims.png-atlas
+[14Jul2025 17:48:26.301] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/chest.png-atlas
+[14Jul2025 17:48:26.301] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x2 minecraft:textures/atlas/decorated_pot.png-atlas
+[14Jul2025 17:48:26.301] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/beds.png-atlas
+[14Jul2025 17:48:26.303] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/shulker_boxes.png-atlas
+[14Jul2025 17:48:26.414] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[14Jul2025 17:48:26.416] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[14Jul2025 17:48:26.417] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[14Jul2025 17:48:26.417] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[14Jul2025 17:48:26.417] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[14Jul2025 17:48:26.452] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[14Jul2025 17:48:26.531] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
+[14Jul2025 17:48:44.626] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1290 recipes
+[14Jul2025 17:48:44.843] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1399 advancements
+[14Jul2025 17:48:45.537] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.1
+[14Jul2025 17:48:45.538] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[14Jul2025 17:48:46.761] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[14Jul2025 17:48:47.108] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[14Jul2025 17:48:47.270] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[14Jul2025 17:48:47.270] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 490 ms
+[14Jul2025 17:48:47.272] [Server thread/WARN] [net.neoforged.neoforge.common.TagConventionLogWarning/]: 
    Dev warning - Legacy Tags detected. Please migrate your 'forge' namespace tags to the 'c' namespace! See net.neoforged.neoforge.common.Tags.java for all tags.
    NOTE: Many tags have been moved around or renamed. Some new ones were added so please review the new tags.
     And make sure you follow tag conventions for new tags! The convention is `c` with nouns generally being plural and adjectives being singular.
    You can disable this message in NeoForge's common config by setting `logLegacyTagWarnings` to "SILENCED" or see individual tags with "DEV_VERBOSE".
 
-[17Dec2024 04:29:24.701] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 524 ms
-[17Dec2024 04:29:24.777] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 5, from 10
-[17Dec2024 04:29:24.777] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
-[17Dec2024 04:29:25.503] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:f84f3952] logged in with entity id 25 at (-62.30000001192093, 71.0, 4.300000011920929)
-[17Dec2024 04:29:25.590] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
-[17Dec2024 04:29:26.012] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 200 advancements
-[17Dec2024 04:29:32.549] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
-[17Dec2024 04:29:32.557] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Creative Mode
-[17Dec2024 04:29:40.713] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
-[17Dec2024 04:29:40.714] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Survival Mode
-[17Dec2024 04:29:47.059] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
-[17Dec2024 04:29:47.072] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
-[17Dec2024 04:29:48.302] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Saturation to Dev]
-[17Dec2024 04:29:48.310] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Saturation to Dev]
-[17Dec2024 04:29:50.451] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Hunger to Dev]
-[17Dec2024 04:29:50.458] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Hunger to Dev]
-[17Dec2024 04:29:51.102] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Damage to Dev]
-[17Dec2024 04:29:51.112] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Damage to Dev]
-[17Dec2024 04:29:51.113] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dmg mitigation roll>>>90.0
-[17Dec2024 04:29:51.113] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] chance:10.0
-[17Dec2024 04:29:51.113] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Damage reduced from>>>12.0
-[17Dec2024 04:29:51.113] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Damage reduced to>>>12.0
-[17Dec2024 04:29:53.453] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Damage to Dev]
-[17Dec2024 04:29:53.458] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Damage to Dev]
-[17Dec2024 04:29:53.459] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dmg mitigation roll>>>46.0
-[17Dec2024 04:29:53.459] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] chance:10.0
-[17Dec2024 04:29:53.459] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Damage reduced from>>>12.0
-[17Dec2024 04:29:53.459] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Damage reduced to>>>12.0
-[17Dec2024 04:29:55.575] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Hunger to Dev]
-[17Dec2024 04:29:55.584] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Hunger to Dev]
-[17Dec2024 04:30:02.498] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 7747ms or 154 ticks behind
-[17Dec2024 04:30:30.321] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[17Dec2024 04:30:30.367] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[17Dec2024 04:30:30.399] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[17Dec2024 04:30:30.406] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[17Dec2024 04:30:30.465] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 13014ms or 260 ticks behind
-[17Dec2024 04:30:34.403] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Hunger to Dev]
-[17Dec2024 04:30:34.409] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Hunger to Dev]
-[17Dec2024 04:30:44.214] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
-[17Dec2024 04:30:44.219] [Netty Server IO #1/ERROR] [net.minecraft.network.Connection/]: Exception caught in connection
-java.nio.channels.ClosedChannelException: null
-	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.local.LocalChannel.doWrite(LocalChannel.java:368) ~[netty-transport-4.1.97.Final.jar%23129!/:4.1.97.Final]
-	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannel$AbstractUnsafe.flush0(AbstractChannel.java:931) ~[netty-transport-4.1.97.Final.jar%23129!/:4.1.97.Final]
-	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannel$AbstractUnsafe.flush(AbstractChannel.java:895) ~[netty-transport-4.1.97.Final.jar%23129!/:4.1.97.Final]
-	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.DefaultChannelPipeline$HeadContext.flush(DefaultChannelPipeline.java:1372) ~[netty-transport-4.1.97.Final.jar%23129!/:4.1.97.Final]
-	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:921) ~[netty-transport-4.1.97.Final.jar%23129!/:4.1.97.Final]
-	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.invokeFlush(AbstractChannelHandlerContext.java:907) ~[netty-transport-4.1.97.Final.jar%23129!/:4.1.97.Final]
-	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.flush(AbstractChannelHandlerContext.java:893) ~[netty-transport-4.1.97.Final.jar%23129!/:4.1.97.Final]
-	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.ChannelOutboundHandlerAdapter.flush(ChannelOutboundHandlerAdapter.java:125) ~[netty-transport-4.1.97.Final.jar%23129!/:4.1.97.Final]
-	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:925) ~[netty-transport-4.1.97.Final.jar%23129!/:4.1.97.Final]
-	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.invokeWriteAndFlush(AbstractChannelHandlerContext.java:941) ~[netty-transport-4.1.97.Final.jar%23129!/:4.1.97.Final]
-	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:966) ~[netty-transport-4.1.97.Final.jar%23129!/:4.1.97.Final]
-	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.writeAndFlush(AbstractChannelHandlerContext.java:934) ~[netty-transport-4.1.97.Final.jar%23129!/:4.1.97.Final]
-	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannelHandlerContext.writeAndFlush(AbstractChannelHandlerContext.java:984) ~[netty-transport-4.1.97.Final.jar%23129!/:4.1.97.Final]
-	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.DefaultChannelPipeline.writeAndFlush(DefaultChannelPipeline.java:1025) ~[netty-transport-4.1.97.Final.jar%23129!/:4.1.97.Final]
-	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.AbstractChannel.writeAndFlush(AbstractChannel.java:306) ~[netty-transport-4.1.97.Final.jar%23129!/:4.1.97.Final]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.network.Connection.doSendPacket(Connection.java:364) ~[neoforge-21.1.65-minecraft.jar%23183!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.network.Connection.lambda$sendPacket$12(Connection.java:359) ~[neoforge-21.1.65-minecraft.jar%23183!/:?]
-	at MC-BOOTSTRAP/io.netty.common@4.1.97.Final/io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174) ~[netty-common-4.1.97.Final.jar%23124!/:4.1.97.Final]
-	at MC-BOOTSTRAP/io.netty.common@4.1.97.Final/io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167) ~[netty-common-4.1.97.Final.jar%23124!/:4.1.97.Final]
-	at MC-BOOTSTRAP/io.netty.common@4.1.97.Final/io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[netty-common-4.1.97.Final.jar%23124!/:4.1.97.Final]
-	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569) ~[netty-transport-4.1.97.Final.jar%23129!/:4.1.97.Final]
-	at MC-BOOTSTRAP/io.netty.common@4.1.97.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.97.Final.jar%23124!/:4.1.97.Final]
-	at MC-BOOTSTRAP/io.netty.common@4.1.97.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.97.Final.jar%23124!/:4.1.97.Final]
-	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[14Jul2025 17:48:47.369] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 5, from 10
+[14Jul2025 17:48:47.369] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
+[14Jul2025 17:48:48.598] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:2a3f0b4f] logged in with entity id 89 at (-63.805821137254945, 71.0, -5.610492997367757)
+[14Jul2025 17:48:48.705] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[14Jul2025 17:48:49.044] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 200 advancements
+[14Jul2025 17:48:51.547] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] 1.0
+[14Jul2025 17:48:54.488] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] 1.0
+[14Jul2025 17:48:55.176] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Damage to Dev]
+[14Jul2025 17:48:55.198] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Damage to Dev]
+[14Jul2025 17:48:55.200] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dmg mitigation roll>>>24.0
+[14Jul2025 17:48:55.200] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] chance:10.0
+[14Jul2025 17:48:55.201] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Damage reduced from>>>12.0
+[14Jul2025 17:48:55.201] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Damage reduced to>>>12.0
+[14Jul2025 17:48:55.201] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Rolujemy>>>36.0
+[14Jul2025 17:48:57.480] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] 1.0
+[14Jul2025 17:49:00.481] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] 1.0
+[14Jul2025 17:49:03.478] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] 1.0
+[14Jul2025 17:49:06.486] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] 1.0
+[14Jul2025 17:49:09.481] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] 1.0
+[14Jul2025 17:49:12.484] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] 1.0
+[14Jul2025 17:49:12.974] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[14Jul2025 17:49:12.984] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[14Jul2025 17:49:15.481] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] 1.0
+[14Jul2025 17:49:16.574] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Damage to Dev]
+[14Jul2025 17:49:16.583] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Damage to Dev]
+[14Jul2025 17:49:16.585] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dmg mitigation roll>>>77.0
+[14Jul2025 17:49:16.585] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] chance:10.0
+[14Jul2025 17:49:16.585] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Damage reduced from>>>12.0
+[14Jul2025 17:49:16.585] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Damage reduced to>>>12.0
+[14Jul2025 17:49:16.585] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Rolujemy>>>34.0
+[14Jul2025 17:49:18.480] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] 1.0
+[14Jul2025 17:49:18.974] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Damage to Dev]
+[14Jul2025 17:49:18.979] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev was killed by magic
+[14Jul2025 17:49:18.988] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Damage to Dev]
+[14Jul2025 17:49:18.988] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] dmg mitigation roll>>>93.0
+[14Jul2025 17:49:18.988] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] chance:10.0
+[14Jul2025 17:49:18.988] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Damage reduced from>>>12.0
+[14Jul2025 17:49:18.990] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Damage reduced to>>>12.0
+[14Jul2025 17:49:18.990] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Rolujemy>>>55.0
+[14Jul2025 17:49:18.992] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev was killed by magic
+[14Jul2025 17:49:19.724] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Damage to Dev]
+[14Jul2025 17:49:19.730] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Damage to Dev]
+[14Jul2025 17:49:21.483] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] 1.0
+[14Jul2025 17:49:23.224] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[14Jul2025 17:49:23.248] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[14Jul2025 17:49:23.267] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[14Jul2025 17:49:23.268] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[14Jul2025 17:49:24.421] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[14Jul2025 17:49:24.479] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[14Jul2025 17:49:24.479] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[14Jul2025 17:49:24.495] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
+[14Jul2025 17:49:24.523] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[14Jul2025 17:49:24.523] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[14Jul2025 17:49:24.523] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[14Jul2025 17:49:24.572] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[14Jul2025 17:49:24.650] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[14Jul2025 17:49:24.654] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[14Jul2025 17:49:24.664] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
+[14Jul2025 17:49:24.665] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[14Jul2025 17:49:24.665] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[14Jul2025 17:49:24.665] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved

@@ -1,4 +1,3 @@
-
 /*
  *    MCreator note: This file will be REGENERATED on each build.
  */
@@ -53,7 +52,5 @@ public class CybercraftModTabs {
 				tabData.accept(CybercraftModItems.EPIMORPHIC_SKELETON.get());
 				tabData.accept(CybercraftModItems.SHOTGUN.get());
 				tabData.accept(CybercraftModItems.SANDEVISTAN.get());
-			})
-
-					.build());
+			}).build());
 }

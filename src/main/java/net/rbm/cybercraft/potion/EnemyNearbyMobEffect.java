@@ -1,4 +1,3 @@
-
 package net.rbm.cybercraft.potion;
 
 import net.rbm.cybercraft.init.CybercraftModMobEffects;

@@ -1,4 +1,3 @@
-
 package net.rbm.cybercraft.world.inventory;
 
 import net.rbm.cybercraft.procedures.WriteProcedure;
@@ -35,10 +34,18 @@ import net.minecraft.core.BlockPos;
 import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.Collections;
 
 @EventBusSubscriber
-public class CyberwareGuiMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
-	public final static HashMap<String, Object> guistate = new HashMap<>();
+public class CyberwareGuiMenu extends AbstractContainerMenu implements CybercraftModMenus.MenuAccessor {
+	public final Map<String, Object> menuState = new HashMap<>() {
+		@Override
+		public Object put(String key, Object value) {
+			if (!this.containsKey(key) && this.size() >= 26)
+				return null;
+			return super.put(key, value);
+		}
+	};
 	public final Level world;
 	public final Player entity;
 	public int x, y, z;
@@ -92,90 +99,150 @@ public class CyberwareGuiMenu extends AbstractContainerMenu implements Supplier<
 			}
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 84, 15) {
+			private final int slot = 0;
+			private int x = CyberwareGuiMenu.this.x;
+			private int y = CyberwareGuiMenu.this.y;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return stack.is(ItemTags.create(ResourceLocation.parse("cybercraft:frontal_cortex")));
 			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 102, 15) {
+			private final int slot = 1;
+			private int x = CyberwareGuiMenu.this.x;
+			private int y = CyberwareGuiMenu.this.y;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return stack.is(ItemTags.create(ResourceLocation.parse("cybercraft:frontal_cortex")));
 			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 174, 15) {
+			private final int slot = 2;
+			private int x = CyberwareGuiMenu.this.x;
+			private int y = CyberwareGuiMenu.this.y;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return stack.is(ItemTags.create(ResourceLocation.parse("cybercraft:operating_system")));
 			}
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 93, 42) {
+			private final int slot = 3;
+			private int x = CyberwareGuiMenu.this.x;
+			private int y = CyberwareGuiMenu.this.y;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return stack.is(ItemTags.create(ResourceLocation.parse("cybercraft:arms")));
 			}
 		}));
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 183, 42) {
+			private final int slot = 4;
+			private int x = CyberwareGuiMenu.this.x;
+			private int y = CyberwareGuiMenu.this.y;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return stack.is(ItemTags.create(ResourceLocation.parse("cybercraft:face")));
 			}
 		}));
 		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 66, 69) {
+			private final int slot = 5;
+			private int x = CyberwareGuiMenu.this.x;
+			private int y = CyberwareGuiMenu.this.y;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return stack.is(ItemTags.create(ResourceLocation.parse("cybercraft:skeleton")));
 			}
 		}));
 		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 84, 69) {
+			private final int slot = 6;
+			private int x = CyberwareGuiMenu.this.x;
+			private int y = CyberwareGuiMenu.this.y;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return stack.is(ItemTags.create(ResourceLocation.parse("cybercraft:skeleton")));
 			}
 		}));
 		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 192, 69) {
+			private final int slot = 7;
+			private int x = CyberwareGuiMenu.this.x;
+			private int y = CyberwareGuiMenu.this.y;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return stack.is(ItemTags.create(ResourceLocation.parse("cybercraft:hands")));
 			}
 		}));
 		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 75, 96) {
+			private final int slot = 8;
+			private int x = CyberwareGuiMenu.this.x;
+			private int y = CyberwareGuiMenu.this.y;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return stack.is(ItemTags.create(ResourceLocation.parse("cybercraft:nervous_system")));
 			}
 		}));
 		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 93, 96) {
+			private final int slot = 9;
+			private int x = CyberwareGuiMenu.this.x;
+			private int y = CyberwareGuiMenu.this.y;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return stack.is(ItemTags.create(ResourceLocation.parse("cybercraft:nervous_system")));
 			}
 		}));
 		this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 192, 96) {
+			private final int slot = 10;
+			private int x = CyberwareGuiMenu.this.x;
+			private int y = CyberwareGuiMenu.this.y;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return stack.is(ItemTags.create(ResourceLocation.parse("cybercraft:circulatory_system")));
 			}
 		}));
 		this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 210, 96) {
+			private final int slot = 11;
+			private int x = CyberwareGuiMenu.this.x;
+			private int y = CyberwareGuiMenu.this.y;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return stack.is(ItemTags.create(ResourceLocation.parse("cybercraft:circulatory_system")));
 			}
 		}));
 		this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal, 12, 84, 123) {
+			private final int slot = 12;
+			private int x = CyberwareGuiMenu.this.x;
+			private int y = CyberwareGuiMenu.this.y;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return stack.is(ItemTags.create(ResourceLocation.parse("cybercraft:integumentary_system")));
 			}
 		}));
 		this.customSlots.put(13, this.addSlot(new SlotItemHandler(internal, 13, 102, 123) {
+			private final int slot = 13;
+			private int x = CyberwareGuiMenu.this.x;
+			private int y = CyberwareGuiMenu.this.y;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return stack.is(ItemTags.create(ResourceLocation.parse("cybercraft:integumentary_system")));
 			}
 		}));
 		this.customSlots.put(14, this.addSlot(new SlotItemHandler(internal, 14, 174, 123) {
+			private final int slot = 14;
+			private int x = CyberwareGuiMenu.this.x;
+			private int y = CyberwareGuiMenu.this.y;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return stack.is(ItemTags.create(ResourceLocation.parse("cybercraft:legs")));
@@ -223,12 +290,14 @@ public class CyberwareGuiMenu extends AbstractContainerMenu implements Supplier<
 				}
 				return ItemStack.EMPTY;
 			}
-			if (itemstack1.getCount() == 0)
-				slot.set(ItemStack.EMPTY);
-			else
+			if (itemstack1.isEmpty()) {
+				slot.setByPlayer(ItemStack.EMPTY);
+			} else {
 				slot.setChanged();
-			if (itemstack1.getCount() == itemstack.getCount())
+			}
+			if (itemstack1.getCount() == itemstack.getCount()) {
 				return ItemStack.EMPTY;
+			}
 			slot.onTake(playerIn, itemstack1);
 		}
 		return itemstack;
@@ -374,18 +443,24 @@ public class CyberwareGuiMenu extends AbstractContainerMenu implements Supplier<
 		}
 	}
 
-	public Map<Integer, Slot> get() {
-		return customSlots;
+	@Override
+	public Map<Integer, Slot> getSlots() {
+		return Collections.unmodifiableMap(customSlots);
+	}
+
+	@Override
+	public Map<String, Object> getMenuState() {
+		return menuState;
 	}
 
 	@SubscribeEvent
 	public static void onPlayerTick(PlayerTickEvent.Post event) {
 		Player entity = event.getEntity();
-		if (entity.containerMenu instanceof CyberwareGuiMenu) {
-			Level world = entity.level();
-			double x = entity.getX();
-			double y = entity.getY();
-			double z = entity.getZ();
+		if (entity.containerMenu instanceof CyberwareGuiMenu menu) {
+			Level world = menu.world;
+			double x = menu.x;
+			double y = menu.y;
+			double z = menu.z;
 			WriteProcedure.execute(entity);
 		}
 	}

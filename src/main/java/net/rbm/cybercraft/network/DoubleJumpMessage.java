@@ -1,4 +1,3 @@
-
 package net.rbm.cybercraft.network;
 
 import net.rbm.cybercraft.procedures.ReinforcedTendonsDoubleJumpProcedure;

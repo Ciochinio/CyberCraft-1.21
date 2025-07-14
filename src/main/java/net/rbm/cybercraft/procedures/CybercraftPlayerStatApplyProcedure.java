@@ -31,9 +31,9 @@ public class CybercraftPlayerStatApplyProcedure {
 				}
 			}
 			if (entity instanceof LivingEntity _entity)
-				_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) - 1));
+				_entity.setHealth((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) - 1);
 			if (entity instanceof LivingEntity _entity)
-				_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + 1));
+				_entity.setHealth((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + 1);
 		}
 		if (entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftToughness != 0) {
 			{

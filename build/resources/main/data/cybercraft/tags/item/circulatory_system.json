@@ -1,13 +1,13 @@
 {
   "replace": false,
   "values": [
-    "cybercraft:threatevac",
     "cybercraft:second_heart",
-    "cybercraft:microrotors",
-    "cybercraft:heal_on_kill",
+    "cybercraft:threatevac",
     "cybercraft:adrenaline_booster",
+    "cybercraft:biomonitor",
     "cybercraft:black_mamba",
-    "cybercraft:isometric_stabilizer",
-    "cybercraft:biomonitor"
+    "cybercraft:heal_on_kill",
+    "cybercraft:microrotors",
+    "cybercraft:isometric_stabilizer"
   ]
 }

@@ -5,9 +5,11 @@ import net.rbm.cybercraft.init.CybercraftModMobEffects;
 import net.rbm.cybercraft.CybercraftMod;
 
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.network.chat.Component;
 
 public class PassiveHealthRegenStartedProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
@@ -27,8 +29,10 @@ public class PassiveHealthRegenStartedProcedure {
 			}
 		}
 		if (entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(CybercraftModMobEffects.PASSIVE_HEALTH_REGEN) && (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) > 0) {
-			CybercraftMod.queueServerWork(20, () -> {
-				if (!(entity instanceof LivingEntity _livEnt3 && _livEnt3.hasEffect(CybercraftModMobEffects.HEAL_COOLDOWN)) && (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) > 0) {
+			CybercraftMod.queueServerWork(60, () -> {
+				if (entity instanceof Player _player && !_player.level().isClientSide())
+					_player.displayClientMessage(Component.literal((entity.getData(CybercraftModVariables.PLAYER_VARIABLES).sumPassiveHealthRegeneration + "")), false);
+				if (!(entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(CybercraftModMobEffects.HEAL_COOLDOWN)) && (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) > 0) {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.addEffect(new MobEffectInstance(CybercraftModMobEffects.HEAL_COOLDOWN, 60, 0));
 					if (entity instanceof LivingEntity _entity)
@@ -36,7 +40,6 @@ public class PassiveHealthRegenStartedProcedure {
 				}
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(CybercraftModMobEffects.PASSIVE_HEALTH_REGEN, 30, 0));
-				PassiveHealthRegenStartedProcedure.execute(world, entity);
 			});
 		}
 	}

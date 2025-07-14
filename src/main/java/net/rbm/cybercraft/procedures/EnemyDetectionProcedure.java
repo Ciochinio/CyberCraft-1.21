@@ -20,7 +20,6 @@ import net.minecraft.server.level.ServerPlayer;
 
 import javax.annotation.Nullable;
 
-import java.util.List;
 import java.util.Comparator;
 
 @EventBusSubscriber
@@ -40,8 +39,7 @@ public class EnemyDetectionProcedure {
 		double rolka = 0;
 		{
 			final Vec3 _center = new Vec3(x, y, z);
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(10 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-			for (Entity entityiterator : _entfound) {
+			for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(10 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 				if (!(entityiterator instanceof Player || entityiterator instanceof ServerPlayer) && (entityiterator instanceof Mob || entityiterator instanceof WaterAnimal)) {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.addEffect(new MobEffectInstance(CybercraftModMobEffects.ENEMY_NEARBY, 5, 0));

@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "cybercraft:reinforced_tendons",
     "cybercraft:fortified_ankles",
-    "cybercraft:lynx_paws",
-    "cybercraft:leeroy_ligament_system"
+    "cybercraft:leeroy_ligament_system",
+    "cybercraft:reinforced_tendons",
+    "cybercraft:lynx_paws"
   ]
 }

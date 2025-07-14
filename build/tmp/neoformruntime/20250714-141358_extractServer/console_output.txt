@@ -1,0 +1,48 @@
+--------------------------------------------------------------------------------
+
+Command-Line:
+ - C:\Program Files\Pylo\MCreator\jdk\bin\java.exe
+ - -jar
+ - C:\Users\cioch\.mcreator\gradle\caches\modules-2\files-2.1\net.neoforged.installertools\installertools\2.1.2\62740d5aa8f75f4a4d542d363bdda5b64a198f7a\installertools-2.1.2-fatjar.jar
+ - --task
+ - bundler_extract
+ - --input
+ - C:\Users\cioch\.mcreator\gradle\caches\neoformruntime\artifacts\minecraft_1.21.1_server.jar
+ - --output
+ - ./output.jar
+ - --jar-only
+--------------------------------------------------------------------------------
+
+Picked up JAVA_TOOL_OPTIONS:  -Dcom.sun.management.jmxremote.port=1099 -Dcom.sun.management.jmxremote.local.only=true -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false
+Error: Exception thrown by the agent : java.rmi.server.ExportException: Port already in use: 1099; nested exception is: 
+	java.net.BindException: Address already in use: bind
+jdk.internal.agent.AgentConfigurationError: java.rmi.server.ExportException: Port already in use: 1099; nested exception is: 
+	java.net.BindException: Address already in use: bind
+	at jdk.management.agent/sun.management.jmxremote.ConnectorBootstrap.startRemoteConnectorServer(ConnectorBootstrap.java:491)
+	at jdk.management.agent/jdk.internal.agent.Agent.startAgent(Agent.java:447)
+	at jdk.management.agent/jdk.internal.agent.Agent.startAgent(Agent.java:603)
+Caused by: java.rmi.server.ExportException: Port already in use: 1099; nested exception is: 
+	java.net.BindException: Address already in use: bind
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.listen(TCPTransport.java:356)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.exportObject(TCPTransport.java:251)
+	at java.rmi/sun.rmi.transport.tcp.TCPEndpoint.exportObject(TCPEndpoint.java:415)
+	at java.rmi/sun.rmi.transport.LiveRef.exportObject(LiveRef.java:147)
+	at java.rmi/sun.rmi.server.UnicastServerRef.exportObject(UnicastServerRef.java:235)
+	at java.rmi/sun.rmi.registry.RegistryImpl.setup(RegistryImpl.java:223)
+	at java.rmi/sun.rmi.registry.RegistryImpl.<init>(RegistryImpl.java:182)
+	at jdk.management.agent/sun.management.jmxremote.SingleEntryRegistry.<init>(SingleEntryRegistry.java:49)
+	at jdk.management.agent/sun.management.jmxremote.ConnectorBootstrap.exportMBeanServer(ConnectorBootstrap.java:857)
+	at jdk.management.agent/sun.management.jmxremote.ConnectorBootstrap.startRemoteConnectorServer(ConnectorBootstrap.java:479)
+	... 2 more
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:565)
+	at java.base/sun.nio.ch.Net.bind(Net.java:554)
+	at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:636)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:391)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:278)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:171)
+	at java.rmi/sun.rmi.transport.tcp.TCPDirectSocketFactory.createServerSocket(TCPDirectSocketFactory.java:45)
+	at java.rmi/sun.rmi.transport.tcp.TCPEndpoint.newServerSocket(TCPEndpoint.java:672)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.listen(TCPTransport.java:344)
+	... 11 more

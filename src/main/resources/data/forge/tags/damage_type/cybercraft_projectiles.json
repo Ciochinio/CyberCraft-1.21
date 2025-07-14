@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "#is_projectile"
+    {
+      "id": "#is_projectile",
+      "required": false
+    }
   ]
 }

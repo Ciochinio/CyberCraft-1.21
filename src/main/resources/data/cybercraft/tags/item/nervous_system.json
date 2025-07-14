@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "cybercraft:adrenaline_converter",
-    "cybercraft:atomic_sensors",
     "cybercraft:deepfield_visual_interface",
-    "cybercraft:stabber",
+    "cybercraft:atomic_sensors",
     "cybercraft:neofiber",
+    "cybercraft:adrenaline_converter",
+    "cybercraft:stabber",
     "cybercraft:tyrosine_injector"
   ]
 }

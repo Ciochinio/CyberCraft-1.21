@@ -11,6 +11,7 @@ import net.neoforged.neoforge.items.ItemStackHandler;
 import net.neoforged.neoforge.items.IItemHandlerModifiable;
 import net.neoforged.neoforge.items.IItemHandler;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
+import net.neoforged.neoforge.event.entity.player.PlayerContainerEvent;
 import net.neoforged.neoforge.capabilities.Capabilities;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -253,7 +254,6 @@ public class CyberwareGuiMenu extends AbstractContainerMenu implements Cybercraf
 				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 59 + 8 + sj * 18, 67 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
 			this.addSlot(new Slot(inv, si, 59 + 8 + si * 18, 67 + 142));
-		ReadProcedure.execute(entity);
 	}
 
 	@Override
@@ -462,6 +462,18 @@ public class CyberwareGuiMenu extends AbstractContainerMenu implements Cybercraf
 			double y = menu.y;
 			double z = menu.z;
 			WriteProcedure.execute(entity);
+		}
+	}
+
+	@SubscribeEvent
+	public static void onContainerOpen(PlayerContainerEvent.Open event) {
+		Player entity = event.getEntity();
+		if (event.getContainer() instanceof CyberwareGuiMenu menu) {
+			Level world = menu.world;
+			double x = menu.x;
+			double y = menu.y;
+			double z = menu.z;
+			ReadProcedure.execute(entity);
 		}
 	}
 }

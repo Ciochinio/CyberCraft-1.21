@@ -44,21 +44,21 @@ public class CritChanceProcedure {
 		{
 			CybercraftModVariables.PlayerVariables _vars = sourceentity.getData(CybercraftModVariables.PLAYER_VARIABLES);
 			_vars.sumCritChance = sourceentity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftCritChance;
-			_vars.syncPlayerVariables(sourceentity);
+			_vars.markSyncDirty();
 		}
 		critChanceRoll = Mth.nextInt(RandomSource.create(), 1, 100);
 		if (sourceentity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(CybercraftModMobEffects.DEEPFIELD_VISUAL_INTERFACE_ACTIVATION)) {
 			{
 				CybercraftModVariables.PlayerVariables _vars = sourceentity.getData(CybercraftModVariables.PLAYER_VARIABLES);
 				_vars.sumCritChance = sourceentity.getData(CybercraftModVariables.PLAYER_VARIABLES).sumCritChance + 15;
-				_vars.syncPlayerVariables(sourceentity);
+				_vars.markSyncDirty();
 			}
 		}
 		if (sourceentity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(CybercraftModMobEffects.STABBER_ACTIVATION)) {
 			{
 				CybercraftModVariables.PlayerVariables _vars = sourceentity.getData(CybercraftModVariables.PLAYER_VARIABLES);
 				_vars.sumCritChance = sourceentity.getData(CybercraftModVariables.PLAYER_VARIABLES).sumCritChance + 15;
-				_vars.syncPlayerVariables(sourceentity);
+				_vars.markSyncDirty();
 			}
 		}
 		if (sourceentity instanceof Player _player && !_player.level().isClientSide())

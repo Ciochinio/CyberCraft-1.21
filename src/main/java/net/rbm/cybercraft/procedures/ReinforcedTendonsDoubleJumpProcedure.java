@@ -35,7 +35,7 @@ public class ReinforcedTendonsDoubleJumpProcedure {
 			{
 				CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
 				_vars.doublejump = entity.getData(CybercraftModVariables.PLAYER_VARIABLES).doublejump - 1;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(CybercraftModMobEffects.REDUCED_FALL_DAMAGE, 25, 0));

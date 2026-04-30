@@ -188,8 +188,8 @@
       "registry_name": "fortified_ankles",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cybercraft/models/item/fortified_ankles.json",
-          "src/main/java/net/rbm/cybercraft/item/FortifiedAnklesItem.java"
+          "src/main/java/net/rbm/cybercraft/item/FortifiedAnklesItem.java",
+          "src/main/resources/assets/cybercraft/models/item/fortified_ankles.json"
         ]
       },
       "path": "~/Cyberware/Cyberwares/Legs/Fortified Ankles"
@@ -253,8 +253,8 @@
       "registry_name": "lynx_paws",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cybercraft/models/item/lynx_paws.json",
-          "src/main/java/net/rbm/cybercraft/item/LynxPawsItem.java"
+          "src/main/java/net/rbm/cybercraft/item/LynxPawsItem.java",
+          "src/main/resources/assets/cybercraft/models/item/lynx_paws.json"
         ]
       },
       "path": "~/Cyberware/Cyberwares/Legs/Lynx Paws"
@@ -343,8 +343,8 @@
       "registry_name": "leeroy_ligament_system",
       "metadata": {
         "files": [
-          "src/main/java/net/rbm/cybercraft/item/LeeroyLigamentSystemItem.java",
-          "src/main/resources/assets/cybercraft/models/item/leeroy_ligament_system.json"
+          "src/main/resources/assets/cybercraft/models/item/leeroy_ligament_system.json",
+          "src/main/java/net/rbm/cybercraft/item/LeeroyLigamentSystemItem.java"
         ]
       },
       "path": "~/Cyberware/Cyberwares/Legs/Leeroy Ligament System"
@@ -559,8 +559,8 @@
       "registry_name": "nano_plating",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cybercraft/models/item/nano_plating.json",
-          "src/main/java/net/rbm/cybercraft/item/NanoPlatingItem.java"
+          "src/main/java/net/rbm/cybercraft/item/NanoPlatingItem.java",
+          "src/main/resources/assets/cybercraft/models/item/nano_plating.json"
         ]
       },
       "path": "~/Cyberware/Cyberwares/Integumentary System/Nano-plating"
@@ -615,8 +615,8 @@
       "registry_name": "painducer",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cybercraft/models/item/painducer.json",
-          "src/main/java/net/rbm/cybercraft/item/PainducerItem.java"
+          "src/main/java/net/rbm/cybercraft/item/PainducerItem.java",
+          "src/main/resources/assets/cybercraft/models/item/painducer.json"
         ]
       },
       "path": "~/Cyberware/Cyberwares/Integumentary System/Painducer"
@@ -708,8 +708,8 @@
       "registry_name": "pain_editor",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cybercraft/models/item/pain_editor.json",
-          "src/main/java/net/rbm/cybercraft/item/PainEditorItem.java"
+          "src/main/java/net/rbm/cybercraft/item/PainEditorItem.java",
+          "src/main/resources/assets/cybercraft/models/item/pain_editor.json"
         ]
       },
       "path": "~/Cyberware/Cyberwares/Integumentary System/Pain Editor"
@@ -1138,8 +1138,8 @@
       "registry_name": "second_heart",
       "metadata": {
         "files": [
-          "src/main/java/net/rbm/cybercraft/item/SecondHeartItem.java",
-          "src/main/resources/assets/cybercraft/models/item/second_heart.json"
+          "src/main/resources/assets/cybercraft/models/item/second_heart.json",
+          "src/main/java/net/rbm/cybercraft/item/SecondHeartItem.java"
         ]
       },
       "path": "~/Cyberware/Cyberwares/Circulatory System/Second Heart"
@@ -1198,8 +1198,8 @@
       "registry_name": "heal_on_kill",
       "metadata": {
         "files": [
-          "src/main/java/net/rbm/cybercraft/item/HealOnKillItem.java",
-          "src/main/resources/assets/cybercraft/models/item/heal_on_kill.json"
+          "src/main/resources/assets/cybercraft/models/item/heal_on_kill.json",
+          "src/main/java/net/rbm/cybercraft/item/HealOnKillItem.java"
         ]
       },
       "path": "~/Cyberware/Cyberwares/Circulatory System/Heal-On-Kill"
@@ -1235,8 +1235,8 @@
       "registry_name": "adrenaline_booster",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cybercraft/models/item/adrenaline_booster.json",
-          "src/main/java/net/rbm/cybercraft/item/AdrenalineBoosterItem.java"
+          "src/main/java/net/rbm/cybercraft/item/AdrenalineBoosterItem.java",
+          "src/main/resources/assets/cybercraft/models/item/adrenaline_booster.json"
         ]
       },
       "path": "~/Cyberware/Cyberwares/Circulatory System/Adrenaline Booster"
@@ -1344,8 +1344,8 @@
       "registry_name": "black_mamba",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cybercraft/models/item/black_mamba.json",
-          "src/main/java/net/rbm/cybercraft/item/BlackMambaItem.java"
+          "src/main/java/net/rbm/cybercraft/item/BlackMambaItem.java",
+          "src/main/resources/assets/cybercraft/models/item/black_mamba.json"
         ]
       },
       "path": "~/Cyberware/Cyberwares/Circulatory System/Black Mamba"
@@ -1526,8 +1526,8 @@
       "registry_name": "adrenaline_converter",
       "metadata": {
         "files": [
-          "src/main/java/net/rbm/cybercraft/item/AdrenalineConverterItem.java",
-          "src/main/resources/assets/cybercraft/models/item/adrenaline_converter.json"
+          "src/main/resources/assets/cybercraft/models/item/adrenaline_converter.json",
+          "src/main/java/net/rbm/cybercraft/item/AdrenalineConverterItem.java"
         ]
       },
       "path": "~/Cyberware/Cyberwares/Nervous System/Adrenaline Converter"
@@ -1629,8 +1629,8 @@
       "registry_name": "atomic_sensors",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cybercraft/models/item/atomic_sensors.json",
-          "src/main/java/net/rbm/cybercraft/item/AtomicSensorsItem.java"
+          "src/main/java/net/rbm/cybercraft/item/AtomicSensorsItem.java",
+          "src/main/resources/assets/cybercraft/models/item/atomic_sensors.json"
         ]
       },
       "path": "~/Cyberware/Cyberwares/Nervous System/Atomic Sensors"
@@ -1675,8 +1675,8 @@
       "registry_name": "deepfield_visual_interface",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cybercraft/models/item/deepfield_visual_interface.json",
-          "src/main/java/net/rbm/cybercraft/item/DeepfieldVisualInterfaceItem.java"
+          "src/main/java/net/rbm/cybercraft/item/DeepfieldVisualInterfaceItem.java",
+          "src/main/resources/assets/cybercraft/models/item/deepfield_visual_interface.json"
         ]
       },
       "path": "~/Cyberware/Cyberwares/Nervous System/Deep-field Visual Interface"
@@ -1740,8 +1740,8 @@
       "registry_name": "stabber",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cybercraft/models/item/stabber.json",
-          "src/main/java/net/rbm/cybercraft/item/StabberItem.java"
+          "src/main/java/net/rbm/cybercraft/item/StabberItem.java",
+          "src/main/resources/assets/cybercraft/models/item/stabber.json"
         ]
       },
       "path": "~/Cyberware/Cyberwares/Nervous System/Stabber"
@@ -1972,8 +1972,8 @@
       "registry_name": "handgun_ammo",
       "metadata": {
         "files": [
-          "src/main/java/net/rbm/cybercraft/item/HandgunAmmoItem.java",
-          "src/main/resources/assets/cybercraft/models/item/handgun_ammo.json"
+          "src/main/resources/assets/cybercraft/models/item/handgun_ammo.json",
+          "src/main/java/net/rbm/cybercraft/item/HandgunAmmoItem.java"
         ]
       },
       "path": "~/Ranged Weapons/Handguns"
@@ -2031,8 +2031,8 @@
       "registry_name": "nbghfvc",
       "metadata": {
         "files": [
-          "src/main/java/net/rbm/cybercraft/item/NbghfvcItem.java",
-          "src/main/resources/assets/cybercraft/models/item/nbghfvc.json"
+          "src/main/resources/assets/cybercraft/models/item/nbghfvc.json",
+          "src/main/java/net/rbm/cybercraft/item/NbghfvcItem.java"
         ]
       },
       "path": "~/Ranged Weapons/Rifiles"
@@ -2078,8 +2078,8 @@
       "registry_name": "dense_marrow",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cybercraft/models/item/dense_marrow.json",
-          "src/main/java/net/rbm/cybercraft/item/DenseMarrowItem.java"
+          "src/main/java/net/rbm/cybercraft/item/DenseMarrowItem.java",
+          "src/main/resources/assets/cybercraft/models/item/dense_marrow.json"
         ]
       },
       "path": "~/Cyberware/Cyberwares/Skeleton/Dense Marrow "
@@ -2220,8 +2220,8 @@
       "registry_name": "shotgun",
       "metadata": {
         "files": [
-          "src/main/java/net/rbm/cybercraft/item/ShotgunItem.java",
-          "src/main/resources/assets/cybercraft/models/item/shotgun.json"
+          "src/main/resources/assets/cybercraft/models/item/shotgun.json",
+          "src/main/java/net/rbm/cybercraft/item/ShotgunItem.java"
         ]
       },
       "path": "~/Ranged Weapons/Shotguns"
@@ -2704,20 +2704,20 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/rbm/cybercraft/network/CybercraftModVariables.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/pack.mcmeta",
-      "src/main/java/net/rbm/cybercraft/init/CybercraftModModels.java",
-      "src/main/java/net/rbm/cybercraft/CybercraftMod.java",
-      "src/main/java/net/rbm/cybercraft/init/CybercraftModTabs.java",
+      "src/main/java/net/rbm/cybercraft/network/MenuStateUpdateMessage.java",
       "src/main/java/net/rbm/cybercraft/init/CybercraftModScreens.java",
       "src/main/java/net/rbm/cybercraft/init/CybercraftModMenus.java",
-      "src/main/java/net/rbm/cybercraft/network/MenuStateUpdateMessage.java",
       "src/main/java/net/rbm/cybercraft/init/CybercraftModKeyMappings.java",
       "src/main/java/net/rbm/cybercraft/init/CybercraftModMobEffects.java",
       "src/main/java/net/rbm/cybercraft/init/CybercraftModItems.java",
       "src/main/java/net/rbm/cybercraft/init/CybercraftModEntityRenderers.java",
-      "src/main/java/net/rbm/cybercraft/init/CybercraftModEntities.java"
+      "src/main/java/net/rbm/cybercraft/init/CybercraftModEntities.java",
+      "src/main/java/net/rbm/cybercraft/init/CybercraftModModels.java",
+      "src/main/java/net/rbm/cybercraft/network/CybercraftModVariables.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/rbm/cybercraft/CybercraftMod.java",
+      "src/main/java/net/rbm/cybercraft/init/CybercraftModTabs.java"
     ]
   },
   "foldersRoot": {
@@ -3065,5 +3065,5 @@
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.rbm.cybercraft"
   },
-  "mcreatorVersion": 202500228610
+  "mcreatorVersion": 202500345720
 }

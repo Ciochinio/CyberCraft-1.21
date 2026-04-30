@@ -17,7 +17,7 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public record CyberwareMenuMessage(int eventType, int pressedms) implements CustomPacketPayload {
 	public static final Type<CyberwareMenuMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(CybercraftMod.MODID, "key_cyberware_menu"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, CyberwareMenuMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, CyberwareMenuMessage message) -> {

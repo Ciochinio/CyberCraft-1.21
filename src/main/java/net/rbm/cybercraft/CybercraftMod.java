@@ -42,15 +42,12 @@ public class CybercraftMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
-
 		CybercraftModItems.REGISTRY.register(modEventBus);
 		CybercraftModEntities.REGISTRY.register(modEventBus);
 		CybercraftModTabs.REGISTRY.register(modEventBus);
 		CybercraftModVariables.ATTACHMENT_TYPES.register(modEventBus);
-
 		CybercraftModMobEffects.REGISTRY.register(modEventBus);
 		CybercraftModMenus.REGISTRY.register(modEventBus);
-
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

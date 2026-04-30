@@ -27,7 +27,7 @@ public class ShotgunRightclickedProcedure {
 				{
 					CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
 					_vars.cybercraftInaccuracy = entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftInaccuracy + 1;
-					_vars.syncPlayerVariables(entity);
+					_vars.markSyncDirty();
 				}
 				for (int index0 = 0; index0 < 10; index0++) {
 					{
@@ -50,7 +50,7 @@ public class ShotgunRightclickedProcedure {
 				{
 					CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
 					_vars.cybercraftInaccuracy = 0;
-					_vars.syncPlayerVariables(entity);
+					_vars.markSyncDirty();
 				}
 				for (int index1 = 0; index1 < 10; index1++) {
 					{

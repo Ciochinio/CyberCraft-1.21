@@ -25,12 +25,8 @@ public class SandevistanEffectProcedure {
 			{
 				CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
 				_vars.cybercraftCritChance = entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftCritChance + 85;
-				_vars.syncPlayerVariables(entity);
-			}
-			{
-				CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
 				_vars.cybercraftCritDamage = entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftCritDamage + 500;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "tick freeze");
@@ -38,12 +34,8 @@ public class SandevistanEffectProcedure {
 				{
 					CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
 					_vars.cybercraftCritChance = entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftCritChance - 85;
-					_vars.syncPlayerVariables(entity);
-				}
-				{
-					CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
 					_vars.cybercraftCritDamage = entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftCritDamage - 500;
-					_vars.syncPlayerVariables(entity);
+					_vars.markSyncDirty();
 				}
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),

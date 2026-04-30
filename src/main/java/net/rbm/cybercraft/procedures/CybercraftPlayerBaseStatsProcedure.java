@@ -11,52 +11,16 @@ public class CybercraftPlayerBaseStatsProcedure {
 		{
 			CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
 			_vars.cybercraftHealth = 0;
-			_vars.syncPlayerVariables(entity);
-		}
-		{
-			CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
 			_vars.cybercraftMovementSpeed = 0;
-			_vars.syncPlayerVariables(entity);
-		}
-		{
-			CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
 			_vars.cybercraftArmor = 0;
-			_vars.syncPlayerVariables(entity);
-		}
-		{
-			CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
 			_vars.cybercraftToughness = 0;
-			_vars.syncPlayerVariables(entity);
-		}
-		{
-			CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
 			_vars.cybercraftPassiveHealthRegeneration = 0;
-			_vars.syncPlayerVariables(entity);
-		}
-		{
-			CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
 			_vars.cybercraftMitigationChance = 10;
-			_vars.syncPlayerVariables(entity);
-		}
-		{
-			CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
 			_vars.cybercraftHackDamage = 0;
-			_vars.syncPlayerVariables(entity);
-		}
-		{
-			CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
 			_vars.cybercraftAttackSpeed = 0;
-			_vars.syncPlayerVariables(entity);
-		}
-		{
-			CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
 			_vars.cybercraftCritChance = 5;
-			_vars.syncPlayerVariables(entity);
-		}
-		{
-			CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
 			_vars.cybercraftCritDamage = 50;
-			_vars.syncPlayerVariables(entity);
+			_vars.markSyncDirty();
 		}
 	}
 }

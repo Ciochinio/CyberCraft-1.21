@@ -3,28 +3,7 @@
  */
 package net.rbm.cybercraft.init;
 
-import net.rbm.cybercraft.potion.TyrosineInjectorActivationMobEffect;
-import net.rbm.cybercraft.potion.ThreatevacActivationThresholdMobEffect;
-import net.rbm.cybercraft.potion.StabberActivationMobEffect;
-import net.rbm.cybercraft.potion.SecondHeartCooldownMobEffect;
-import net.rbm.cybercraft.potion.SandevistanCooldownMobEffect;
-import net.rbm.cybercraft.potion.RegenTestPlus5MobEffect;
-import net.rbm.cybercraft.potion.ReducedFallDamageMobEffect;
-import net.rbm.cybercraft.potion.RecoilLowMobEffect;
-import net.rbm.cybercraft.potion.RecoilHighMobEffect;
-import net.rbm.cybercraft.potion.RecentShotMobEffect;
-import net.rbm.cybercraft.potion.RangeguardActivationMobEffect;
-import net.rbm.cybercraft.potion.ProxishieldActivationMobEffect;
-import net.rbm.cybercraft.potion.PassiveHealthRegenMobEffect;
-import net.rbm.cybercraft.potion.HealCooldownMobEffect;
-import net.rbm.cybercraft.potion.EnemyNearbyMobEffect;
-import net.rbm.cybercraft.potion.DeepfieldVisualInterfaceActivationMobEffect;
-import net.rbm.cybercraft.potion.CountershellMitigationChanceMobEffect;
-import net.rbm.cybercraft.potion.ChemicalDOTMobEffect;
-import net.rbm.cybercraft.potion.ChemicalDOTCooldownMobEffect;
-import net.rbm.cybercraft.potion.BiomonitorCooldownMobEffect;
-import net.rbm.cybercraft.potion.AtomicSensorsActivationMobEffect;
-import net.rbm.cybercraft.potion.AdrenalineConverterActivationMobEffect;
+import net.rbm.cybercraft.potion.*;
 import net.rbm.cybercraft.CybercraftMod;
 
 import net.neoforged.neoforge.registries.DeferredRegister;

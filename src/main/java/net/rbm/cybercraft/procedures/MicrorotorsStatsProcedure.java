@@ -14,7 +14,7 @@ public class MicrorotorsStatsProcedure {
 			{
 				CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
 				_vars.cybercraftAttackSpeed = entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftAttackSpeed + 1;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 		}
 	}

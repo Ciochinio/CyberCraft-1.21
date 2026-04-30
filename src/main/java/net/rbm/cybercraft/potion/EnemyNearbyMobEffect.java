@@ -13,7 +13,7 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.client.gui.screens.inventory.EffectRenderingInventoryScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class EnemyNearbyMobEffect extends MobEffect {
 	public EnemyNearbyMobEffect() {
 		super(MobEffectCategory.NEUTRAL, -16777216);

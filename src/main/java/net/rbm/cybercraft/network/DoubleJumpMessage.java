@@ -17,7 +17,7 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public record DoubleJumpMessage(int eventType, int pressedms) implements CustomPacketPayload {
 	public static final Type<DoubleJumpMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(CybercraftMod.MODID, "key_double_jump"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, DoubleJumpMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, DoubleJumpMessage message) -> {

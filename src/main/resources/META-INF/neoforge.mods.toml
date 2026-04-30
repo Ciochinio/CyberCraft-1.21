@@ -20,7 +20,7 @@ authors="Ciochu"
 [[dependencies.cybercraft]]
     modId="neoforge"
     type="required"
-    versionRange="[21.1.176,)"
+    versionRange="[21.1.190,)"
     ordering="AFTER"
     side="BOTH"
 

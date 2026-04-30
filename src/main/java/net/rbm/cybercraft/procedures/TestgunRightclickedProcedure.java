@@ -26,7 +26,7 @@ public class TestgunRightclickedProcedure {
 				{
 					CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
 					_vars.cybercraftInaccuracy = entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftInaccuracy + 1;
-					_vars.syncPlayerVariables(entity);
+					_vars.markSyncDirty();
 				}
 				{
 					Entity _shootFrom = entity;
@@ -47,7 +47,7 @@ public class TestgunRightclickedProcedure {
 				{
 					CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
 					_vars.cybercraftInaccuracy = 0;
-					_vars.syncPlayerVariables(entity);
+					_vars.markSyncDirty();
 				}
 				{
 					Entity _shootFrom = entity;

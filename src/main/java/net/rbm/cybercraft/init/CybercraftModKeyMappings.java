@@ -19,7 +19,7 @@ import net.neoforged.api.distmarker.Dist;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
+@EventBusSubscriber(Dist.CLIENT)
 public class CybercraftModKeyMappings {
 	public static final KeyMapping CYBERWARE_MENU = new KeyMapping("key.cybercraft.cyberware_menu", GLFW.GLFW_KEY_F8, "key.categories.cybercraft") {
 		private boolean isDownOld = false;
@@ -68,7 +68,7 @@ public class CybercraftModKeyMappings {
 		event.register(OPERATING_SYSTEM_ACTIVATE);
 	}
 
-	@EventBusSubscriber({Dist.CLIENT})
+	@EventBusSubscriber(Dist.CLIENT)
 	public static class KeyEventListener {
 		@SubscribeEvent
 		public static void onClientTick(ClientTickEvent.Post event) {

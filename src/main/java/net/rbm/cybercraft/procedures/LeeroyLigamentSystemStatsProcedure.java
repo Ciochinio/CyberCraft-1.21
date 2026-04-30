@@ -13,7 +13,7 @@ public class LeeroyLigamentSystemStatsProcedure {
 			{
 				CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
 				_vars.cybercraftMovementSpeed = entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftMovementSpeed + 20;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 		}
 	}

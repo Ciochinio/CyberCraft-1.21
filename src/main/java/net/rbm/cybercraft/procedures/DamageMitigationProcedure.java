@@ -38,14 +38,14 @@ public class DamageMitigationProcedure {
 		{
 			CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
 			_vars.sumMitigationChance = entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftMitigationChance;
-			_vars.syncPlayerVariables(entity);
+			_vars.markSyncDirty();
 		}
 		mitigationRoll = Mth.nextInt(RandomSource.create(), 1, 100);
 		if (entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(CybercraftModMobEffects.COUNTERSHELL_MITIGATION_CHANCE)) {
 			{
 				CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
 				_vars.sumMitigationChance = entity.getData(CybercraftModVariables.PLAYER_VARIABLES).sumMitigationChance + 20;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 		}
 		if (entity instanceof Player _player && !_player.level().isClientSide())

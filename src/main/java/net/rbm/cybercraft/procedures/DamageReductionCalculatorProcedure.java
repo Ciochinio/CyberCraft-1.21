@@ -33,7 +33,7 @@ public class DamageReductionCalculatorProcedure {
 		{
 			CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
 			_vars.cybercraftDamageReduction = amount * (1 - Math.max((entity instanceof LivingEntity _livEnt ? _livEnt.getArmorValue() : 0) / 5, (entity instanceof LivingEntity _livEnt ? _livEnt.getArmorValue() : 0) - amount / 2) / 25);
-			_vars.syncPlayerVariables(entity);
+			_vars.markSyncDirty();
 		}
 		if (entity instanceof Player _player && !_player.level().isClientSide())
 			_player.displayClientMessage(Component.literal(("Damage reduced from>>>" + amount)), false);

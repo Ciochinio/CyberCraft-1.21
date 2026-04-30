@@ -30,19 +30,19 @@ public class CritDamageProcedure {
 		{
 			CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
 			_vars.sumCritDamage = entity.getData(CybercraftModVariables.PLAYER_VARIABLES).cybercraftCritDamage;
-			_vars.syncPlayerVariables(entity);
+			_vars.markSyncDirty();
 		}
 		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(CybercraftModMobEffects.TYROSINE_INJECTOR_ACTIVATION)) {
 			{
 				CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
 				_vars.sumCritDamage = entity.getData(CybercraftModVariables.PLAYER_VARIABLES).sumCritDamage + 20;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 		}
 		{
 			CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
 			_vars.sumCritDamage = entity.getData(CybercraftModVariables.PLAYER_VARIABLES).sumCritDamage * 0.01;
-			_vars.syncPlayerVariables(entity);
+			_vars.markSyncDirty();
 		}
 	}
 }

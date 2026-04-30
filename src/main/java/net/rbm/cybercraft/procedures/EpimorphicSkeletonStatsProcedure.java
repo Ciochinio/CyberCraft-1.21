@@ -15,7 +15,7 @@ public class EpimorphicSkeletonStatsProcedure {
 			{
 				CybercraftModVariables.PlayerVariables _vars = entity.getData(CybercraftModVariables.PLAYER_VARIABLES);
 				_vars.cybercraftHealth = (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 0.2;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 		}
 	}

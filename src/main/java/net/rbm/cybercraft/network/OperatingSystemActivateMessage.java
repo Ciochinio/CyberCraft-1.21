@@ -17,7 +17,7 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public record OperatingSystemActivateMessage(int eventType, int pressedms) implements CustomPacketPayload {
 	public static final Type<OperatingSystemActivateMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(CybercraftMod.MODID, "key_operating_system_activate"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, OperatingSystemActivateMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, OperatingSystemActivateMessage message) -> {

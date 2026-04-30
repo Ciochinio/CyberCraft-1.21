@@ -6,6 +6,7 @@ import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
 import net.neoforged.neoforge.network.PacketDistributor;
+import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.neoforge.common.util.INBTSerializable;
 import net.neoforged.neoforge.attachment.AttachmentType;
@@ -14,7 +15,6 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
@@ -27,7 +27,7 @@ import net.minecraft.core.HolderLookup;
 
 import java.util.function.Supplier;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class CybercraftModVariables {
 	public static final DeferredRegister<AttachmentType<?>> ATTACHMENT_TYPES = DeferredRegister.create(NeoForgeRegistries.Keys.ATTACHMENT_TYPES, CybercraftMod.MODID);
 	public static final Supplier<AttachmentType<PlayerVariables>> PLAYER_VARIABLES = ATTACHMENT_TYPES.register("player_variables", () -> AttachmentType.serializable(() -> new PlayerVariables()).build());
@@ -37,72 +37,78 @@ public class CybercraftModVariables {
 		CybercraftMod.addNetworkMessage(PlayerVariablesSyncMessage.TYPE, PlayerVariablesSyncMessage.STREAM_CODEC, PlayerVariablesSyncMessage::handleData);
 	}
 
-	@EventBusSubscriber
-	public static class EventBusVariableHandlers {
-		@SubscribeEvent
-		public static void onPlayerLoggedInSyncPlayerVariables(PlayerEvent.PlayerLoggedInEvent event) {
-			if (event.getEntity() instanceof ServerPlayer player)
-				player.getData(PLAYER_VARIABLES).syncPlayerVariables(event.getEntity());
-		}
+	@SubscribeEvent
+	public static void onPlayerLoggedInSyncPlayerVariables(PlayerEvent.PlayerLoggedInEvent event) {
+		if (event.getEntity() instanceof ServerPlayer player)
+			PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES)));
+	}
 
-		@SubscribeEvent
-		public static void onPlayerRespawnedSyncPlayerVariables(PlayerEvent.PlayerRespawnEvent event) {
-			if (event.getEntity() instanceof ServerPlayer player)
-				player.getData(PLAYER_VARIABLES).syncPlayerVariables(event.getEntity());
-		}
+	@SubscribeEvent
+	public static void onPlayerRespawnedSyncPlayerVariables(PlayerEvent.PlayerRespawnEvent event) {
+		if (event.getEntity() instanceof ServerPlayer player)
+			PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES)));
+	}
 
-		@SubscribeEvent
-		public static void onPlayerChangedDimensionSyncPlayerVariables(PlayerEvent.PlayerChangedDimensionEvent event) {
-			if (event.getEntity() instanceof ServerPlayer player)
-				player.getData(PLAYER_VARIABLES).syncPlayerVariables(event.getEntity());
-		}
+	@SubscribeEvent
+	public static void onPlayerChangedDimensionSyncPlayerVariables(PlayerEvent.PlayerChangedDimensionEvent event) {
+		if (event.getEntity() instanceof ServerPlayer player)
+			PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES)));
+	}
 
-		@SubscribeEvent
-		public static void clonePlayer(PlayerEvent.Clone event) {
-			PlayerVariables original = event.getOriginal().getData(PLAYER_VARIABLES);
-			PlayerVariables clone = new PlayerVariables();
-			clone.save = original.save;
-			clone.operatingsystem1 = original.operatingsystem1;
-			clone.frontalcortex1 = original.frontalcortex1;
-			clone.frontalcortex2 = original.frontalcortex2;
-			clone.face1 = original.face1;
-			clone.arms1 = original.arms1;
-			clone.hands1 = original.hands1;
-			clone.skeleton1 = original.skeleton1;
-			clone.skeleton2 = original.skeleton2;
-			clone.circulatorysystem1 = original.circulatorysystem1;
-			clone.circulatorysystem2 = original.circulatorysystem2;
-			clone.nervoussystem1 = original.nervoussystem1;
-			clone.nervoussystem2 = original.nervoussystem2;
-			clone.legs1 = original.legs1;
-			clone.integumentarysystem1 = original.integumentarysystem1;
-			clone.integumentarysystem2 = original.integumentarysystem2;
-			if (!event.isWasDeath()) {
-				clone.doublejump = original.doublejump;
-				clone.cybercraftMovementSpeed = original.cybercraftMovementSpeed;
-				clone.cybercraftHealth = original.cybercraftHealth;
-				clone.cybercraftArmor = original.cybercraftArmor;
-				clone.cybercraftHackDamage = original.cybercraftHackDamage;
-				clone.cybercraftAdditionalDamage = original.cybercraftAdditionalDamage;
-				clone.cybercraftDamageReduction = original.cybercraftDamageReduction;
-				clone.cybercraftCritChance = original.cybercraftCritChance;
-				clone.cybercraftCritDamage = original.cybercraftCritDamage;
-				clone.cybercraftToughness = original.cybercraftToughness;
-				clone.cybercraftPassiveHealthRegeneration = original.cybercraftPassiveHealthRegeneration;
-				clone.sumPassiveHealthRegeneration = original.sumPassiveHealthRegeneration;
-				clone.cybercraftAttackSpeed = original.cybercraftAttackSpeed;
-				clone.sumMitigationChance = original.sumMitigationChance;
-				clone.cybercraftMitigationChance = original.cybercraftMitigationChance;
-				clone.sumCritChance = original.sumCritChance;
-				clone.sumCritDamage = original.sumCritDamage;
-				clone.cybercraftInaccuracy = original.cybercraftInaccuracy;
-				clone.cybercraftRecoilYaw = original.cybercraftRecoilYaw;
-			}
-			event.getEntity().setData(PLAYER_VARIABLES, clone);
+	@SubscribeEvent
+	public static void onPlayerTickUpdateSyncPlayerVariables(PlayerTickEvent.Post event) {
+		if (event.getEntity() instanceof ServerPlayer player && player.getData(PLAYER_VARIABLES)._syncDirty) {
+			PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES)));
+			player.getData(PLAYER_VARIABLES)._syncDirty = false;
 		}
 	}
 
+	@SubscribeEvent
+	public static void clonePlayer(PlayerEvent.Clone event) {
+		PlayerVariables original = event.getOriginal().getData(PLAYER_VARIABLES);
+		PlayerVariables clone = new PlayerVariables();
+		clone.save = original.save;
+		clone.operatingsystem1 = original.operatingsystem1;
+		clone.frontalcortex1 = original.frontalcortex1;
+		clone.frontalcortex2 = original.frontalcortex2;
+		clone.face1 = original.face1;
+		clone.arms1 = original.arms1;
+		clone.hands1 = original.hands1;
+		clone.skeleton1 = original.skeleton1;
+		clone.skeleton2 = original.skeleton2;
+		clone.circulatorysystem1 = original.circulatorysystem1;
+		clone.circulatorysystem2 = original.circulatorysystem2;
+		clone.nervoussystem1 = original.nervoussystem1;
+		clone.nervoussystem2 = original.nervoussystem2;
+		clone.legs1 = original.legs1;
+		clone.integumentarysystem1 = original.integumentarysystem1;
+		clone.integumentarysystem2 = original.integumentarysystem2;
+		if (!event.isWasDeath()) {
+			clone.doublejump = original.doublejump;
+			clone.cybercraftMovementSpeed = original.cybercraftMovementSpeed;
+			clone.cybercraftHealth = original.cybercraftHealth;
+			clone.cybercraftArmor = original.cybercraftArmor;
+			clone.cybercraftHackDamage = original.cybercraftHackDamage;
+			clone.cybercraftAdditionalDamage = original.cybercraftAdditionalDamage;
+			clone.cybercraftDamageReduction = original.cybercraftDamageReduction;
+			clone.cybercraftCritChance = original.cybercraftCritChance;
+			clone.cybercraftCritDamage = original.cybercraftCritDamage;
+			clone.cybercraftToughness = original.cybercraftToughness;
+			clone.cybercraftPassiveHealthRegeneration = original.cybercraftPassiveHealthRegeneration;
+			clone.sumPassiveHealthRegeneration = original.sumPassiveHealthRegeneration;
+			clone.cybercraftAttackSpeed = original.cybercraftAttackSpeed;
+			clone.sumMitigationChance = original.sumMitigationChance;
+			clone.cybercraftMitigationChance = original.cybercraftMitigationChance;
+			clone.sumCritChance = original.sumCritChance;
+			clone.sumCritDamage = original.sumCritDamage;
+			clone.cybercraftInaccuracy = original.cybercraftInaccuracy;
+			clone.cybercraftRecoilYaw = original.cybercraftRecoilYaw;
+		}
+		event.getEntity().setData(PLAYER_VARIABLES, clone);
+	}
+
 	public static class PlayerVariables implements INBTSerializable<CompoundTag> {
+		boolean _syncDirty = false;
 		public boolean save = true;
 		public ItemStack operatingsystem1 = ItemStack.EMPTY;
 		public ItemStack frontalcortex1 = ItemStack.EMPTY;
@@ -219,9 +225,8 @@ public class CybercraftModVariables {
 			cybercraftRecoilYaw = nbt.getDouble("cybercraftRecoilYaw");
 		}
 
-		public void syncPlayerVariables(Entity entity) {
-			if (entity instanceof ServerPlayer serverPlayer)
-				PacketDistributor.sendToPlayer(serverPlayer, new PlayerVariablesSyncMessage(this));
+		public void markSyncDirty() {
+			_syncDirty = true;
 		}
 	}
 
